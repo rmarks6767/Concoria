@@ -151,7 +151,7 @@ if Inventory[equipped,0] == ""{ //IF NOTHING IS EQUIPPED...
 //KEYPRESS MOVEMENT
 
     //LEFT
-    if keyboard_check_pressed(ord('A')){
+    if keyboard_check_pressed(ord("A")){
         
 
         direction = 180
@@ -159,7 +159,7 @@ if Inventory[equipped,0] == ""{ //IF NOTHING IS EQUIPPED...
         friction = 0
         
     //RIGHT
-    }else if keyboard_check_pressed(ord('D')){
+    }else if keyboard_check_pressed(ord("D")){
     
 
         direction = 0
@@ -167,7 +167,7 @@ if Inventory[equipped,0] == ""{ //IF NOTHING IS EQUIPPED...
         friction = 0
         
     //UP
-    }else if keyboard_check_pressed(ord('W')){
+    }else if keyboard_check_pressed(ord("W")){
     
 
         direction = 90
@@ -176,7 +176,7 @@ if Inventory[equipped,0] == ""{ //IF NOTHING IS EQUIPPED...
 
         
     //DOWN
-    }else if keyboard_check_pressed(ord('S')){
+    }else if keyboard_check_pressed(ord("S")){
     
 
         direction = 270
@@ -187,26 +187,26 @@ if Inventory[equipped,0] == ""{ //IF NOTHING IS EQUIPPED...
 
 //KEYRELEASE
 
-    if keyboard_check_released(ord('A')) and not MovingKeyDown(){
+    if keyboard_check_released(ord("A")) and not MovingKeyDown(){
 
 
         direction = 180
         friction = .5
         
         
-    }else if keyboard_check_released(ord('D')) and not MovingKeyDown(){
+    }else if keyboard_check_released(ord("D")) and not MovingKeyDown(){
     
 
         direction = 0
         friction = .5
     
-    }else if keyboard_check_released(ord('W')) and not MovingKeyDown(){
+    }else if keyboard_check_released(ord("W")) and not MovingKeyDown(){
     
 
         direction = 90
         friction = .5
     
-    }else if keyboard_check_released(ord('S')) and not MovingKeyDown(){
+    }else if keyboard_check_released(ord("S")) and not MovingKeyDown(){
     
 
         direction = 270
@@ -231,7 +231,7 @@ if Inventory[equipped,0] == ""{ //IF NOTHING IS EQUIPPED...
 
 //INVENTORY
 
-    if keyboard_check_pressed(ord('E')){
+    if keyboard_check_pressed(ord("E")){
         
         if Inventory_Open == false{
         
@@ -247,27 +247,27 @@ if Inventory[equipped,0] == ""{ //IF NOTHING IS EQUIPPED...
     
 //Equip
 
-    if keyboard_check_pressed(ord('1')){
+    if keyboard_check_pressed(ord("1")){
         
         PlayerUnequipAll()
         Inventory[0,3] = true
         
-    }else if keyboard_check_pressed(ord('2')){
+    }else if keyboard_check_pressed(ord("2")){
     
         PlayerUnequipAll()
         Inventory[1,3] = true
     
-    }else if keyboard_check_pressed(ord('3')){
+    }else if keyboard_check_pressed(ord("3")){
     
         PlayerUnequipAll()
         Inventory[2,3] = true
     
-    }else if keyboard_check_pressed(ord('4')){
+    }else if keyboard_check_pressed(ord("4")){
     
         PlayerUnequipAll()
         Inventory[3,3] = true
     
-    }else if keyboard_check_pressed(ord('5')){
+    }else if keyboard_check_pressed(ord("5")){
     
         PlayerUnequipAll()
         Inventory[4,3] = true
