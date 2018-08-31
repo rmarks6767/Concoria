@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0250f395-5eb8-4560-bdd6-3c4e69ccedd4",
+            "Value": {
+                "id": "55663071-8225-448d-ae64-b9350c190f39",
+                "resourcePath": "rooms\\TitleScreen\\TitleScreen.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "094bdddb-2f67-47b7-b769-ebe18939fc42",
             "Value": {
                 "id": "5a4fe370-072e-434a-ac75-903c11f82135",
@@ -52,6 +60,14 @@
                 "id": "09a8742d-2986-4596-867c-406bb1a1af64",
                 "resourcePath": "rooms\\room0\\room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "0ba1cb05-1599-43f4-9659-645ee4646070",
+            "Value": {
+                "id": "bfa2a089-83d6-4ab7-8aee-c41a21bc2e11",
+                "resourcePath": "views\\0ba1cb05-1599-43f4-9659-645ee4646070.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -146,7 +162,7 @@
             "Key": "4b8b7485-be3e-4454-a6f8-f8f0034900e8",
             "Value": {
                 "id": "a7b65a1c-3952-40c5-9396-614e1dd05a3e",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\MainRoom\\MainRoom.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -300,6 +316,14 @@
                 "id": "d685c694-b00b-4e00-80cd-b2bb23d736e4",
                 "resourcePath": "views\\e8d4817e-ec5d-4373-b166-4cc63bc8297d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e95da5b4-f6e2-451c-9751-65698b093ad3",
+            "Value": {
+                "id": "8926d399-157c-4397-9e56-eba05610987a",
+                "resourcePath": "rooms\\Credits\\Credits.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

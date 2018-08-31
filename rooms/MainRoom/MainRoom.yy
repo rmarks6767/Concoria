@@ -1,6 +1,6 @@
 
 {
-    "name": "room0",
+    "name": "MainRoom",
     "id": "4b8b7485-be3e-4454-a6f8-f8f0034900e8",
     "creationCodeFile": "",
     "inheritCode": false,
@@ -43,7 +43,7 @@
             "id": "2e336ae3-e5fa-4d07-993e-0c3701244a15",
             "animationFPS": 15,
             "animationSpeedType": "0",
-            "colour": { "Value": 4278190080 },
+            "colour": { "Value": 4278190323 },
             "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
