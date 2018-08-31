@@ -140,22 +140,22 @@ if (image_index+image_speed >= image_number){
 
 //Stop animating when weapon changes
 
-if keyboard_check_pressed(ord('1')){
+if keyboard_check_pressed(ord("1")){
     
     sprite_index = nodraw
     
-}else if keyboard_check_pressed(ord('2')){
+}else if keyboard_check_pressed(ord("2")){
 
     sprite_index = nodraw
 
-}else if keyboard_check_pressed(ord('3')){
+}else if keyboard_check_pressed(ord("3")){
 
     sprite_index = nodraw
 
-}else if keyboard_check_pressed(ord('4')){
+}else if keyboard_check_pressed(ord("4")){
 
     sprite_index = nodraw
-}else if keyboard_check_pressed(ord('5')){
+}else if keyboard_check_pressed(ord("5")){
 
     sprite_index = nodraw
 }
