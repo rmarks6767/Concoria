@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "902ff43d-24f5-4599-94bc-cb724f7f6e54",
+            "Value": {
+                "id": "4de5a26d-6dfa-4476-a207-4ff8461b6e89",
+                "resourcePath": "sprites\\poop\\poop.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a1f5fb03-fb39-43be-ae3b-d9792dcaebe1",
             "Value": {
                 "id": "10f26b21-111c-46f3-9811-e7686e6e5358",
