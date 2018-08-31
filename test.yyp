@@ -189,6 +189,14 @@
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
             }
+        },
+        {
+            "Key": "f4558304-10b9-4784-b64b-bbbdb6bac690",
+            "Value": {
+                "id": "e6432094-ceef-4e64-b989-1d4c6c38b6be",
+                "resourcePath": "sprites\\sprite0\\sprite0.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "script_order": [
