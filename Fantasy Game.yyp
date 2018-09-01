@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "7b9b60b8-a137-45a1-b7d6-b125ceb6f812",
+            "Value": {
+                "id": "d6a9bb72-f13f-49f2-aa1b-980adc1eb2ba",
+                "resourcePath": "sprites\\poop\\poop.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "86384ae3-2cad-4814-952a-2ec6599eb1a5",
             "Value": {
                 "id": "536c9fc8-2c78-4a59-9726-06cb65587f62",
