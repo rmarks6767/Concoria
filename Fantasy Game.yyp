@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "2dbd3197-6880-4382-9abe-4a42c6fd471b",
+            "Value": {
+                "id": "026a6e24-7dbb-42ae-8dc4-666cb651bfac",
+                "resourcePath": "objects\\Enemy_Controller\\Enemy_Controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "37701427-6447-40a3-9477-99c895c329c2",
             "Value": {
                 "id": "b44ecaf5-d9f4-4c3f-a7da-6b9f46a30046",
@@ -212,6 +220,14 @@
                 "id": "383abbbb-a3d0-4028-9a2c-b14265532f86",
                 "resourcePath": "rooms\\TitleScreen\\TitleScreen.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "7af97022-4941-4b10-b287-75d88d5c0293",
+            "Value": {
+                "id": "4cb4df58-fc95-44d3-85e8-cc314f1fc242",
+                "resourcePath": "scripts\\Attacking\\Attacking.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -359,6 +375,14 @@
             }
         },
         {
+            "Key": "f68f5897-9e49-4591-a2bb-3f05d53523d5",
+            "Value": {
+                "id": "2206c35a-3b3b-49da-b2fd-6a860e67a41c",
+                "resourcePath": "scripts\\EnemyProbability\\EnemyProbability.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f9e6b64c-4b2a-4863-860e-c12397f756ca",
             "Value": {
                 "id": "816037dd-ab8e-4c4f-8633-d599801bd1ce",
@@ -388,7 +412,9 @@
         "b3084bb0-51ac-49c9-b84c-64263d6fb7b5",
         "89424d59-d3cc-44e1-ac7f-91ed8d9c7e30",
         "86b7f16a-c598-4d82-8cc9-17049177d587",
-        "86384ae3-2cad-4814-952a-2ec6599eb1a5"
+        "86384ae3-2cad-4814-952a-2ec6599eb1a5",
+        "7af97022-4941-4b10-b287-75d88d5c0293",
+        "f68f5897-9e49-4591-a2bb-3f05d53523d5"
     ],
     "tutorial": ""
 }
