@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "73adc40a-f039-47d8-919f-6f55be4f5251",
+            "Value": {
+                "id": "383abbbb-a3d0-4028-9a2c-b14265532f86",
+                "resourcePath": "rooms\\TitleScreen\\TitleScreen.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "87375086-e969-4bff-9f96-7be4aebdbd9c",
             "Value": {
                 "id": "1995b2f6-5d79-4735-a0fd-f207440815a1",
