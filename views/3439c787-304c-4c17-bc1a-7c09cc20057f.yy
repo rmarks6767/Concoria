@@ -5,8 +5,12 @@
     "name": "3439c787-304c-4c17-bc1a-7c09cc20057f",
     "children": [
         "10150189-12eb-486b-9e55-ecce91fe89a5",
+        "5d1954d2-945b-44ed-a53a-882410b85299",
         "9739da81-f019-4440-aaee-7930bb523c6d",
+        "2d9456fe-00a6-4faf-8cf4-1e5117874145",
         "e73196cd-a1f9-4fc0-93fc-9e9432697972",
+        "763b676b-8e7e-4e82-84e0-08fe84c2ef48",
+        "415fe04f-a392-4f3d-97a1-49a3a99fa7c7",
         "731e05ed-88f3-4abc-b634-a0a8337f771c"
     ],
     "filterType": "GMSprite",

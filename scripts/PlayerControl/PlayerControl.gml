@@ -1,4 +1,4 @@
-image_speed = 0.5
+image_speed = 2
 
 equipped = FindEquippedSlot()
 //Sprite Handling   
