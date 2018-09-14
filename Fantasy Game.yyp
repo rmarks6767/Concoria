@@ -42,7 +42,7 @@
             "Key": "0a1b659b-2dbb-40c7-bab1-f97bbb40d779",
             "Value": {
                 "id": "c120a3c3-c122-477b-9133-1baffc2e3249",
-                "resourcePath": "sprites\\sprite0\\sprite0.yy",
+                "resourcePath": "sprites\\test\\test.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "3ccd8d76-5a23-4a4c-a1e9-adc4458f7b7a",
+            "Value": {
+                "id": "ecd20224-9997-405a-b971-a9c34cd6e832",
+                "resourcePath": "sprites\\template_idle_b\\template_idle_b.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3ce95be1-7716-430b-9333-2990d3c5bbff",
             "Value": {
                 "id": "9e75ab75-c607-40ba-9803-783c1e0c93e0",
@@ -172,6 +180,14 @@
                 "id": "b72911b2-410c-4c0d-9566-fe624a9438ad",
                 "resourcePath": "views\\3f05addd-d43e-4ded-94aa-7fa54f130d2e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "45377b6d-1e29-4820-9a2a-8134a77a13be",
+            "Value": {
+                "id": "e4154936-e4c6-4532-b528-8981c4db98e1",
+                "resourcePath": "sprites\\template_idle_f\\template_idle_f.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -228,6 +244,22 @@
                 "id": "383abbbb-a3d0-4028-9a2c-b14265532f86",
                 "resourcePath": "rooms\\TitleScreen\\TitleScreen.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "76f9b6fe-7b1f-4b6b-9bf6-5ac83ddbe5e4",
+            "Value": {
+                "id": "791251ac-daac-4eef-a4c6-6a5e2dc50407",
+                "resourcePath": "sprites\\template_idle_r\\template_idle_r.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7971ef5b-0989-4d67-9044-495054b5a91e",
+            "Value": {
+                "id": "c1879a65-d84a-4f9d-b963-995a0c569041",
+                "resourcePath": "sprites\\template_idle_l\\template_idle_l.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
