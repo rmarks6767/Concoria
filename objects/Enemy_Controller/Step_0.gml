@@ -1,18 +1,23 @@
 
-state = 1;
+state = "None";
 
 
 switch(state)
 {
 	case "Stationary":
-		Stationary();
+		Stationary(enemy_health);
+		
 	case "Wandering":
-		Wander();
+		Wander(enemy_health);
+		
 	case "Attacking":
-		Attacking();
+		Attacking(enemy_health);
+	
 	case "Army":
-		armyColab();
+		armyColab(enemy_health);
+	
 	default:
+		show_debug_message("oh fuck no state for enemy")
 		break;
 	
 }
