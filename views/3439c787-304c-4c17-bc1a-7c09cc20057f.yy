@@ -9,9 +9,9 @@
         "9739da81-f019-4440-aaee-7930bb523c6d",
         "2d9456fe-00a6-4faf-8cf4-1e5117874145",
         "e73196cd-a1f9-4fc0-93fc-9e9432697972",
-        "763b676b-8e7e-4e82-84e0-08fe84c2ef48",
-        "415fe04f-a392-4f3d-97a1-49a3a99fa7c7",
-        "731e05ed-88f3-4abc-b634-a0a8337f771c"
+        "c211e458-a71b-4d4a-84d5-35ff4a29d94e",
+        "00759f8b-82bd-4feb-b0ee-ecdd9aa6950d",
+        "f90d99e1-878a-4558-9e8d-7d366ed9c09f"
     ],
     "filterType": "GMSprite",
     "folderName": "moving",
