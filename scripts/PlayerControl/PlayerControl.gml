@@ -33,7 +33,7 @@ if Inventory[equipped,0] == ""{ //IF NOTHING IS EQUIPPED...
             
                 sprite_index = template_idle_l 
                 
-            //RIGHT
+            //RIGHTaa
             }else if GetMouseDirection() == "right"{
             
                 sprite_index = template_idle_r

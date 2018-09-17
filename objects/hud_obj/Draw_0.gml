@@ -1,10 +1,10 @@
 
 
 
-screenx = view_xview //Just redefining the origin of the view
-screeny = view_yview // For ease of typing
-screenh = view_hview
-screenw = view_wview
+screenx = view_xport //Just redefining the origin of the view
+screeny = view_yport // For ease of typing
+screenh = view_hport
+screenw = view_wport
 draw_rectangle_color(screenx, screeny, screenx + screenw , screeny + 100, c_black, c_black, c_black,c_black,false);
 
 if player.Inventory_Open == true {
