@@ -1,5 +1,5 @@
 
-state = "None";
+state = "Stationary";
 
 
 switch(state)
@@ -17,7 +17,7 @@ switch(state)
 		armyColab(enemy_health);
 	
 	default:
-		show_debug_message("oh fuck no state for enemy")
+		show_debug_message("oh fuck, no state for enemy")
 		break;
 	
 }
