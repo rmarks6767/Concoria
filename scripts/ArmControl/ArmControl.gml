@@ -2,7 +2,7 @@
 
 
 
-//alarm[0] = 3;
+
 
 
 //Keep the Arm Attached to the player when he moves
@@ -50,7 +50,7 @@ with(player){
 
 //Display weapon and attacks
 if itemholding != "" {
-	if player.attacking != true{
+	if player.attacking == false{
 		if GetMouseDirection() == "left"{
 		
 			sprite_index = template_arm_l
@@ -78,24 +78,28 @@ if itemholding != "" {
 		
 			sprite_index = template_arm_l
 			SwingArm("left")
+			depth = -1
 		
 		}
 		else if GetMouseDirection() == "right"{
 		
 			sprite_index = template_arm_r
 			SwingArm("right")
+			depth = -1
 		
 		}
 		else if GetMouseDirection() == "up"{
 	
 			sprite_index = template_arm_r
 			SwingArm("up")
+			depth = 1
 	
 		}
 		else if GetMouseDirection() == "down"{
 		
 			sprite_index = template_arm_l
 			SwingArm("down")
+			depth = -1
 			
 		}
 		

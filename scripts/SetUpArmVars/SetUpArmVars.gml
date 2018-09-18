@@ -1,4 +1,4 @@
 sprite_index = nodraw
 itemholding = ""
-depth = 0
+depth = -1
 armFrame = 0
