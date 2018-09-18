@@ -1,15 +1,15 @@
 //Purpose: Control The movement of the arm object
 
-//Set Angle of arm
-image_angle = arm_angle;
 
+
+//alarm[0] = 3;
 
 
 //Keep the Arm Attached to the player when he moves
 if player.speed == 0{
 
-    x = player.x
-    y = player.y
+    x = player.x;
+    y = player.y;
     
 }
 else{
@@ -48,6 +48,60 @@ with(player){
     other.itemholding = Inventory[FindEquippedSlot(),0];
 }
 
+//Display weapon and attacks
+if itemholding != "" {
+	if player.attacking != true{
+		if GetMouseDirection() == "left"{
+		
+			sprite_index = template_arm_l
+		
+		}
+		else if GetMouseDirection() == "right"{
+		
+			sprite_index = template_arm_r
+		
+		}
+		else if GetMouseDirection() == "up"{
+	
+			sprite_index = template_arm_r
+	
+		}
+		else if GetMouseDirection() == "down"{
+		
+			sprite_index = template_arm_l
+		
+		}
+	}
+	else{ //ATTACKing
+		
+		if GetMouseDirection() == "left"{
+		
+			sprite_index = template_arm_l
+			SwingArm("left")
+		
+		}
+		else if GetMouseDirection() == "right"{
+		
+			sprite_index = template_arm_r
+			SwingArm("right")
+		
+		}
+		else if GetMouseDirection() == "up"{
+	
+			sprite_index = template_arm_r
+			SwingArm("up")
+	
+		}
+		else if GetMouseDirection() == "down"{
+		
+			sprite_index = template_arm_l
+			SwingArm("down")
+			
+		}
+		
+	}
+	
+}
 
 
 
