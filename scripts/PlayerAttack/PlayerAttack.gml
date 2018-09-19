@@ -4,7 +4,7 @@ if armFrame < 10 {
 		
 	if !alarm[0]{
 		
-		alarm[0] = 1;
+		alarm[0] = 1;//THIS NUMBER SHOULD LATER BE ATTACHED TO PLAYER ATTACK SPEED STAT
 		
 	}
 		

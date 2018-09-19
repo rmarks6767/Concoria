@@ -49,26 +49,88 @@ with(player){
 }
 
 //Display weapon and attacks
-if itemholding != "" {
+if itemholding != "" {//If something is 
+	
 	if player.attacking == false{
-		if GetMouseDirection() == "left"{
 		
-			sprite_index = template_arm_l
+		sprite_index = GetWeaponSprite(itemholding,GetMouseDirection())
+		
+		if GetMouseDirection() == "left"{
+			
+			depth = 1
 		
 		}
 		else if GetMouseDirection() == "right"{
 		
-			sprite_index = template_arm_r
+			depth = -1
 		
 		}
 		else if GetMouseDirection() == "up"{
 	
-			sprite_index = template_arm_r
+			depth = 1
 	
 		}
 		else if GetMouseDirection() == "down"{
 		
-			sprite_index = template_arm_l
+			depth = -1
+		
+		}
+	}
+	else{ //ATTACKing
+		
+		if GetMouseDirection() == "left"{
+		
+			PlayerAttack("left")
+			depth = 1
+		
+		}
+		else if GetMouseDirection() == "right"{
+		
+			PlayerAttack("right")
+			depth = -1
+		
+		}
+		else if GetMouseDirection() == "up"{
+	
+			PlayerAttack("up")
+			depth = 1
+	
+		}
+		else if GetMouseDirection() == "down"{
+		
+			PlayerAttack("down")
+			depth = -1
+			
+		}
+		
+	}
+	
+}
+else{//If nothing is equipped
+	
+	if player.attacking == false{
+		if GetMouseDirection() == "left"{
+		
+			sprite_index = nodraw
+			depth = 1
+		
+		}
+		else if GetMouseDirection() == "right"{
+		
+			sprite_index = nodraw
+			depth = -1
+		
+		}
+		else if GetMouseDirection() == "up"{
+	
+			sprite_index = nodraw
+			depth = 1
+	
+		}
+		else if GetMouseDirection() == "down"{
+		
+			sprite_index = nodraw
+			depth = -1
 		
 		}
 	}
@@ -77,35 +139,42 @@ if itemholding != "" {
 		if GetMouseDirection() == "left"{
 		
 			sprite_index = template_arm_l
-			SwingArm("left")
-			depth = -1
+			PlayerAttack("left")
+			depth = 1
 		
 		}
 		else if GetMouseDirection() == "right"{
 		
 			sprite_index = template_arm_r
-			SwingArm("right")
+			PlayerAttack("right")
 			depth = -1
 		
 		}
 		else if GetMouseDirection() == "up"{
 	
-			sprite_index = template_arm_r
-			SwingArm("up")
+			sprite_index = template_arm_b
+			PlayerAttack("up")
 			depth = 1
 	
 		}
 		else if GetMouseDirection() == "down"{
 		
-			sprite_index = template_arm_l
-			SwingArm("down")
+			sprite_index = template_arm_f
+			PlayerAttack("down")
 			depth = -1
 			
 		}
 		
 	}
 	
+	
+	
+	
 }
+	
+	
+	
+	
 
 
 
@@ -114,33 +183,40 @@ if itemholding != "" {
 if keyboard_check_pressed(ord("1")){
     
     sprite_index = nodraw;
+	itemholding = player.Inventory[player.equipped,0];
     
 }else if keyboard_check_pressed(ord("2")){
 
     sprite_index = nodraw;
+	itemholding = player.Inventory[player.equipped,0];
 
 }else if keyboard_check_pressed(ord("3")){
 
     sprite_index = nodraw;
+	itemholding = player.Inventory[player.equipped,0];
 
 }else if keyboard_check_pressed(ord("4")){
 
     sprite_index = nodraw;
+	itemholding = player.Inventory[player.equipped,0];
 	
 }else if keyboard_check_pressed(ord("5")){
 
     sprite_index = nodraw;
+	itemholding = player.Inventory[player.equipped,0];
 }
     
 
 if mouse_wheel_up(){
 
     sprite_index = nodraw;
+	itemholding = player.Inventory[player.equipped,0];
     
 }
 
 if mouse_wheel_down(){
 
     sprite_index = nodraw;
+	itemholding = player.Inventory[player.equipped,0];
 
 }

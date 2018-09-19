@@ -1,8 +1,8 @@
 {
-    "id": "2606f4a1-dcb6-49c3-b6d5-e4aea2bbfad4",
+    "id": "658784d8-79a5-470b-a6a9-cc5b1659f71e",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "SwingArm",
+    "name": "GetWeaponSprite",
     "IsCompatibility": false,
     "IsDnD": false
 }
