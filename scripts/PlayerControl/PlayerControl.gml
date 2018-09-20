@@ -1,153 +1,475 @@
-image_speed = 0.5
-
 equipped = FindEquippedSlot()
-//Sprite Handling   
-if Inventory[equipped,0] == ""{ //IF NOTHING IS EQUIPPED...
-    if attacking == false {
-        if speed > 0{
-            
-            //LEFT
-            if GetMouseDirection() == "left"{
-            
-                sprite_index = template_move_l 
-                
-            //RIGHT
-            }else if GetMouseDirection() == "right"{
-            
-                sprite_index = template_move_r
-            
-            //UP
-            }else if GetMouseDirection() == "up"{
-            
-                sprite_index = template_move_b
-            
-            //DOWN
-            }else if GetMouseDirection() == "down"{
-            
-                sprite_index = template_move_f
-            }
-        }else{
-            
-            //LEFT
-            if GetMouseDirection() == "left"{
-            
-                sprite_index = template_idle_l 
-                
-            //RIGHT
-            }else if GetMouseDirection() == "right"{
-            
-                sprite_index = template_idle_r
-            
-            //UP
-            }else if GetMouseDirection() == "up"{
-            
-                sprite_index = template_idle_b
-            
-            //DOWN
-            }else if GetMouseDirection() == "down"{
-            
-                sprite_index = template_idle_f
-            
-            }
-        }
-    }else{
-        if speed > 0{
-            
-            //LEFT
-            if GetMouseDirection() == "left"{
-            
-                sprite_index = template_move_attack_l 
-                
-            //RIGHT
-            }else if GetMouseDirection() == "right"{
-            
-                sprite_index = template_move_attack_r
-            
-            //UP
-            }else if GetMouseDirection() == "up"{
-            
-                sprite_index = template_move_attack_b
-            
-            //DOWN
-            }else if GetMouseDirection() == "down"{
-            
-                sprite_index = template_move_attack_f
-            }
-        }else{
-            show_debug_message("CONDITION MET")
-            //LEFT
-            if GetMouseDirection() == "left"{
-            
-                sprite_index = template_idle_attack_l 
-                
-            //RIGHT
-            }else if GetMouseDirection() == "right"{
-            
-                sprite_index = template_idle_attack_r
-            
-            //UP
-            }else if GetMouseDirection() == "up"{
-            
-                sprite_index = template_idle_attack_b
-            
-            //DOWN
-            }else if GetMouseDirection() == "down"{
-            
-                sprite_index = template_idle_attack_f
-            
-            }
-        }
 
-    }
-}else{
-    if speed > 0{
-        //LEFT
-        if GetMouseDirection() == "left"{
-        
-            sprite_index = template_move_attack_l 
-            
-        //RIGHT
-        }else if GetMouseDirection() == "right"{
-        
-            sprite_index = template_move_attack_r
-        
-        //UP
-        }else if GetMouseDirection() == "up"{
-        
-            sprite_index = template_move_attack_b
-        
-        //DOWN
-        }else if GetMouseDirection() == "down"{
-        
-            sprite_index = template_move_attack_f
-        }
-    }else{
-        
-        //LEFT
-        if GetMouseDirection() == "left"{
-        
-            sprite_index = template_idle_attack_l 
-            
-        //RIGHT
-        }else if GetMouseDirection() == "right"{
-        
-            sprite_index = template_idle_attack_r
-        
-        //UP
-        }else if GetMouseDirection() == "up"{
-        
-            sprite_index = template_idle_attack_b
-        
-        //DOWN
-        }else if GetMouseDirection() == "down"{
-        
-            sprite_index = template_idle_attack_f
-        
-        }
-    }
+//Sprite Handling
+if Inventory[equipped,0] == ""{
+	if attacking == false{
+		if speed == 0{
+	
+			if GetMouseDirection() == "left"{
+		
+				sprite_index = template_idle_l
+		
+				if direction == 0{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
 
+				}
+			
+			}
+			else if GetMouseDirection() == "right"{
+		
+				sprite_index = template_idle_r
+		
+				if direction == 180{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
+
+				}
+		
+			}
+			else if GetMouseDirection() == "up"{
+		
+				sprite_index = template_idle_b
+		
+				if direction == 270{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
+
+				}
+		
+			}
+			else if GetMouseDirection() == "down"{
+		
+				sprite_index = template_idle_f
+		
+				if direction == 90{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
+
+				}
+		
+			}
+
+		}
+		else{
+	
+			if GetMouseDirection() == "left"{
+		
+				sprite_index = template_move_l
+		
+				if direction == 0{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
+
+				}
+			
+		
+		
+	
+	
+			}
+			else if GetMouseDirection() == "right"{
+		
+				sprite_index = template_move_r
+		
+				if direction == 180{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
+
+				}
+		
+		
+		
+			}
+			else if GetMouseDirection() == "up"{
+		
+				sprite_index = template_move_b
+		
+				if direction == 270{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
+
+				}
+		
+			}
+			else if GetMouseDirection() == "down"{
+		
+				sprite_index = template_move_f
+		
+				if direction == 90{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
+
+				}
+		
+		
+			}
+
+		}
+		
+	}
+	else{//IF WE'RE ATTACKING
+		if speed == 0{
+	
+			if GetMouseDirection() == "left"{
+		
+				sprite_index = template_idle_attack_l
+		
+				if direction == 0{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
+
+				}
+			
+			}
+			else if GetMouseDirection() == "right"{
+		
+				sprite_index = template_idle_attack_r
+		
+				if direction == 180{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
+
+				}
+		
+			}
+			else if GetMouseDirection() == "up"{
+		
+				sprite_index = template_idle_attack_b
+		
+				if direction == 270{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
+
+				}
+		
+			}
+			else if GetMouseDirection() == "down"{
+		
+				sprite_index = template_idle_attack_f
+		
+				if direction == 90{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
+
+				}
+		
+			}
+
+		}
+		else{
+	
+			if GetMouseDirection() == "left"{
+		
+				sprite_index = template_move_attack_l
+		
+				if direction == 0{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
+
+				}
+			
+		
+		
+	
+	
+			}
+			else if GetMouseDirection() == "right"{
+		
+				sprite_index = template_move_attack_r
+		
+				if direction == 180{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
+
+				}
+		
+		
+		
+			}
+			else if GetMouseDirection() == "up"{
+		
+				sprite_index = template_move_attack_b
+		
+				if direction == 270{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
+
+				}
+		
+			}
+			else if GetMouseDirection() == "down"{
+		
+				sprite_index = template_move_attack_f
+		
+				if direction == 90{
+		
+			
+					image_speed = -2
+		
+				}
+				else{
+			
+					image_speed = 2
+
+				}
+		
+		
+			}
+
+		}
+		
+		
+		
+		
+	}
+	
+}
+else{
+	
+	if speed == 0{
+	
+		if GetMouseDirection() == "left"{
+		
+			sprite_index = template_idle_attack_l
+		
+			if direction == 0{
+		
+			
+				image_speed = -2
+		
+			}
+			else{
+			
+				image_speed = 2
+
+			}
+	
+		}
+		else if GetMouseDirection() == "right"{
+		
+			sprite_index = template_idle_attack_r
+		
+			if direction == 180{
+		
+			
+				image_speed = -2
+		
+			}
+			else{
+			
+				image_speed = 2
+
+			}
+		
+		
+		
+		}
+		else if GetMouseDirection() == "up"{
+		
+			sprite_index = template_idle_attack_b
+		
+			if direction == 270{
+		
+			
+				image_speed = -2
+		
+			}
+			else{
+			
+				image_speed = 2
+
+			}
+		
+		}
+		else if GetMouseDirection() == "down"{
+		
+			sprite_index = template_idle_attack_f
+		
+			if direction == 90{
+		
+			
+				image_speed = -2
+		
+			}
+			else{
+			
+				image_speed = 2
+
+			}
+		
+		}
+
+	}
+	else{
+	
+		if GetMouseDirection() == "left"{
+		
+			sprite_index = template_move_attack_l
+		
+			if direction == 0{
+		
+			
+				image_speed = -2
+		
+			}
+			else{
+			
+				image_speed = 2
+
+			}
+			
+		}
+		else if GetMouseDirection() == "right"{
+		
+			sprite_index = template_move_attack_r
+		
+			if direction == 180{
+		
+			
+				image_speed = -2
+		
+			}
+			else{
+			
+				image_speed = 2
+
+			}
+		
+		
+		
+		}
+		else if GetMouseDirection() == "up"{
+		
+			sprite_index = template_move_attack_b
+		
+			if direction == 270{
+		
+			
+				image_speed = -2
+		
+			}
+			else{
+			
+				image_speed = 2
+
+			}
+		
+		}
+		else if GetMouseDirection() == "down"{
+		
+			sprite_index = template_move_attack_f
+		
+			if direction == 90{
+		
+			
+				image_speed = -2
+		
+			}
+			else{
+			
+				image_speed = 2
+
+			}
+		
+		
+		}
+	
+	}
 
 }
+
+
 //KEYPRESS MOVEMENT
 
     //LEFT
@@ -222,6 +544,7 @@ if Inventory[equipped,0] == ""{ //IF NOTHING IS EQUIPPED...
         if attacking == false{
         
             attacking = true
+			
             show_debug_message("attacking")
             
         }

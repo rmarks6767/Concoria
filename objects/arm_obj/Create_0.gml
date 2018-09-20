@@ -1,3 +1,1 @@
-sprite_index = nodraw
-itemholding = ""
-depth = 0
+SetUpArmVars()
