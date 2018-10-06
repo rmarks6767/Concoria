@@ -4,10 +4,10 @@ port = argument1; //Int
 
 
 client = network_create_socket(network_socket_tcp);
-test = network_connect(client,ip,port);
+testConnection = network_connect(client,ip,port);
 
 //Check if connection happened
-if (test < 0){
+if (testConnection < 0){
 	
 	show_message("Connection failed");
 }else{

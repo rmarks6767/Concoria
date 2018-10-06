@@ -19,7 +19,7 @@ do
 }until(server > 0);
 
 //Display that we have started a socket to connect to
-show_message("Socket Initialized: " + string(server) + " " + string(defaultPort
+show_message("Socket Initialized on Port: " + string(defaultPort))
 
 //Create a map to hold connected client in
-clients = ds_map_create()
+clients = ds_map_create();

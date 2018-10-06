@@ -58,7 +58,7 @@ else if (eventid != global.client){
 	
 	switch(cmd){
 		
-		case CMD.CMOVEOBJECT:
+		case CMD.KEYPRESS:
 			var key = buffer_read(buff,buffer_s16);
 			var updown = buffer_read(buff,buffer_bool);
 			if (key == vk_left){

@@ -1,8 +1,10 @@
+///@description Set Up Client Variables (Mainly Enums)
 enum CMD{
 
 	KEYPRESS,
 	SENDNAME,
-	
+	MOUSEMOVE,
+	MOUSECLICK,
 	
 	
 }
@@ -13,6 +15,6 @@ enum KEY{
 	UP,
 	DOWN,
 	SPACE,
-	
+	ESC,
 	
 }
