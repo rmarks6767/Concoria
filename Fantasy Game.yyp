@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "1a582c9c-cae6-4a09-8117-1372039db051",
+            "Value": {
+                "id": "d3412b4a-7805-4f88-9601-b1b83e23a0de",
+                "resourcePath": "scripts\\DisableChunkInstances\\DisableChunkInstances.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1c3cf742-1c97-46f4-a3d0-2ed424174430",
             "Value": {
                 "id": "e4e95a8b-ac68-4d04-a942-1ee46b9e2ea8",
@@ -1010,7 +1018,8 @@
         "f68f5897-9e49-4591-a2bb-3f05d53523d5",
         "6128c2bd-0c90-4d42-af92-68c9ff2234d4",
         "14790d5c-8c40-4358-bee2-a2b782852f11",
-        "658784d8-79a5-470b-a6a9-cc5b1659f71e"
+        "658784d8-79a5-470b-a6a9-cc5b1659f71e",
+        "1a582c9c-cae6-4a09-8117-1372039db051"
     ],
     "tutorial": ""
 }
