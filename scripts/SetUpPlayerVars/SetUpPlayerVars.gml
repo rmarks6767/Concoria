@@ -42,3 +42,12 @@ Inventory[4,0] = ""
 Inventory[4,1] = 0
 Inventory[4,2] = "none"
 Inventory[4,3] = false
+
+
+arm = instance_create_layer(x,y,"Instances",arm_obj);
+with(arm){
+	
+	owner = other;
+	
+	
+}

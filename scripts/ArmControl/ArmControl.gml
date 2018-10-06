@@ -5,38 +5,38 @@
 
 
 
-//Keep the Arm Attached to the player when he moves
-if player.speed == 0{
+//Keep the Arm Attached to the Player when he moves
+if owner.speed == 0{
 
-    x = player.x;
-    y = player.y;
+    x = owner.x;
+    y = owner.y;
     
 }
 else{
 
     //RIGHT
-    if player.direction == 0{
+    if owner.direction == 0{
     
-        x = player.x + player.speed;
-        y = player.y;
+        x = owner.x + owner.speed;
+        y = owner.y;
     
     //UP
-    }else if player.direction == 90{
+    }else if owner.direction == 90{
     
-        x = player.x;
-        y = player.y - player.speed;
+        x = owner.x;
+        y = owner.y - owner.speed;
         
     //LEFT
-    }else if player.direction == 180{
+    }else if owner.direction == 180{
     
-        x = player.x - player.speed;
-        y = player.y;
+        x = owner.x - owner.speed;
+        y = owner.y;
         
     //DOWN
-    }else if player.direction == 270{
+    }else if owner.direction == 270{
     
-        x = player.x ;
-        y = player.y + player.speed;
+        x = owner.x ;
+        y = owner.y + owner.speed;
     
     }
     
@@ -44,14 +44,15 @@ else{
 
 
 //Grab the equipped item's name from the inventory and store it in the arm
-with(player){
+with(owner){
     other.itemholding = Inventory[FindEquippedSlot(),0];
 }
 
+
 //Display weapon and attacks
-if itemholding != "" {//If something is 
+if itemholding != "" {//If something is in the Player's hand
 	
-	if player.attacking == false{
+	if owner.attacking == false{//if they aren't attacking
 		
 		sprite_index = GetWeaponSprite(itemholding,GetMouseDirection())
 		
@@ -108,7 +109,7 @@ if itemholding != "" {//If something is
 }
 else{//If nothing is equipped
 	
-	if player.attacking == false{
+	if owner.attacking == false{
 		if GetMouseDirection() == "left"{
 		
 			sprite_index = nodraw
@@ -183,40 +184,40 @@ else{//If nothing is equipped
 if keyboard_check_pressed(ord("1")){
     
     sprite_index = nodraw;
-	itemholding = player.Inventory[player.equipped,0];
+	itemholding = owner.Inventory[owner.equipped,0];
     
 }else if keyboard_check_pressed(ord("2")){
 
     sprite_index = nodraw;
-	itemholding = player.Inventory[player.equipped,0];
+	itemholding = owner.Inventory[owner.equipped,0];
 
 }else if keyboard_check_pressed(ord("3")){
 
     sprite_index = nodraw;
-	itemholding = player.Inventory[player.equipped,0];
+	itemholding = owner.Inventory[owner.equipped,0];
 
 }else if keyboard_check_pressed(ord("4")){
 
     sprite_index = nodraw;
-	itemholding = player.Inventory[player.equipped,0];
+	itemholding = owner.Inventory[owner.equipped,0];
 	
 }else if keyboard_check_pressed(ord("5")){
 
     sprite_index = nodraw;
-	itemholding = player.Inventory[player.equipped,0];
+	itemholding = owner.Inventory[owner.equipped,0];
 }
     
 
 if mouse_wheel_up(){
 
     sprite_index = nodraw;
-	itemholding = player.Inventory[player.equipped,0];
+	itemholding = owner.Inventory[owner.equipped,0];
     
 }
 
 if mouse_wheel_down(){
 
     sprite_index = nodraw;
-	itemholding = player.Inventory[player.equipped,0];
+	itemholding = owner.Inventory[owner.equipped,0];
 
 }

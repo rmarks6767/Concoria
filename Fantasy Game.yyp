@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "26604253-061c-48fc-8a68-436c294ab45b",
+            "Value": {
+                "id": "5ae2f73a-4c3e-4901-b901-9cca5d3e0a13",
+                "resourcePath": "sprites\\template_arm_l1\\template_arm_l1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2c97baec-7c3d-4f9f-846c-b8400705c25e",
             "Value": {
                 "id": "ff452309-f579-4e25-aacf-ad18381229e5",
@@ -311,6 +319,14 @@
             }
         },
         {
+            "Key": "49c45719-5831-46a9-a6e7-47bd36ff6616",
+            "Value": {
+                "id": "a2c1c86a-e654-4032-8386-f8b0582c0918",
+                "resourcePath": "sprites\\template_arm_swing_l\\template_arm_swing_l.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4adefcbb-5ad7-40a4-b458-e2c7f3023d06",
             "Value": {
                 "id": "d76c1510-418d-471c-951e-4cf8fb5e4ae6",
@@ -332,6 +348,14 @@
                 "id": "73276cf9-0867-40d6-b9d7-f1199a697660",
                 "resourcePath": "scripts\\PlayerUnequipAll\\PlayerUnequipAll.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4de4bdc7-0a4f-4df5-8bb9-0d21377f47e1",
+            "Value": {
+                "id": "99d73c16-dcfd-45ad-ac39-b064a18dca60",
+                "resourcePath": "sprites\\template_arm_swing_f\\template_arm_swing_f.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -727,6 +751,14 @@
             }
         },
         {
+            "Key": "b5ea4d7e-aabe-4e84-ae7a-8bc0b749af20",
+            "Value": {
+                "id": "38aa57b1-ecd4-44a8-a8b0-1f417a87287c",
+                "resourcePath": "sprites\\template_arm_swing_r\\template_arm_swing_r.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b6f86c4e-aba9-48fc-8bfa-8cc0d1c29b04",
             "Value": {
                 "id": "7e9f445b-a527-4aee-bbce-3fa413a0515c",
@@ -850,7 +882,7 @@
             "Key": "ead87700-a2cc-462e-842b-11f7e7e42367",
             "Value": {
                 "id": "dae4bb36-f87b-451a-a066-f878bb32f347",
-                "resourcePath": "sprites\\arm_swing_f\\arm_swing_f.yy",
+                "resourcePath": "sprites\\template_arm_swing_b\\template_arm_swing_b.yy",
                 "resourceType": "GMSprite"
             }
         },
