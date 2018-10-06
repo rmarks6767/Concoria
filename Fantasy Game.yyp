@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "559ac737-aba1-4faa-8411-63dcd3a45d25",
+            "Value": {
+                "id": "6eb6ffff-1b3e-43d8-9db0-f08e1a89f7ab",
+                "resourcePath": "objects\\help\\help.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "56c4eb7d-9997-474d-8ce4-aaabed5bf686",
             "Value": {
                 "id": "7cb925ee-afbb-4478-846d-74670c44176c",
