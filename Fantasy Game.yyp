@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "1b3ad351-27b8-4a45-98bc-892c01235d36",
+            "Value": {
+                "id": "a02a0a38-9ed8-4b3b-98ef-c9a7b24be925",
+                "resourcePath": "sprites\\sword_iron_swing_l\\sword_iron_swing_l.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1c3cf742-1c97-46f4-a3d0-2ed424174430",
             "Value": {
                 "id": "e4e95a8b-ac68-4d04-a942-1ee46b9e2ea8",
