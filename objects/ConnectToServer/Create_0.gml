@@ -1,0 +1,2 @@
+ipGood = false;
+portGood = false;

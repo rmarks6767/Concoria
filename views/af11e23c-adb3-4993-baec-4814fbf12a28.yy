@@ -13,7 +13,9 @@
         "2da2fedf-4702-440c-af4e-dbf3de658923",
         "23c5484b-8546-4546-a42b-3b1c9b46a24c",
         "e2f68ba9-406a-4f49-98ca-28da6b3e84ae",
-        "e21281d8-e4c5-4b5d-bb67-36a82f2ceec9"
+        "e21281d8-e4c5-4b5d-bb67-36a82f2ceec9",
+        "b30bb7ef-ae2f-4e28-b40a-6d492572e8a8",
+        "8c485a84-6b1e-4fef-be81-ad3655122938"
     ],
     "filterType": "GMObject",
     "folderName": "Multiplayer Objects",

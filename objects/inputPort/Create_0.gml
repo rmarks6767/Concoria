@@ -1,3 +1,3 @@
 
 
-port = "Click to enter a new port";
+global.port = "Click";
