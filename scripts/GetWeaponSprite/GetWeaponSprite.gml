@@ -1,58 +1,122 @@
 weaponName = argument0
 weaponDirection = argument1
-switch(weaponName){
+attacking = argument2
+
+if attacking == false{ //not attacking
+	switch(weaponName){
 	
-	case "":
-		switch(weaponDirection){
+		case "":
+			switch(weaponDirection){
 		
-			case "left":
+				case "left":
 				
-				return template_arm_l
-				break
+					return nodraw
+					break;
 				
-			case "right":
+				case "right":
 			
-				return template_arm_r
-				break
+					return nodraw
+					break;
 			
-			case "up":
+				case "up":
 			
-				return template_arm_b
-				break
+					return nodraw
+					break;
 			
-			case "down":
+				case "down":
 			
-				return template_arm_f
-				break
+					return nodraw
+					break;
 				
-		}
-		break	
-	case "Iron Sword":
-		switch(weaponDirection){
+			}
+			break;
+		case "Iron Sword":
+			switch(weaponDirection){
 		
-			case "left":
+				case "left":
 				
-				return sword_iron_l
-				break
+					return sword_iron_l
+					;
 				
-			case "right":
+				case "right":
 			
-				return sword_iron_r
-				break
+					return sword_iron_r
+					break;
 			
-			case "up":
+				case "up":
 			
-				return sword_iron_b
-				break
+					return sword_iron_b
+					break;
 			
-			case "down":
+				case "down":
 			
-				return sword_iron_f
-				break
+					return sword_iron_f
+					break;
 				
-		}
-		break
+			}
+			break;
 	
 	
+	
+	}
+}
+else{ //attacking
+	
+	switch(weaponName){
+	
+		case "":
+			switch(weaponDirection){
+		
+				case "left":
+				
+					return template_arm_swing_l;
+					break;
+				
+				case "right":
+			
+					return template_arm_swing_r;
+					break;
+			
+				case "up":
+			
+					return template_arm_swing_b
+					break
+			
+				case "down":
+			
+					return template_arm_swing_f;
+					break;
+				
+			}
+			break	
+		case "Iron Sword":
+			switch(weaponDirection){
+		
+				case "left":
+				
+					return sword_iron_l
+					;
+				
+				case "right":
+			
+					return sword_iron_r
+					break;
+			
+				case "up":
+			
+					return sword_iron_b
+					break;
+			
+				case "down":
+			
+					return sword_iron_f
+					break;
+				
+			}
+			break;
+	
+	
+	
+	}
 	
 }

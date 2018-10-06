@@ -55,14 +55,6 @@
             }
         },
         {
-            "Key": "0a1b659b-2dbb-40c7-bab1-f97bbb40d779",
-            "Value": {
-                "id": "c120a3c3-c122-477b-9133-1baffc2e3249",
-                "resourcePath": "sprites\\test\\test.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "0af2c7f6-2ae0-4f91-81de-01b49235bd09",
             "Value": {
                 "id": "0c001fec-2db3-448f-ad72-8c1c3bfdaebd",
@@ -170,7 +162,7 @@
             "Key": "26604253-061c-48fc-8a68-436c294ab45b",
             "Value": {
                 "id": "5ae2f73a-4c3e-4901-b901-9cca5d3e0a13",
-                "resourcePath": "sprites\\template_arm_l1\\template_arm_l1.yy",
+                "resourcePath": "sprites\\template_arm_r\\template_arm_r.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -977,8 +969,8 @@
         "7af97022-4941-4b10-b287-75d88d5c0293",
         "f68f5897-9e49-4591-a2bb-3f05d53523d5",
         "6128c2bd-0c90-4d42-af92-68c9ff2234d4",
-        "14790d5c-8c40-4358-bee2-a2b782852f11",
-        "658784d8-79a5-470b-a6a9-cc5b1659f71e"
+        "658784d8-79a5-470b-a6a9-cc5b1659f71e",
+        "14790d5c-8c40-4358-bee2-a2b782852f11"
     ],
     "tutorial": ""
 }

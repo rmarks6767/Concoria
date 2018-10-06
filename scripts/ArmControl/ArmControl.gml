@@ -49,137 +49,45 @@ with(owner){
 }
 
 
-//Display weapon and attacks
-if itemholding != "" {//If something is in the Player's hand
+sprite_index = GetWeaponSprite(itemholding,GetMouseDirection(),owner.attacking)
+
+
+//Display arm at proper depth
+if GetMouseDirection() == "left"{
+		
+	depth = 1
+		
+}
+else if GetMouseDirection() == "right"{
+		
+	depth = -1
+		
+}
+else if GetMouseDirection() == "up"{
 	
-	if owner.attacking == false{//if they aren't attacking
-		
-		sprite_index = GetWeaponSprite(itemholding,GetMouseDirection())
-		
-		if GetMouseDirection() == "left"{
-			
-			depth = 1
-		
-		}
-		else if GetMouseDirection() == "right"{
-		
-			depth = -1
-		
-		}
-		else if GetMouseDirection() == "up"{
-	
-			depth = 1
-	
-		}
-		else if GetMouseDirection() == "down"{
-		
-			depth = -1
-		
-		}
-	}
-	else{ //ATTACKing
-		
-		if GetMouseDirection() == "left"{
-		
-			PlayerAttack("left")
-			depth = 1
-		
-		}
-		else if GetMouseDirection() == "right"{
-		
-			PlayerAttack("right")
-			depth = -1
-		
-		}
-		else if GetMouseDirection() == "up"{
-	
-			PlayerAttack("up")
-			depth = 1
-	
-		}
-		else if GetMouseDirection() == "down"{
-		
-			PlayerAttack("down")
-			depth = -1
-			
-		}
-		
-	}
+	depth = 1
 	
 }
-else{//If nothing is equipped
-	
-	if owner.attacking == false{
-		if GetMouseDirection() == "left"{
+else if GetMouseDirection() == "down"{
 		
-			sprite_index = nodraw
-			depth = 1
-		
-		}
-		else if GetMouseDirection() == "right"{
-		
-			sprite_index = nodraw
-			depth = -1
-		
-		}
-		else if GetMouseDirection() == "up"{
-	
-			sprite_index = nodraw
-			depth = 1
-	
-		}
-		else if GetMouseDirection() == "down"{
-		
-			sprite_index = nodraw
-			depth = -1
-		
-		}
-	}
-	else{ //ATTACKing
-		
-		if GetMouseDirection() == "left"{
-		
-			sprite_index = template_arm_l
-			PlayerAttack("left")
-			depth = 1
-		
-		}
-		else if GetMouseDirection() == "right"{
-		
-			sprite_index = template_arm_r
-			PlayerAttack("right")
-			depth = -1
-		
-		}
-		else if GetMouseDirection() == "up"{
-	
-			sprite_index = template_arm_b
-			PlayerAttack("up")
-			depth = 1
-	
-		}
-		else if GetMouseDirection() == "down"{
-		
-			sprite_index = template_arm_f
-			PlayerAttack("down")
-			depth = -1
+	depth = -1
 			
-		}
-		
-	}
-	
-	
-	
-	
 }
 	
 	
 	
+
+	
+//Set attacking to false at end of animation
+if (image_index+image_speed >= image_number) {
+	owner.attacking = false;
+}
+	
 	
 
 
 
-//Stop animating when weapon changes
+//Stop animating when weapon changes and update item holding
 
 if keyboard_check_pressed(ord("1")){
     

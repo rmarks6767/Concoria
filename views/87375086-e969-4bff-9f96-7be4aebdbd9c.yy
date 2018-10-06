@@ -20,8 +20,7 @@
         "163d7d79-8de9-4ca8-8ddd-e158fadbead6",
         "e8d4817e-ec5d-4373-b166-4cc63bc8297d",
         "b11b2294-312b-4b59-9d87-a293d0be2d0e",
-        "15866137-669c-4230-9d0c-da9283a0b490",
-        "0a1b659b-2dbb-40c7-bab1-f97bbb40d779"
+        "15866137-669c-4230-9d0c-da9283a0b490"
     ],
     "filterType": "root",
     "folderName": "Default",
