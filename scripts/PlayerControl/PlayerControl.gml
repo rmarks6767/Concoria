@@ -633,5 +633,3 @@ if mouse_wheel_down(){
     }
 
 }
-
-
