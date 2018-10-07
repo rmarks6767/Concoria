@@ -14,17 +14,17 @@ switch(thestate)
 	case state.attacking:
 		Attacking(objectName);
 	case state.dying:
-		Dying(objectName);
+		Dying();
 	case state.fleeing:
-		Fleeing(objectName);
+		Fleeing();
 	case state.townDwelling:
-		TownDwelling(objectName);
+		TownDwelling();
 	case state.lowHealth:
-		LowHealth(objectName);
+		LowHealth();
 	case state.exploring:
-		Exploring(objectName);
+		Exploring();
 	case state.goingHome:
-		GoingHome(objectName);
+		GoingHome();
 	case state.blocking:
 	
 }

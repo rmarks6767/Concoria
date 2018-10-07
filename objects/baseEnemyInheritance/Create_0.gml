@@ -1,7 +1,7 @@
 
 
 //sets the possible variables that the enemy can read
-enemyHealth = 100;
+Health = 100;
 playerFriendly = true;
 playerClose = false;
 enemyFriendly = true;
