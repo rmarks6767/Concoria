@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "087f44bb-1240-4d2f-b49f-18d302fd71e9",
+            "Value": {
+                "id": "70eef8d7-739f-4672-9607-b6a99aca1474",
+                "resourcePath": "scripts\\RecreateInstances\\RecreateInstances.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "094bdddb-2f67-47b7-b769-ebe18939fc42",
             "Value": {
                 "id": "5a4fe370-072e-434a-ac75-903c11f82135",
@@ -791,14 +799,6 @@
             }
         },
         {
-            "Key": "6c2e2661-d92f-44cf-ac78-d2c3dd83ff4c",
-            "Value": {
-                "id": "56bd4f69-859c-430f-bc59-1b2fd3f7211a",
-                "resourcePath": "views\\6c2e2661-d92f-44cf-ac78-d2c3dd83ff4c.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "6c3a9295-2c46-47f8-9d0f-5e6fac8543dd",
             "Value": {
                 "id": "019c53e8-84e8-4203-bbce-37c1bcbbc9de",
@@ -1095,26 +1095,10 @@
             }
         },
         {
-            "Key": "a3caa637-74db-4e02-b3ec-691dae1e96f4",
-            "Value": {
-                "id": "9dd4e981-c9fa-4120-b74f-07423ce29def",
-                "resourcePath": "views\\a3caa637-74db-4e02-b3ec-691dae1e96f4.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "a5115611-b7dc-4b4c-96d5-b49cdbdcf958",
             "Value": {
                 "id": "7a21ba1e-697a-47db-8ae6-5c59fb676aa5",
                 "resourcePath": "views\\a5115611-b7dc-4b4c-96d5-b49cdbdcf958.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "a64864fa-963e-44ef-8189-c1936d21c9c8",
-            "Value": {
-                "id": "26a5ba3d-c74d-4a69-8abf-10408683d948",
-                "resourcePath": "views\\a64864fa-963e-44ef-8189-c1936d21c9c8.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1316,14 +1300,6 @@
                 "id": "a4d90c15-ea15-459a-886f-d55d26eeacf7",
                 "resourcePath": "sprites\\italian_idle_attack_l\\italian_idle_attack_l.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "bfb006df-201f-4018-9055-d90c7baa3a6a",
-            "Value": {
-                "id": "b499bfbb-d620-48f0-b343-361bd0a40d49",
-                "resourcePath": "views\\bfb006df-201f-4018-9055-d90c7baa3a6a.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -1680,7 +1656,10 @@
         "37701427-6447-40a3-9477-99c895c329c2",
         "2606f4a1-dcb6-49c3-b6d5-e4aea2bbfad4",
         "48697ad0-3a25-4c98-9ede-7e1f70ac14c6",
-        "50b35dae-a817-492b-b22b-6cae385fecca"
+        "1cf74be6-3aec-409e-834a-a1ae213c7ed1",
+        "2f379bc9-cc7f-4228-9e8e-29927d492d85",
+        "50b35dae-a817-492b-b22b-6cae385fecca",
+        "087f44bb-1240-4d2f-b49f-18d302fd71e9"
     ],
     "tutorial": ""
 }
