@@ -77,5 +77,3 @@ if(array_length_1d(storedids) > 0)
 		}
 	}
 }
-
-
