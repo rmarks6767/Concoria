@@ -1,3 +1,19 @@
+var ply = instance_nearest(x,y,player);;
+if ply != undefined{
+	
+	if playerFriendly == false{
+		var plyDistance = distance_to_point(ply.x,ply.y)
+		if plyDistance < 150{
+		
+			thestate = state.attack;
+		}
+	}
+	
+}
+
+
+
+
 var toDo = irandom_range(0,7);
 
 switch(toDo){
