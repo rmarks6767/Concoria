@@ -117,7 +117,3 @@ sprite_index = GetWeaponSprite(itemholding,NumDirectionToString(owner.face_direc
 if (image_index+image_speed >= image_number) {
 	owner.attacking = false;
 }
-
-if owner.objectName == "player"{
-	show_debug_message(string(owner.attacking))
-}
