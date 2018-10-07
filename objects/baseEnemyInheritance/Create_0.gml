@@ -7,6 +7,9 @@ playerClose = false;
 enemyFriendly = true;
 attacking = false;
 inBattle = false;
+itemHolding[0] =  "Iron Sword"//Name
+itemHolding[1] =  "Sword"//Type
+face_direction = direction;
 
 
 
@@ -90,7 +93,7 @@ enum state
 {
 	stationary, 
 	goingHome,
-	attacking,
+	attack,
 	dying,
 	fleeing,
 	townDwelling,
@@ -101,3 +104,9 @@ enum state
 }
 //initializes the enemy in the stationary state
 thestate = state.stationary;
+arm = instance_create_layer(x,y,"Instances",arm_obj);
+with (arm){
+	
+	owner = other;
+	
+}

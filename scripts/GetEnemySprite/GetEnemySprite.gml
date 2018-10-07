@@ -1,9 +1,8 @@
-name = argument0; //Stirng Name of the enemy
-attacking = argument1; //Boolean of whether enemy is attacking or not
-npcDirection = argument2; //int Which way the enemy is facing
-npcSpeed = argument3; //int of speed to check if it is greater than zero
-ourSprite = 0;
-show_debug_message(string(attacking))
+var name = argument0; //Stirng Name of the enemy
+var attacking = argument1; //Boolean of whether enemy is attacking or not
+var npcDirection = argument2; //int Which way the enemy is facing
+var npcSpeed = argument3; //int of speed to check if it is greater than zero
+var ourSprite = 0;
 
 italiansprite[0] =	italian_idle_l
 italiansprite[1] =	italian_idle_r
