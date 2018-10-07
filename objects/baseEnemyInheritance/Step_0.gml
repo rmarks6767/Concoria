@@ -1,13 +1,16 @@
 
 
-
+sprite_index = GetEnemySprite(objectName,inBattle,direction,speed);
 
 switch(thestate)
 {
 	case state.stationary:
-		Stationary(dropables, enemyHealth, thestate, playerFriendly, playerClose, enemyFriendly);
+		Stationary();
 	case state.wandering:
-		Wander();
+		if !alarm[0]{
+			Wander();
+			alarm[0] = irandom_range(20,50);
+		}
 	case state.attacking:
 		Attacking();
 	case state.dying:

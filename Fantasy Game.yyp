@@ -111,11 +111,27 @@
             }
         },
         {
+            "Key": "154401cd-b303-484f-9ccd-cca088eca93e",
+            "Value": {
+                "id": "41c4c0f5-920c-44b8-9735-1df5e03bf1fe",
+                "resourcePath": "sprites\\sword_iron_swing_f\\sword_iron_swing_f.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "15866137-669c-4230-9d0c-da9283a0b490",
             "Value": {
                 "id": "38c36f01-7042-469e-8e59-1d7bf6c657dc",
                 "resourcePath": "views\\15866137-669c-4230-9d0c-da9283a0b490.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "15c5f407-4680-407d-accb-ffb294aa636b",
+            "Value": {
+                "id": "888978e5-fc82-43eb-aec8-eee5acf6262f",
+                "resourcePath": "scripts\\GetEnemySprite\\GetEnemySprite.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -220,6 +236,14 @@
                 "id": "5d39532f-838b-4d18-8e5d-4d6d2e6e4a0b",
                 "resourcePath": "views\\3439c787-304c-4c17-bc1a-7c09cc20057f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "361afdee-4f2e-46d4-9c07-46c16a814a55",
+            "Value": {
+                "id": "8b279abe-d055-46ad-b53c-0c1223c98d68",
+                "resourcePath": "sprites\\sword_iron_swing_b\\sword_iron_swing_b.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -727,14 +751,6 @@
             }
         },
         {
-            "Key": "a83c3fff-0410-4056-9da5-04e035d82ec6",
-            "Value": {
-                "id": "a2596bdf-3e57-4a08-b91f-bd0ea346eee0",
-                "resourcePath": "objects\\Enemy\\Enemy.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "12693e35-3f21-4e4f-937e-fab3e9ffc5fa",
@@ -951,6 +967,14 @@
             }
         },
         {
+            "Key": "d5dd663e-1b98-48d7-857d-bc5dad4169bb",
+            "Value": {
+                "id": "9aaf596e-a354-4e1a-a1a1-a648fd482399",
+                "resourcePath": "sprites\\sword_iron_swing_r\\sword_iron_swing_r.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d7e78b57-74f7-442a-a1a3-a11507b26e56",
             "Value": {
                 "id": "abe00aaf-f04a-4c26-b329-ac27541e376b",
@@ -1047,6 +1071,14 @@
             }
         },
         {
+            "Key": "f44fc43f-fe04-4e2b-bb97-729ebf66b465",
+            "Value": {
+                "id": "d5be56fb-2f58-475a-b707-7c2c55a228f4",
+                "resourcePath": "sprites\\sword_iron_swing_l\\sword_iron_swing_l.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f68f5897-9e49-4591-a2bb-3f05d53523d5",
             "Value": {
                 "id": "e3e9b9e0-986b-4e3f-a474-878f6a371e51",
@@ -1102,6 +1134,7 @@
         "0af2c7f6-2ae0-4f91-81de-01b49235bd09",
         "b3084bb0-51ac-49c9-b84c-64263d6fb7b5",
         "f68f5897-9e49-4591-a2bb-3f05d53523d5",
+        "15c5f407-4680-407d-accb-ffb294aa636b",
         "86384ae3-2cad-4814-952a-2ec6599eb1a5",
         "86b7f16a-c598-4d82-8cc9-17049177d587",
         "7af97022-4941-4b10-b287-75d88d5c0293",
