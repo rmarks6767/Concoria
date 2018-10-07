@@ -15,7 +15,7 @@ switch(thestate)
 		break;
 		
 	case state.attack:
-		Attacking(objectName);
+		Attacking();
 		break;
 		
 	case state.dying:
