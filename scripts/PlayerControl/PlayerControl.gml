@@ -478,7 +478,7 @@ else{
 
         direction = 180
         speed = 5
-        friction = 0
+
         
     //RIGHT
     }else if keyboard_check_pressed(ord("D")){
@@ -486,7 +486,7 @@ else{
 
         direction = 0
         speed = 5
-        friction = 0
+
         
     //UP
     }else if keyboard_check_pressed(ord("W")){
@@ -494,7 +494,7 @@ else{
 
         direction = 90
         speed = 5
-        friction = 0
+
 
         
     //DOWN
@@ -503,7 +503,7 @@ else{
 
         direction = 270
         speed = 5
-        friction = 0
+
     }
 
 
@@ -557,7 +557,7 @@ else{
     if keyboard_check_pressed(ord("E")){
         
 		var object = instance_place(x,y,floorobject_obj);
-		if object != undefined{
+		if instance_exists(object){
 			
 			if Inventory[equipped,0] == ""{
 				
@@ -590,7 +590,7 @@ else{
 			
 			Inventory[equipped,0] = ""
 			Inventory[equipped,1] = 0
-			Inventory[equipped,2] = "None"
+			Inventory[equipped,2] = "none"
 			
 		}
         

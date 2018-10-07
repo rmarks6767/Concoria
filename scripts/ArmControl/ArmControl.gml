@@ -23,6 +23,7 @@ else{
 with(owner){
 	if objectName == "player"{
 		other.itemholding = Inventory[FindEquippedSlot(self),0];
+		other.itemholdingType = Inventory[FindEquippedSlot(self),2];
 	}
 	else{
 		if (inBattle){
@@ -31,6 +32,7 @@ with(owner){
 		{
 			other.itemholding = "";
 		}
+		other.itemholdingType = itemHolding[1];
 	}
 }
 
@@ -114,6 +116,21 @@ if owner.objectName == "player"{
 sprite_index = GetWeaponSprite(itemholding,NumDirectionToString(owner.face_direction),owner.attacking)
 
 //Set attacking to false at end of animation
-if (image_index+image_speed >= image_number) {
-	owner.attacking = false;
+if (image_index+image_speed >= image_number){
+	if owner.attacking == true{
+		
+		owner.attacking = false;
+		
+		if itemholdingType == "Bow"{
+			var arw = instance_create_layer(owner.x,owner.y,"Instances",arrow_obj);
+			with (arw){
+			
+				owner = other.owner
+				direction = owner.face_direction;
+				speed = 12;
+				image_angle = direction - 90
+		
+			}
+		}
+	}
 }
