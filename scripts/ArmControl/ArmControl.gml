@@ -22,7 +22,7 @@ else{
 //Grab the equipped item's name from the inventory and store it in the arm
 with(owner){
 	if objectName == "player"{
-		other.itemholding = Inventory[FindEquippedSlot(),0];
+		other.itemholding = Inventory[FindEquippedSlot(self),0];
 	}
 	else{
 		if (inBattle){

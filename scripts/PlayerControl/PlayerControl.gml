@@ -1,4 +1,4 @@
-equipped = FindEquippedSlot()
+equipped = FindEquippedSlot(self)
 
 //Sprite Handling
 if Inventory[equipped,0] == ""{
@@ -556,15 +556,43 @@ else{
 
     if keyboard_check_pressed(ord("E")){
         
-        if Inventory_Open == false{
+		var object = instance_place(x,y,floorobject_obj);
+		if object != undefined{
+			
+			if Inventory[equipped,0] == ""{
+				
+				Inventory[equipped,0] = object.name;
+				Inventory[equipped,1] = 1;
+				Inventory[equipped,2] = object.type;
+				instance_destroy(object);
+			
+			}
+			
+		}
         
-            Inventory_Open = true
-            
-        }else{
+    }
+	
+	if keyboard_check_pressed(ord("Q")){
+		
+		equippedItemName = Inventory[equipped,0]
+		equippedItemQuantity = Inventory[equipped,1]
+		equippedItemType = Inventory[equipped,2]
         
-            Inventory_Open = false
+        if equippedItemName != ""{
         
-        }
+            var object = instance_create_layer(x,y,"Instances",floorobject_obj);
+			with(object){
+				
+				name = other.equippedItemName;
+				type = other.equippedItemType;
+				
+			}
+			
+			Inventory[equipped,0] = ""
+			Inventory[equipped,1] = 0
+			Inventory[equipped,2] = "None"
+			
+		}
         
     }
     

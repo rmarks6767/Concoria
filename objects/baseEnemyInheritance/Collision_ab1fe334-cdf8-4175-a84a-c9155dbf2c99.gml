@@ -1,4 +1,4 @@
-/// @description Insert Collision with arm
+/// @description Collision with arm
 
 //if this isn't our arm
 if other.owner != self{
