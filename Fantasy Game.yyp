@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "244374ca-5ade-4413-8c4c-22805f1b9f6c",
+            "Value": {
+                "id": "5c80ed0b-91a8-4cee-8688-a89bf0b853c8",
+                "resourcePath": "objects\\solid_obj\\solid_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2453f398-8f12-4d3e-a4ba-891e623ff77a",
             "Value": {
                 "id": "70bd5cfb-1783-4011-b3bd-084ae2d48a77",
@@ -906,7 +914,7 @@
             "Key": "75979757-9481-42ab-805e-fb79130ca6ab",
             "Value": {
                 "id": "f5af7c72-f8b3-4fd3-8b92-9335472faadb",
-                "resourcePath": "sprites\\Placeholder\\Placeholder.yy",
+                "resourcePath": "sprites\\Solid\\Solid.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1063,6 +1071,14 @@
             }
         },
         {
+            "Key": "882043c3-a243-4e57-81e7-7c67bdd3a596",
+            "Value": {
+                "id": "b9df11c3-df69-4d24-935f-15250a920704",
+                "resourcePath": "sprites\\sprite103\\sprite103.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "890cf754-fe2b-4e5b-8f56-4a14ff83dcaf",
             "Value": {
                 "id": "f2f28957-0c93-4ef4-851d-90db6b1d1dfb",
@@ -1099,6 +1115,14 @@
             "Value": {
                 "id": "68e35dcc-f7af-49f2-b793-1838ed99c316",
                 "resourcePath": "sprites\\sword_iron_r\\sword_iron_r.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "94a94000-0388-4894-bd51-e05919460823",
+            "Value": {
+                "id": "6c5751dc-a775-4e89-869d-5b7695d7f5a9",
+                "resourcePath": "sprites\\Solid_sprt\\Solid_sprt.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1196,6 +1220,14 @@
                 "id": "12693e35-3f21-4e4f-937e-fab3e9ffc5fa",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a93aaba5-578e-4dd7-85ae-6ae03322e231",
+            "Value": {
+                "id": "c8554cae-5e14-4927-920d-aac15bdaf619",
+                "resourcePath": "scripts\\Solid_Collisons\\Solid_Collisons.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1759,6 +1791,7 @@
         "3a4721e7-ee94-4323-9270-ef60c263fc64",
         "37701427-6447-40a3-9477-99c895c329c2",
         "2606f4a1-dcb6-49c3-b6d5-e4aea2bbfad4",
+        "a93aaba5-578e-4dd7-85ae-6ae03322e231",
         "48697ad0-3a25-4c98-9ede-7e1f70ac14c6",
         "1cf74be6-3aec-409e-834a-a1ae213c7ed1",
         "2f379bc9-cc7f-4228-9e8e-29927d492d85",
