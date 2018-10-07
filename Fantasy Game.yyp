@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "11e5a256-c280-4ea3-accb-3248d2145a5c",
+            "Value": {
+                "id": "077ce8d2-16ef-42c3-aff4-a924db02afe6",
+                "resourcePath": "sprites\\template_house\\template_house.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "14790d5c-8c40-4358-bee2-a2b782852f11",
             "Value": {
                 "id": "6d59154a-fd23-4dc0-b7ce-df11357d5b06",
@@ -303,6 +311,14 @@
             }
         },
         {
+            "Key": "3cb2bf13-9dc7-49cd-9bf4-7ec9d870b128",
+            "Value": {
+                "id": "d5110f4c-c940-4abe-9558-07dabe124d78",
+                "resourcePath": "sprites\\italian_move_attack_r\\italian_move_attack_r.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3ccd8d76-5a23-4a4c-a1e9-adc4458f7b7a",
             "Value": {
                 "id": "ecd20224-9997-405a-b971-a9c34cd6e832",
@@ -455,6 +471,14 @@
             }
         },
         {
+            "Key": "5068a328-c9af-44bf-b35f-be0ed61f035d",
+            "Value": {
+                "id": "37c6a0f4-11ca-463b-8d8f-7f3f4dcce730",
+                "resourcePath": "sprites\\italian_move_r\\italian_move_r.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "52ab57a8-d02a-425f-bdc3-1a55764c2292",
             "Value": {
                 "id": "cf90d406-ce39-443a-b6d7-4406f90f4e98",
@@ -587,6 +611,14 @@
             "Value": {
                 "id": "61054989-2fa7-4729-92b0-848bd62aff75",
                 "resourcePath": "sprites\\sprEnemyIdle\\sprEnemyIdle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6f4270bd-683c-43eb-a85d-a86c55822de4",
+            "Value": {
+                "id": "91a13caf-638f-4e83-a8d4-08c3e82b570e",
+                "resourcePath": "sprites\\italian_move_l\\italian_move_l.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -767,6 +799,14 @@
             }
         },
         {
+            "Key": "8d3de4bb-b8dc-4252-a94d-b0fbdf076ca6",
+            "Value": {
+                "id": "1b7a6a0b-50d0-49e2-93b5-3bac8156dc1e",
+                "resourcePath": "sprites\\italian_move_b\\italian_move_b.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "92cdf4bb-9830-4dbb-a62e-32ca77854f49",
             "Value": {
                 "id": "68e35dcc-f7af-49f2-b793-1838ed99c316",
@@ -779,6 +819,14 @@
             "Value": {
                 "id": "9f53bd4f-4690-493c-a570-5b92131d970a",
                 "resourcePath": "sprites\\pee\\pee.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "961764f0-2d38-4243-a48f-f8fbe7c1d109",
+            "Value": {
+                "id": "2ba8a4ad-5a0d-4639-9989-23946787a812",
+                "resourcePath": "sprites\\italian_move_f\\italian_move_f.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1031,6 +1079,14 @@
             }
         },
         {
+            "Key": "c4b40881-3b10-451f-a82d-1acefc4da940",
+            "Value": {
+                "id": "d02b643f-fb05-46a7-b016-860eef1b53a6",
+                "resourcePath": "sprites\\italian_move_attack_l\\italian_move_attack_l.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cb574001-628a-4f95-be0a-c96e5ae41e22",
             "Value": {
                 "id": "60420ee5-1a3f-45f5-bcfd-8f023a5b0a67",
@@ -1119,6 +1175,14 @@
             }
         },
         {
+            "Key": "e3922fe7-b42b-4e94-aa30-803d17aa9b25",
+            "Value": {
+                "id": "9575069a-d7dd-4e3b-8102-c980b7b07198",
+                "resourcePath": "sprites\\italian_move_attack_f\\italian_move_attack_f.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e3a1c548-30e4-4df9-a672-e6a39c93d97d",
             "Value": {
                 "id": "1081a932-c269-4451-8a25-fce2e2fcd130",
@@ -1195,6 +1259,14 @@
             "Value": {
                 "id": "cdaf55b3-f97b-4ea8-af82-80677156db97",
                 "resourcePath": "sprites\\italian_idle_l\\italian_idle_l.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f37a9d8a-5538-46e9-9fdf-36f5522a4d82",
+            "Value": {
+                "id": "329c7cb1-c83b-4017-9051-659c1daeafd1",
+                "resourcePath": "sprites\\italian_move_attack_b\\italian_move_attack_b.yy",
                 "resourceType": "GMSprite"
             }
         },
