@@ -103,10 +103,18 @@
             }
         },
         {
+            "Key": "10a0bf64-2f5b-40f2-babc-595c6e0aaa03",
+            "Value": {
+                "id": "a0652932-57a6-463c-b03a-fd882ab08686",
+                "resourcePath": "objects\\italianHouseOutside\\italianHouseOutside.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "11e5a256-c280-4ea3-accb-3248d2145a5c",
             "Value": {
-                "id": "077ce8d2-16ef-42c3-aff4-a924db02afe6",
-                "resourcePath": "sprites\\template_house\\template_house.yy",
+                "id": "fc650b6c-07d8-445d-9cd2-bd7202ae0c26",
+                "resourcePath": "sprites\\sprItalianHouse\\sprItalianHouse.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -127,27 +135,11 @@
             }
         },
         {
-            "Key": "154401cd-b303-484f-9ccd-cca088eca93e",
-            "Value": {
-                "id": "41c4c0f5-920c-44b8-9735-1df5e03bf1fe",
-                "resourcePath": "sprites\\sword_iron_swing_f\\sword_iron_swing_f.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "15866137-669c-4230-9d0c-da9283a0b490",
             "Value": {
                 "id": "38c36f01-7042-469e-8e59-1d7bf6c657dc",
                 "resourcePath": "views\\15866137-669c-4230-9d0c-da9283a0b490.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "15c5f407-4680-407d-accb-ffb294aa636b",
-            "Value": {
-                "id": "888978e5-fc82-43eb-aec8-eee5acf6262f",
-                "resourcePath": "scripts\\GetEnemySprite\\GetEnemySprite.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -271,11 +263,11 @@
             }
         },
         {
-            "Key": "361afdee-4f2e-46d4-9c07-46c16a814a55",
+            "Key": "35944972-6931-4bf4-9496-79b8d0df8413",
             "Value": {
-                "id": "8b279abe-d055-46ad-b53c-0c1223c98d68",
-                "resourcePath": "sprites\\sword_iron_swing_b\\sword_iron_swing_b.yy",
-                "resourceType": "GMSprite"
+                "id": "84a20a1a-bfc2-4ff2-bc8e-c8aa09e6d240",
+                "resourcePath": "objects\\worldObjectLoader\\worldObjectLoader.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -324,14 +316,6 @@
                 "id": "4e2d5b1c-97f2-4ac2-a69e-32be2e08ef25",
                 "resourcePath": "objects\\hud_obj\\hud_obj.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "3cb2bf13-9dc7-49cd-9bf4-7ec9d870b128",
-            "Value": {
-                "id": "d5110f4c-c940-4abe-9558-07dabe124d78",
-                "resourcePath": "sprites\\italian_move_attack_r\\italian_move_attack_r.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -487,14 +471,6 @@
             }
         },
         {
-            "Key": "5068a328-c9af-44bf-b35f-be0ed61f035d",
-            "Value": {
-                "id": "37c6a0f4-11ca-463b-8d8f-7f3f4dcce730",
-                "resourcePath": "sprites\\italian_move_r\\italian_move_r.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "52ab57a8-d02a-425f-bdc3-1a55764c2292",
             "Value": {
                 "id": "cf90d406-ce39-443a-b6d7-4406f90f4e98",
@@ -540,6 +516,14 @@
                 "id": "23361502-565d-483d-a103-74309a714174",
                 "resourcePath": "sprites\\template_idle_attack_l\\template_idle_attack_l.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5ae64a6b-0007-423b-b8a6-847fefd7e9f2",
+            "Value": {
+                "id": "9bf3e348-3f2b-498b-b852-ba2d84e0b6c8",
+                "resourcePath": "views\\5ae64a6b-0007-423b-b8a6-847fefd7e9f2.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -623,11 +607,11 @@
             }
         },
         {
-            "Key": "6f4270bd-683c-43eb-a85d-a86c55822de4",
+            "Key": "6c3a9295-2c46-47f8-9d0f-5e6fac8543dd",
             "Value": {
-                "id": "91a13caf-638f-4e83-a8d4-08c3e82b570e",
-                "resourcePath": "sprites\\italian_move_l\\italian_move_l.yy",
-                "resourceType": "GMSprite"
+                "id": "019c53e8-84e8-4203-bbce-37c1bcbbc9de",
+                "resourcePath": "objects\\italianHouse\\italianHouse.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -735,6 +719,14 @@
             }
         },
         {
+            "Key": "83c4dc4a-9ab4-4241-a206-98db0757820b",
+            "Value": {
+                "id": "cf956d58-a688-4a5c-9dc2-912f70b0df94",
+                "resourcePath": "views\\83c4dc4a-9ab4-4241-a206-98db0757820b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "85e99c0b-1540-4167-8560-b1dc6d9c51cc",
             "Value": {
                 "id": "5d0d6fea-44ed-4903-9401-c47bb221197d",
@@ -799,14 +791,6 @@
             }
         },
         {
-            "Key": "8d3de4bb-b8dc-4252-a94d-b0fbdf076ca6",
-            "Value": {
-                "id": "1b7a6a0b-50d0-49e2-93b5-3bac8156dc1e",
-                "resourcePath": "sprites\\italian_move_b\\italian_move_b.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "92cdf4bb-9830-4dbb-a62e-32ca77854f49",
             "Value": {
                 "id": "68e35dcc-f7af-49f2-b793-1838ed99c316",
@@ -819,14 +803,6 @@
             "Value": {
                 "id": "9f53bd4f-4690-493c-a570-5b92131d970a",
                 "resourcePath": "sprites\\pee\\pee.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "961764f0-2d38-4243-a48f-f8fbe7c1d109",
-            "Value": {
-                "id": "2ba8a4ad-5a0d-4639-9989-23946787a812",
-                "resourcePath": "sprites\\italian_move_f\\italian_move_f.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1079,14 +1055,6 @@
             }
         },
         {
-            "Key": "c4b40881-3b10-451f-a82d-1acefc4da940",
-            "Value": {
-                "id": "d02b643f-fb05-46a7-b016-860eef1b53a6",
-                "resourcePath": "sprites\\italian_move_attack_l\\italian_move_attack_l.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "cb574001-628a-4f95-be0a-c96e5ae41e22",
             "Value": {
                 "id": "60420ee5-1a3f-45f5-bcfd-8f023a5b0a67",
@@ -1143,10 +1111,10 @@
             }
         },
         {
-            "Key": "d5dd663e-1b98-48d7-857d-bc5dad4169bb",
+            "Key": "d78ea00d-9369-49b3-8528-2d89af3c1759",
             "Value": {
-                "id": "9aaf596e-a354-4e1a-a1a1-a648fd482399",
-                "resourcePath": "sprites\\sword_iron_swing_r\\sword_iron_swing_r.yy",
+                "id": "3e917c22-88e3-4f24-8aa6-633b4d906bb1",
+                "resourcePath": "sprites\\template_arm_swing_l1\\template_arm_swing_l1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1167,19 +1135,19 @@
             }
         },
         {
+            "Key": "df279dd3-0696-4352-8f2d-f40fc97fc7ea",
+            "Value": {
+                "id": "015b2b51-405f-4aa8-af44-89dcb7187a3f",
+                "resourcePath": "sprites\\sprItalianHouseOpen\\sprItalianHouseOpen.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dfa9a27f-33d2-42d7-a462-dfcc66b92ab7",
             "Value": {
                 "id": "d3b29cfb-6b0e-4ee4-9338-d6b5cd63f1b3",
                 "resourcePath": "objects\\objViking\\objViking.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "e3922fe7-b42b-4e94-aa30-803d17aa9b25",
-            "Value": {
-                "id": "9575069a-d7dd-4e3b-8102-c980b7b07198",
-                "resourcePath": "sprites\\italian_move_attack_f\\italian_move_attack_f.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1263,14 +1231,6 @@
             }
         },
         {
-            "Key": "f37a9d8a-5538-46e9-9fdf-36f5522a4d82",
-            "Value": {
-                "id": "329c7cb1-c83b-4017-9051-659c1daeafd1",
-                "resourcePath": "sprites\\italian_move_attack_b\\italian_move_attack_b.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "5c9ddd04-30a6-4ffe-906e-c949a4c44516",
@@ -1279,11 +1239,11 @@
             }
         },
         {
-            "Key": "f44fc43f-fe04-4e2b-bb97-729ebf66b465",
+            "Key": "f5d36e11-6541-4ae8-a368-915b81b73c76",
             "Value": {
-                "id": "d5be56fb-2f58-475a-b707-7c2c55a228f4",
-                "resourcePath": "sprites\\sword_iron_swing_l\\sword_iron_swing_l.yy",
-                "resourceType": "GMSprite"
+                "id": "1cd37d44-f9ef-49b6-9444-1b5107daf74a",
+                "resourcePath": "views\\f5d36e11-6541-4ae8-a368-915b81b73c76.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1342,7 +1302,6 @@
         "0af2c7f6-2ae0-4f91-81de-01b49235bd09",
         "b3084bb0-51ac-49c9-b84c-64263d6fb7b5",
         "f68f5897-9e49-4591-a2bb-3f05d53523d5",
-        "15c5f407-4680-407d-accb-ffb294aa636b",
         "86384ae3-2cad-4814-952a-2ec6599eb1a5",
         "86b7f16a-c598-4d82-8cc9-17049177d587",
         "7af97022-4941-4b10-b287-75d88d5c0293",
