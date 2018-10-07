@@ -1,3 +1,2 @@
-storedx = 0
-storedy = 0
-stored = 5;
+counterStore = 0;
+counterFull = 0;
