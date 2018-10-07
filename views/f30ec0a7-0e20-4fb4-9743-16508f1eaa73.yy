@@ -1,0 +1,30 @@
+{
+    "id": "f30ec0a7-0e20-4fb4-9743-16508f1eaa73",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "f30ec0a7-0e20-4fb4-9743-16508f1eaa73",
+    "children": [
+        "52ab57a8-d02a-425f-bdc3-1a55764c2292",
+        "92cdf4bb-9830-4dbb-a62e-32ca77854f49",
+        "002e7b9a-3d16-40c6-bfe8-e84175599712",
+        "2ed1143c-1c5f-4b48-81bf-58c4cf290177",
+        "f316e149-25ac-437d-809b-985fc23033c0",
+        "154401cd-b303-484f-9ccd-cca088eca93e",
+        "f44fc43f-fe04-4e2b-bb97-729ebf66b465",
+        "d5dd663e-1b98-48d7-857d-bc5dad4169bb",
+        "416e0a4e-5b73-4235-80f9-4e7218d4597e",
+        "3914fef7-8865-42e6-801b-fc5b27f5f7a9",
+        "8670c38e-3e94-4d00-9b57-b19e97419927",
+        "b50ab8ab-5b0d-4d42-a3cd-94d8d5681d5f",
+        "a7e71ee5-4493-4709-9ab5-d20fa1f53471",
+        "44d5cd2f-1149-4216-883c-2dc9ae043e72",
+        "bb487735-8a91-4da0-b922-c9115a9d48cb",
+        "2d9ea840-7f72-4321-810d-c0b2ff344799",
+        "745e9a38-6b98-4509-83fd-bb43740001f7",
+        "1e5e4738-5f23-4ccd-a981-baf58a6dc87f"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "iron",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

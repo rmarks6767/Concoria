@@ -55,6 +55,32 @@ if attacking == false{ //not attacking
 				
 			}
 			break;
+			
+		case "Wooden Sword":
+			switch(weaponDirection){
+		
+				case "left":
+				
+					return sword_wood_l
+					;
+				
+				case "right":
+			
+					return sword_wood_r
+					break;
+			
+				case "up":
+			
+					return sword_wood_b
+					break;
+			
+				case "down":
+			
+					return sword_wood_f
+					break;
+				
+			}
+			break;
 	
 	
 	
@@ -114,7 +140,32 @@ else{ //attacking
 				
 			}
 			break;
-	
+			
+		case "Wooden Sword":
+			switch(weaponDirection){
+		
+				case "left":
+				
+					return sword_wood_swing_l
+					;
+				
+				case "right":
+			
+					return sword_wood_swing_r
+					break;
+			
+				case "up":
+			
+					return sword_wood_swing_b
+					break;
+			
+				case "down":
+			
+					return sword_wood_swing_f
+					break;
+				
+			}
+			break;
 	
 	
 	}

@@ -1,4 +1,4 @@
-equipped = FindEquippedSlot()
+equipped = FindEquippedSlot(self)
 
 //Sprite Handling
 if Inventory[equipped,0] == ""{
