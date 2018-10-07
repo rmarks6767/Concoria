@@ -1,0 +1,2 @@
+alarmZeroCalled = false;
+alarmOneCalled = false;

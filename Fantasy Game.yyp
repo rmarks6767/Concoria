@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "15c5f407-4680-407d-accb-ffb294aa636b",
+            "Value": {
+                "id": "cdb0e0ac-3d5a-4eb6-b33f-a7c68c6dabaf",
+                "resourcePath": "scripts\\GetEnemySprite\\GetEnemySprite.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "163d7d79-8de9-4ca8-8ddd-e158fadbead6",
             "Value": {
                 "id": "e99930d0-3d7d-443b-a4fd-6adee80754b9",
@@ -1302,6 +1310,7 @@
         "0af2c7f6-2ae0-4f91-81de-01b49235bd09",
         "b3084bb0-51ac-49c9-b84c-64263d6fb7b5",
         "f68f5897-9e49-4591-a2bb-3f05d53523d5",
+        "15c5f407-4680-407d-accb-ffb294aa636b",
         "86384ae3-2cad-4814-952a-2ec6599eb1a5",
         "86b7f16a-c598-4d82-8cc9-17049177d587",
         "7af97022-4941-4b10-b287-75d88d5c0293",

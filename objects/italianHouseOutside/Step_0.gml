@@ -1,17 +1,22 @@
 
 
-houseWidth = 61;
-houseHeight = 81;
+houseWidth = x + 61;
+houseHeight = y + 81;
 house_x = x;
 house_y = y + 20;
 
 if ((player.x > house_x && player.x < houseWidth) && (player.y > house_y && player.y < houseHeight))
 {
-	with(italianHouseOutside)
+	if image_alpha > 0
 	{
-		while (image_alpha > 0)
-		{
-			image_alpha -= 0.01;
-		}
+		alarm[0] = 1;
 	}
 }
+else
+{
+	if image_alpha < 100
+	{
+		alarm[1] = 1;
+	}
+}
+
