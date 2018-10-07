@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "25af20fb-932b-4c9c-8cfb-d13e9d3bb850",
+            "Value": {
+                "id": "713a7e46-d60d-4cfd-a967-fce7793c3adb",
+                "resourcePath": "objects\\baseHouse\\baseHouse.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2606f4a1-dcb6-49c3-b6d5-e4aea2bbfad4",
             "Value": {
                 "id": "5a58d7b9-c6ce-48f4-8444-61716a6fcef8",
