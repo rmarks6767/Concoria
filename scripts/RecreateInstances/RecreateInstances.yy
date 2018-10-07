@@ -1,8 +1,8 @@
 {
-    "id": "50b35dae-a817-492b-b22b-6cae385fecca",
+    "id": "087f44bb-1240-4d2f-b49f-18d302fd71e9",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "SaveInstances",
+    "name": "RecreateInstances",
     "IsCompatibility": false,
     "IsDnD": false
 }

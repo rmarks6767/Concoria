@@ -1,4 +1,5 @@
-
+//sets the type to variable, saying the object can change over time
+type = "variable"; 
 
 //sets the possible variables that the enemy can read
 Health = 100;
