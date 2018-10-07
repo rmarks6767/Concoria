@@ -1,1 +1,3 @@
-global.storeInstance [0,0] = "";
+storedx = 0
+storedy = 0
+stored = 5;
