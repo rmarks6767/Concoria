@@ -1,6 +1,5 @@
-show_debug_message("Called script");
-		
-var storedids;
+
+
 
 viewx = camera_get_view_x(view_camera[0]) 
 viewy = camera_get_view_y(view_camera[0])
@@ -9,9 +8,9 @@ viewwidth = camera_get_view_width(view_camera[0])
 
 viewx1 = viewx;
 viewy1 = viewy;
-viewx2 = viewx + viewwidth;
-viewy2 = viewy + viewheight;
-var padding = 200;
+viewx2 = viewx1 + viewwidth;
+viewy2 = viewy1 + viewheight;
+padding = -100;
 //var objectStorage;
 
 numInstances = instance_count;
@@ -59,8 +58,11 @@ if(array_length_1d(storedids) > 0)
 			objectStorage[i, 2] = storedids[counterFull];    //instance Id
 			counterFull = counterFull + 1;
 	}
-	show_debug_message("Deactivated Region");
-	instance_deactivate_region(viewx - padding, viewy - padding, viewheight + padding, viewwidth + padding, false, true)
+	var wide = (viewx2 - viewx1) + padding*2
+	
+	var high =(viewy2 - viewy1) + padding*2
+	show_debug_message(string(wide) + "::" + string(high))
+	instance_deactivate_region(viewx1 - padding, viewy1 - padding, wide,high, false, true)
 
 
 	for (p = 0; p < array_length_1d(storedids); p++) 
