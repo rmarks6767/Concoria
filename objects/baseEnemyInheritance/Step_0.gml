@@ -5,23 +5,23 @@
 switch(thestate)
 {
 	case state.stationary:
-		Stationary(dropables, enemyHealth, thestate, playerFriendly, playerClose, enemyFriendly);
+		Stationary(objectName);
 	case state.wandering:
-		Wander();
+		Wander(objectName);
 	case state.attacking:
-		Attacking();
+		Attacking(objectName);
 	case state.dying:
-		Dying();
+		Dying(objectName);
 	case state.fleeing:
-		Fleeing();
+		Fleeing(objectName);
 	case state.townDwelling:
-		TownDwelling();
+		TownDwelling(objectName);
 	case state.lowHealth:
-		LowHealth();
+		LowHealth(objectName);
 	case state.exploring:
-		Exploring();
+		Exploring(objectName);
 	case state.goingHome:
-		GoingHome();
+		GoingHome(objectName);
 	case state.blocking:
 	
 }

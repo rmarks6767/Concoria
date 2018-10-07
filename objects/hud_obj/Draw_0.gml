@@ -1,10 +1,11 @@
 
 
 
-screenx = view_xport //Just redefining the origin of the view
-screeny = view_yport // For ease of typing
-screenh = view_hport
-screenw = view_wport
+screenx = view_xport[0] //Just redefining the origin of the view
+screeny = view_yport[0] // For ease of typing
+screenh = view_hport[0]
+screenw = view_wport[0]
+
 draw_rectangle_color(screenx, screeny, screenx + screenw , screeny + 100, c_black, c_black, c_black,c_black,false);
 
 if player.Inventory_Open == true {
@@ -29,7 +30,7 @@ for (i = 0; i < 5; i+=1){
     
     if highlight == false{
     
-        draw_rectangle_color(invx1 + i*40 , invy1 , invx2 + i*40 , invy2, c_black, c_black, c_black,c_black,true);    
+        draw_rectangle_color(invx1 + i*40 , invy1 , invx2 + i*40 , invy2, c_black, c_black, c_black,c_black,true);   
         
     }else{
     

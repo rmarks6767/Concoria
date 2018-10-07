@@ -1,0 +1,1 @@
+//dcamera_set_view_target(mainCamera, player);
