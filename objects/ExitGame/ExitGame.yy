@@ -1,8 +1,8 @@
 {
-    "id": "559ac737-aba1-4faa-8411-63dcd3a45d25",
+    "id": "3fb3ccef-cbf5-49de-9c25-d317157b8d74",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "help",
+    "name": "ExitGame",
     "eventList": [
         
     ],
