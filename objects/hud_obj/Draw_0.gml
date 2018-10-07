@@ -28,7 +28,7 @@ for (i = 0; i < 5; i+=1){
     
     if highlight == false{
     
-        draw_rectangle_color(invx1 + i*40 , invy1 , invx2 + i*40 , invy2, c_black, c_black, c_black,c_black,true);    
+        draw_rectangle_color(invx1 + i*40 , invy1 , invx2 + i*40 , invy2, c_black, c_black, c_black,c_black,true);   
         
     }else{
     

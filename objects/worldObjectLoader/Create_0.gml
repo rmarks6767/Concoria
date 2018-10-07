@@ -1,0 +1,1 @@
+global.storeInstance [0,0] = "";

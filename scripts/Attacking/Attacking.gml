@@ -1,0 +1,3 @@
+objectName = argument0;
+
+

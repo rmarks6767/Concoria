@@ -12,19 +12,19 @@ switch(thestate)
 			alarm[0] = irandom_range(20,50);
 		}
 	case state.attacking:
-		Attacking();
+		Attacking(objectName);
 	case state.dying:
-		Dying();
+		Dying(objectName);
 	case state.fleeing:
-		Fleeing();
+		Fleeing(objectName);
 	case state.townDwelling:
-		TownDwelling();
+		TownDwelling(objectName);
 	case state.lowHealth:
-		LowHealth();
+		LowHealth(objectName);
 	case state.exploring:
-		Exploring();
+		Exploring(objectName);
 	case state.goingHome:
-		GoingHome();
+		GoingHome(objectName);
 	case state.blocking:
 	
 }
