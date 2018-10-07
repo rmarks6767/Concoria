@@ -47,7 +47,7 @@ switch(thestate)
 }
 if Health <= 0{
 		
-		instance_destroy(arm);
+		instance_destroy(self.arm);
 		instance_destroy(self);
 		
 }

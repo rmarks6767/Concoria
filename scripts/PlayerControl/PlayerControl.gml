@@ -557,7 +557,7 @@ else{
     if keyboard_check_pressed(ord("E")){
         
 		var object = instance_place(x,y,floorobject_obj);
-		if object != undefined{
+		if instance_exists(object){
 			
 			if Inventory[equipped,0] == ""{
 				
@@ -590,7 +590,7 @@ else{
 			
 			Inventory[equipped,0] = ""
 			Inventory[equipped,1] = 0
-			Inventory[equipped,2] = "None"
+			Inventory[equipped,2] = "none"
 			
 		}
         

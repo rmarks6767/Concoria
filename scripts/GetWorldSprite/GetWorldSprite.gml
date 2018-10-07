@@ -10,4 +10,7 @@ switch(obj_name){
 		return sword_wood_world;
 		break;
 	
+	case "Short Bow":
+		return bow_short_world;
+		break;
 }

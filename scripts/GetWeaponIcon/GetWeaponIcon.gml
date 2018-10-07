@@ -6,12 +6,19 @@ switch (itemName){
 	case "":
 		return nodraw;
 		break;
+		
 	case "Iron Sword":
 		return sword_iron_icon;
 		break;
+		
 	case "Wooden Sword":
 		return sword_wood_icon;
 		break;
+		
+	case "Short Bow":
+		return bow_short_icon;
+		break;	
+		
 	default:
 		return oof;
 		break;
