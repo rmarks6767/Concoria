@@ -634,7 +634,7 @@
             "Key": "50b35dae-a817-492b-b22b-6cae385fecca",
             "Value": {
                 "id": "d0279b69-8b0c-402b-8094-9183c47db9d4",
-                "resourcePath": "scripts\\SaveInstances\\SaveInstances.yy",
+                "resourcePath": "scripts\\ManageInstances\\ManageInstances.yy",
                 "resourceType": "GMScript"
             }
         },
