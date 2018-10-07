@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "1093c746-b7ba-4956-b025-aa24a1bdb830",
+            "Value": {
+                "id": "65abb9fe-5dd5-4afd-8db1-97ccd0376692",
+                "resourcePath": "sprites\\sword_iron_world\\sword_iron_world.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "10a0bf64-2f5b-40f2-babc-595c6e0aaa03",
             "Value": {
                 "id": "a0652932-57a6-463c-b03a-fd882ab08686",
@@ -231,6 +239,14 @@
             }
         },
         {
+            "Key": "219b739a-7150-45a4-9792-c1914d85d481",
+            "Value": {
+                "id": "b955e576-5a1b-4965-b1d8-1d2814091593",
+                "resourcePath": "objects\\floorobject_obj\\floorobject_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2453f398-8f12-4d3e-a4ba-891e623ff77a",
             "Value": {
                 "id": "70bd5cfb-1783-4011-b3bd-084ae2d48a77",
@@ -308,6 +324,14 @@
                 "id": "2129b274-576e-4a32-861f-b8afe6b087d7",
                 "resourcePath": "sprites\\sword_iron_f\\sword_iron_f.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2f379bc9-cc7f-4228-9e8e-29927d492d85",
+            "Value": {
+                "id": "2cf3ff67-0a05-46ef-839f-6cd374995ab6",
+                "resourcePath": "scripts\\GetWorldSprite\\GetWorldSprite.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -547,6 +571,14 @@
             "Value": {
                 "id": "99d73c16-dcfd-45ad-ac39-b064a18dca60",
                 "resourcePath": "sprites\\template_arm_swing_f\\template_arm_swing_f.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4e2addbd-d82b-4917-b33a-fa697a2cfcac",
+            "Value": {
+                "id": "8efd59f0-7942-4625-8e78-8b6f612fa868",
+                "resourcePath": "sprites\\sword_wood_world\\sword_wood_world.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1544,7 +1576,8 @@
         "37701427-6447-40a3-9477-99c895c329c2",
         "2606f4a1-dcb6-49c3-b6d5-e4aea2bbfad4",
         "48697ad0-3a25-4c98-9ede-7e1f70ac14c6",
-        "1cf74be6-3aec-409e-834a-a1ae213c7ed1"
+        "1cf74be6-3aec-409e-834a-a1ae213c7ed1",
+        "2f379bc9-cc7f-4228-9e8e-29927d492d85"
     ],
     "tutorial": ""
 }
