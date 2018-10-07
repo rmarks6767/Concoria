@@ -5,7 +5,9 @@ if other.owner != self{
 	
 		if other.owner.objectName == "player"{
 			
-			Health -= (other.owner.Str+1) * 8;
+			if (other.owner.attacking){
+				Health -= (other.owner.Str+1) * 8;
+			}
 			
 		}
 	
