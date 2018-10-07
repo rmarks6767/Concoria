@@ -513,26 +513,26 @@ else{
 
 
         direction = 180
-        friction = .5
+        speed = 0
         
         
     }else if keyboard_check_released(ord("D")) and not MovingKeyDown(){
     
 
         direction = 0
-        friction = .5
+        speed = 0
     
     }else if keyboard_check_released(ord("W")) and not MovingKeyDown(){
     
 
         direction = 90
-        friction = .5
+        speed = 0
     
     }else if keyboard_check_released(ord("S")) and not MovingKeyDown(){
     
 
         direction = 270
-        friction = .5
+        speed = 0
     
     }
     
