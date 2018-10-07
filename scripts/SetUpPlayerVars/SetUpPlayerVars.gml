@@ -26,9 +26,9 @@ Inventory[0,0] = "Iron Sword"
 Inventory[0,1] = 1
 Inventory[0,2] = "Sword"
 Inventory[0,3] = true
-Inventory[1,0] = ""
+Inventory[1,0] = "Wooden Sword"
 Inventory[1,1] = 0
-Inventory[1,2] = "none"
+Inventory[1,2] = "Sword"
 Inventory[1,3] = false
 Inventory[2,0] = ""
 Inventory[2,1] = 0
@@ -51,3 +51,10 @@ with(arm){
 	
 	
 }
+hud = instance_create_layer(x,y,"Instances",hud_obj);
+with (hud){
+	
+	owner = other;
+	
+}
+view = view_camera[0];
