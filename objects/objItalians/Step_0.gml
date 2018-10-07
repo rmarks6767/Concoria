@@ -1,5 +1,6 @@
 // Inherit the parent event
 event_inherited();
+thestate = state.wandering;
 
 
 if (enemy_health < 20)

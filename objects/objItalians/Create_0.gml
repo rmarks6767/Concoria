@@ -1,7 +1,8 @@
 // Inherit the parent event
+objectName = "italian";
 event_inherited();
 
-objectName = "italian";
+
 
 //personality of the italian
 

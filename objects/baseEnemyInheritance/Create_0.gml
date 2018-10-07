@@ -5,7 +5,8 @@ enemyHealth = 100;
 playerFriendly = true;
 playerClose = false;
 enemyFriendly = true;
-objectName = "";
+attacking = false;
+inBattle = false;
 
 
 

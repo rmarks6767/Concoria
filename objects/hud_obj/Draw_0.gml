@@ -1,12 +1,10 @@
+screenx = camera_get_view_x(view_camera[0]) //Just redefining the origin of the view
+screeny = camera_get_view_y(view_camera[0])// For ease of typing
+screenh = camera_get_view_width(view_camera[0])
+screenw = camera_get_view_height(view_camera[0])
 
-
-
-screenx = view_xport[0] //Just redefining the origin of the view
-screeny = view_yport[0] // For ease of typing
-screenh = view_hport[0]
-screenw = view_wport[0]
-
-draw_rectangle_color(screenx, screeny, screenx + screenw , screeny + 100, c_black, c_black, c_black,c_black,false);
+//show_debug_message("VIEW X AND Y: " + string(screenh) + "," + string(screenw))
+//draw_rectangle_color(screenx, screeny, screenx + screenw , screeny + 100, c_black, c_black, c_black,c_black,false);
 
 if player.Inventory_Open == true {
     DrawInventory()
@@ -17,10 +15,10 @@ if player.Inventory_Open == true {
 
 //Redefining the inventory coords here
 thicc = 32 // This determines how thicc the inventory blocks are
-invx1 = screenx+(screenw/3)
-invy1 = (screeny+screenh) - (screenh/100)
+invx1 = screenx + (screenw/1.5)
+invy1 = screeny + (screenh - (screenh/3))
 invx2 = invx1 + thicc
-invy2 = invy1 - thicc
+invy2 = invy1 + thicc
 
 slot = FindEquippedSlot()
 
@@ -49,7 +47,7 @@ barlen = 130
 
 
 hbarx1 = (screenx + screenw/10)
-hbary1 = (screeny+screenh) - (screenh/15)
+hbary1 = (screeny+ (screenh - (screenh/3)))
 hbarx2 = hbarx1
 hbary2 = hbary1 + barthicc
 

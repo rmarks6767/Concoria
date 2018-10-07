@@ -94,22 +94,22 @@ else{ //attacking
 		
 				case "left":
 				
-					return sword_iron_l
+					return sword_iron_swing_l
 					;
 				
 				case "right":
 			
-					return sword_iron_r
+					return sword_iron_swing_r
 					break;
 			
 				case "up":
 			
-					return sword_iron_b
+					return sword_iron_swing_b
 					break;
 			
 				case "down":
 			
-					return sword_iron_f
+					return sword_iron_swing_f
 					break;
 				
 			}
