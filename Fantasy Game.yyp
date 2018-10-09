@@ -567,6 +567,14 @@
             }
         },
         {
+            "Key": "42c25cba-fa50-4db6-8378-b6e2a1c59d17",
+            "Value": {
+                "id": "72af7dcb-7241-4f78-b855-8e90a69796be",
+                "resourcePath": "views\\42c25cba-fa50-4db6-8378-b6e2a1c59d17.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "42ee920d-4fdc-41e4-80fc-d6bb80f01721",
             "Value": {
                 "id": "8cafd114-96dd-416d-a28c-268db96907f1",
@@ -1428,6 +1436,14 @@
                 "id": "edaf734d-2c29-4228-9760-22f15eb03a8f",
                 "resourcePath": "sprites\\sword_wood_b\\sword_wood_b.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b575cd1c-477d-4ea6-8d32-c71c841903a1",
+            "Value": {
+                "id": "e5a9d2d1-05bd-4903-9af2-ab622069edea",
+                "resourcePath": "views\\b575cd1c-477d-4ea6-8d32-c71c841903a1.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

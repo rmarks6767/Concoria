@@ -15,7 +15,8 @@
         "382ecbf9-c175-4c9e-8037-2eefac589287",
         "b4e6bec9-28bb-48c8-b780-099c5d3d0311",
         "784a715b-1d05-4f06-b732-ffd076b8f8fa",
-        "745fa165-d508-45f0-97d7-5e7939ab8857"
+        "745fa165-d508-45f0-97d7-5e7939ab8857",
+        "cfc99938-f6db-4dc1-9ffc-da5ebace03f6"
     ],
     "filterType": "GMObject",
     "folderName": "NPCs",
