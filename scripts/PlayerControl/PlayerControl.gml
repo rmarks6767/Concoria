@@ -471,17 +471,21 @@ else{
 
 
 //KEYPRESS MOVEMENT
-
+if !((keyboard_check(ord("A")) and keyboard_check(ord("W"))) 
+or (keyboard_check(ord("A")) and keyboard_check(ord("S")))
+or (keyboard_check(ord("D")) and keyboard_check(ord("W")))
+or (keyboard_check(ord("D")) and keyboard_check(ord("S")))
+){
     //LEFT
-    if keyboard_check_pressed(ord("A")){
+    if keyboard_check(ord("A")){
         
-
-        direction = 180
-        speed = 5
-
+		
+			direction = 180
+			speed = 5
+			
         
     //RIGHT
-    }else if keyboard_check_pressed(ord("D")){
+    }else if keyboard_check(ord("D")){
     
 
         direction = 0
@@ -489,7 +493,7 @@ else{
 
         
     //UP
-    }else if keyboard_check_pressed(ord("W")){
+    }else if keyboard_check(ord("W")){
     
 
         direction = 90
@@ -498,13 +502,52 @@ else{
 
         
     //DOWN
-    }else if keyboard_check_pressed(ord("S")){
+    }else if keyboard_check(ord("S")){
     
 
         direction = 270
         speed = 5
 
     }
+}else if((keyboard_check(ord("A")) and keyboard_check(ord("W"))) 
+or (keyboard_check(ord("A")) and keyboard_check(ord("S")))
+or (keyboard_check(ord("D")) and keyboard_check(ord("W")))
+or (keyboard_check(ord("D")) and keyboard_check(ord("S")))
+){
+	//LEFT
+    if keyboard_check(ord("A"))and keyboard_check(ord("W")){
+        
+
+        direction = 135
+        speed = 5
+
+        
+    //RIGHT
+    }else if keyboard_check(ord("A"))and keyboard_check(ord("S")){
+    
+
+        direction = 225
+        speed = 5
+
+        
+    //UP
+    }else if keyboard_check(ord("D"))and keyboard_check(ord("W")){
+    
+
+        direction = 45
+        speed = 5
+
+
+        
+    //DOWN
+    }else if keyboard_check(ord("D"))and keyboard_check(ord("S")){
+    
+
+        direction = 315
+        speed = 5
+
+    }
+}
 
 
 //KEYRELEASE
