@@ -1,5 +1,5 @@
-houseWidth = x + 61;
-houseHeight = y + 81;
+houseWidth = x + 241;
+houseHeight = y + 500;
 house_x = x;
 house_y = y + 20;
 
