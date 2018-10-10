@@ -6,17 +6,17 @@
 
 
 //Keep the Arm Attached to the Player when he moves
-if owner.speed == 0{
+//if owner.speed == 0{
 
     x = owner.x;
     y = owner.y;
     
-}
-else{
+//}
+//else{
 
     x = x + lengthdir_x(owner.speed, owner.direction);
 	y = y + lengthdir_y(owner.speed, owner.direction);
-}
+//}
 
 
 //Grab the equipped item's name from the inventory and store it in the arm

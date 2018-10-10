@@ -1575,6 +1575,14 @@
             }
         },
         {
+            "Key": "c20b960e-8008-4636-81bd-31e5c8437b3d",
+            "Value": {
+                "id": "fe532419-7627-44b4-a935-084ed28d95fd",
+                "resourcePath": "sprites\\humanoid_mask\\humanoid_mask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c211e458-a71b-4d4a-84d5-35ff4a29d94e",
             "Value": {
                 "id": "5fd36b9c-7e21-40a3-b295-4693211f8028",

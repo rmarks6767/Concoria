@@ -9,4 +9,5 @@ if instance_exists(other.owner){
 				}
 			
 	}
+	
 }
