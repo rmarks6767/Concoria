@@ -1322,7 +1322,7 @@
             "Key": "a93aaba5-578e-4dd7-85ae-6ae03322e231",
             "Value": {
                 "id": "c8554cae-5e14-4927-920d-aac15bdaf619",
-                "resourcePath": "scripts\\Solid_Collisons\\Solid_Collisons.yy",
+                "resourcePath": "scripts\\CheckCollisions\\CheckCollisions.yy",
                 "resourceType": "GMScript"
             }
         },

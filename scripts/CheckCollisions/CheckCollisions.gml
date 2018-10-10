@@ -1,0 +1,111 @@
+//Purpose: Checking collisions with "solid" objects in all directions. This is used by both the player
+//and enemies
+
+//Array of all solid objects
+solidArray[0] = solid_obj;
+solidArray[1] = player;
+solidArray[2] = baseEnemyInheritance;
+
+//Loop through and check for each type of object
+for	(var i = 0; i < array_length_1d(solidArray); i++)
+{
+	//make sure we are moving before we even start running the script uneccessarily
+	if speed > 0{
+
+		//grab every instance at every direction
+		var inst0 = instance_place(1,0,solidArray[i])
+		var inst45 = instance_place(1,-1,solidArray[i])
+		var inst90 = instance_place(0,-1,solidArray[i])
+		var inst135 = instance_place(-1,-1,solidArray[i])
+		var inst180 = instance_place(-1,0,solidArray[i])
+		var inst225 = instance_place(-1,1,solidArray[i])
+		var inst270 = instance_place(0,1,solidArray[i])
+		var inst315 = instance_place(1,1,solidArray[i])
+		
+		//Check each direction starting from zero and going up
+		
+		//Right
+		if ( (direction > 0 and direction <= 22.5) or ( direction > 337.5 and direction <= 0) ){
+			
+			show_debug_message("RIGHT COLLISION")
+			if (inst0 and inst0!= self){
+				
+				speed = 0;
+				
+			}
+			
+		}
+		//Top Right
+		else if ( direction > 22.5 and direction <= 67.5 ){
+			
+			if (inst45 and inst45!= self){
+				
+				speed = 0;
+				
+			}
+			
+		}
+		//Top
+		else if ( direction > 67.5 and direction <= 112.5 ){
+			
+			if (inst90 and inst90!= self){
+				
+				speed = 0;
+				
+			}
+			
+		}
+		//Top Left
+		else if ( direction > 112.5 and direction <= 157.5 ){
+			
+			if (inst135 and inst135!= self){
+				
+				speed = 0;
+				
+			}
+			
+		}
+		//Left
+		else if ( direction > 157.5 and direction <= 202.5 ){
+			
+			if (inst180 and inst180!= self){
+				
+				speed = 0;
+				
+			}
+			
+		}
+		//South Left
+		else if ( direction > 202.5 and direction <= 247.5 ){
+			
+			if (inst225 and inst225!= self){
+				
+				speed = 0;
+				
+			}
+			
+		}
+		//South
+		else if ( direction > 247.5 and direction <= 292.5 ){
+			
+			if (inst270 and inst270!= self){
+				
+				speed = 0;
+				
+			}
+			
+		}
+		//South Right
+		else if ( direction > 202.5 and direction <= 337.5 ){
+			
+			if (inst315 and inst315!= self){
+				
+				speed = 0;
+				
+			}
+			
+		}
+		
+	}
+	
+}
