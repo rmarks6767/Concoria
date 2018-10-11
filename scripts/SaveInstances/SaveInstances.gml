@@ -82,8 +82,7 @@ if(array_length_1d(storedids) > 0)
 	Low = 0
 	High =  array_length_2d(objectStorage, counterFull) - 1;
 	Total = array_length_2d(objectStorage, counterFull);
-	
-	objectStorage = MergeSort(objectStorage, Low, High, Total);
+	MergeSort(objectStorage, Low, High, Total);
 
          
 
@@ -108,10 +107,11 @@ if(array_length_1d(storedids) > 0)
 					}
                     for (o = 0; o < array_length_2d(objectStorage, p) - 1; o++)
                     {
-                       objectStorage[p, 0] = saved[t, 0]
-					   objectStorage[p, 1] = saved[t, 1]
-					   objectStorage[p, 2] = saved[t, 2]
+                       objectStorage[p, 0] = saved[o, 0]
+					   objectStorage[p, 1] = saved[o, 1]
+					   objectStorage[p, 2] = saved[o, 2]
                     }
+					//counterFull--;
 				}
 		}
 	}
