@@ -132,5 +132,16 @@ if (image_index+image_speed >= image_number){
 		
 			}
 		}
+		if itemholdingType == "Staff"{
+			var ball = instance_create_layer(owner.x,owner.y,"Instances",spellball_obj);
+			with (ball){
+			
+				owner = other.owner
+				direction = owner.face_direction;
+				speed = 12;
+				image_angle = direction - 90
+		
+			}
+		}
 	}
 }

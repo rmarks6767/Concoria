@@ -40,6 +40,15 @@ shortbow[5] = bow_short_pull_r
 shortbow[6] = bow_short_pull_f
 shortbow[7] = bow_short_pull_b
 
+woodstaff[0] = staff_wood_l
+woodstaff[1] = staff_wood_r
+woodstaff[2] = staff_wood_f
+woodstaff[3] = staff_wood_b
+woodstaff[4] = staff_wood_swing_l
+woodstaff[5] = staff_wood_swing_r
+woodstaff[6] = staff_wood_swing_f
+woodstaff[7] = staff_wood_swing_b
+
 switch(weaponName){
 
 	case "":
@@ -56,6 +65,10 @@ switch(weaponName){
 	
 	case "Short Bow":
 		toReturn = shortbow;
+		break;
+		
+	case "Wooden Staff":
+		toReturn = woodstaff;
 		break;
 
 
