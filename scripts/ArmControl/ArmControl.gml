@@ -6,17 +6,17 @@
 
 
 //Keep the Arm Attached to the Player when he moves
-if owner.speed == 0{
+//if owner.speed == 0{
 
     x = owner.x;
     y = owner.y;
     
-}
-else{
+//}
+//else{
 
     x = x + lengthdir_x(owner.speed, owner.direction);
 	y = y + lengthdir_y(owner.speed, owner.direction);
-}
+//}
 
 
 //Grab the equipped item's name from the inventory and store it in the arm
@@ -124,6 +124,17 @@ if (image_index+image_speed >= image_number){
 		if itemholdingType == "Bow"{
 			var arw = instance_create_layer(owner.x,owner.y,"Instances",arrow_obj);
 			with (arw){
+			
+				owner = other.owner
+				direction = owner.face_direction;
+				speed = 12;
+				image_angle = direction - 90
+		
+			}
+		}
+		if itemholdingType == "Staff"{
+			var ball = instance_create_layer(owner.x,owner.y,"Instances",spellball_obj);
+			with (ball){
 			
 				owner = other.owner
 				direction = owner.face_direction;

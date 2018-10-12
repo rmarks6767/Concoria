@@ -1,5 +1,6 @@
 sprite_index = GetEnemySprite(objectName,inBattle,direction,speed);
 face_direction = direction;
+
 switch(thestate)
 {
 	case state.stationary:
@@ -50,4 +51,8 @@ if Health <= 0{
 		instance_destroy(self.arm);
 		instance_destroy(self);
 		
+}
+CheckCollisions();
+with(arm){
+	ArmControl()
 }
