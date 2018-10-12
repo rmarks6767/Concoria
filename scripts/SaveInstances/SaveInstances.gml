@@ -1,3 +1,4 @@
+
 //gets the arguments from the worldObjectLoader
 counterStore = argument0     
 counterFull = argument1
@@ -24,43 +25,42 @@ padding = 500;
 //gets the number of instances currently active in the room
 numInstances = instance_count;
 
+//used for seeing how many instances are currently in the room in any given frame
+show_debug_message(string(numInstances));
 
-//used for seeing how many instances are currently in the room in any given frame      /////////////////trun on for dbuggin///////////////
-//show_debug_message(string(numInstances));
-					
 //the first time it gets the x and y to use for the instance in the room that is checking to store or not
 var fobjx = 0; 
 var fobjy = 0;
  
  
-
-
-//runs the function for the number of instances in the entire room (checking every instance)
+//checks to see if the instance should be deactivated or kept in the room based on the view 
 for (i = 0; i < numInstances; i++)  
 {
-		//checks the array that stores all of the instances in the room and gets each of their positions in the room
-		with(instance_id[i])  
+	//instids[i] = instance_id[i];   //stores the instance id in an array in order to compare it 
+	//if instids[i] != noone
+	//{
+		with(instance_id[i])  //instids[i])
 		{
 			fobjx = x;
 			fobjy = y;
 		}
-		//checks to see if the instance should be deactivated or kept in the room based on the view 
 		if ((fobjx < (viewx1 - padding) or fobjx > (viewx2 + padding)) or (fobjy < (viewy1 - padding) or fobjy > (viewy2 + padding)))
 		{
-			//stores the instance id in a new array, only the ones that really need to be stored
-			storedids[counterStore] = instance_id[i];
-			counterStore++;
+			storedids[counterStore] = instance_id[i]  //instids[i];	
+			counterStore = counterStore + 1;
 		}
+		else
+		{
+		
+		}
+	//}
+	
 }
-
-//will store x, y, and instance_id
-
-//gets the number of how many instances that are outside of the room
+var null = 0;
+//will store x, y, instance_id, health, state (if applicable)
 if(array_length_1d(storedids) > 0)
 {
-    //repeats the analysis for all of the instances outside of the room
 	
-	//also only starts the counter at the length of the array
 	for (i = counterFull; i < array_length_1d(storedids); i++)
 	{
 			var lobjx = 0;
@@ -76,21 +76,13 @@ if(array_length_1d(storedids) > 0)
 			counterFull = counterFull + 1;
 	}
 	var wide = (viewx2 - viewx1) + padding*2
+	
 	var high =(viewy2 - viewy1) + padding*2
-	instance_deactivate_region(viewx1 - padding, viewy1 - padding, wide,high, false, true);
-	
-	
-	Low = 0
-	High = array_length_2d(objectStorage, counterFull) - 1;
-	Total = array_length_2d(objectStorage, counterFull);
-	MergeSort(objectStorage, Low, High, Total);
-
-	
-         
+	show_debug_message(string(wide) + "::" + string(high))
+	instance_deactivate_region(viewx1 - padding, viewy1 - padding, wide,high, false, true)
 
 
-    // checks each part of the array from the last value to the first value and deletes the last value that is always the closest to the deactivation area
-	for (p = array_length_1d(storedids) - 1; p > 0; p--) 
+	for (p = 0; p < array_length_1d(storedids); p++) 
 	{
 		if array_length_2d(objectStorage, p) > 0
 		{
@@ -99,16 +91,7 @@ if(array_length_1d(storedids) > 0)
 			var inst = objectStorage[p, 2];	
 				if ((objx > viewx1 - padding && objx < viewx2 + padding) && (objy > viewy1 - padding && objy < viewy2 + padding))
 				{
-					
-					
-					counterFull--;
 					inst = instance_activate_object(inst)
-					
-					objectStorage[p, 0] = noone;
-					objectStorage[p, 1] = noone;
-                    objectStorage[p, 2] = noone;	
-					
-					
 				}
 		}
 	}
