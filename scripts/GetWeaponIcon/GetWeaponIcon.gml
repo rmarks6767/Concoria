@@ -19,6 +19,10 @@ switch (itemName){
 		return bow_short_icon;
 		break;	
 		
+	case "Wooden Staff":
+		return staff_wood_icon;
+		break;	
+		
 	default:
 		return oof;
 		break;

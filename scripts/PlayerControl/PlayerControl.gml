@@ -605,7 +605,7 @@ or (keyboard_check(ord("D")) and keyboard_check(ord("S")))
 			if Inventory[equipped,0] == ""{
 				
 				Inventory[equipped,0] = object.name;
-				Inventory[equipped,1] = 1;
+				Inventory[equipped,1] = object.quantity;
 				Inventory[equipped,2] = object.type;
 				instance_destroy(object);
 			
@@ -615,26 +615,65 @@ or (keyboard_check(ord("D")) and keyboard_check(ord("S")))
         
     }
 	
+	//If we hit the drop key
 	if keyboard_check_pressed(ord("Q")){
-		
+	
+		//Store all of the important item info
 		equippedItemName = Inventory[equipped,0]
 		equippedItemQuantity = Inventory[equipped,1]
 		equippedItemType = Inventory[equipped,2]
-        
-        if equippedItemName != ""{
-        
-            var object = instance_create_layer(x,y,"Instances",floorobject_obj);
-			with(object){
+		
+		//Make sure we aren't in an empty slot
+		if (equippedItemName != "" and equippedItemQuantity >= 1){
+			
+			//If we are also hitting the key that makes us drop one item at a time
+			if keyboard_check_pressed(vk_shift){
+		
+				//Spawn floor object and give it our important info
+	            var object = instance_create_layer(x,y,"Instances",floorobject_obj);
+				with(object){
 				
-				name = other.equippedItemName;
-				type = other.equippedItemType;
+					name = other.equippedItemName;
+					type = other.equippedItemType;
+					quantity += 1;
 				
+				}
+				
+				
+				//If the single thing that we are dropping is the last item, empty our slot
+				if (Inventory[equipped,1] - 1 == 0){
+					Inventory[equipped,0] = "";
+					Inventory[equipped,1] -= 1;
+					Inventory[equipped,2] = "none";
+					
+				//If not just subtract one from our slot
+				}else{
+					
+					Inventory[equipped,1] -= 1;
+
+				}
+			
 			}
+			//If we aren't hitting the single drop key
+			else{
+				//Spawn a floor object
+				var object = instance_create_layer(x,y,"Instances",floorobject_obj);
+				with(object){
+					
+					//Give it our important info
+					name = other.equippedItemName;
+					type = other.equippedItemType;
+					quantity = other.equippedItemQuantity;
+				
+				}
 			
-			Inventory[equipped,0] = ""
-			Inventory[equipped,1] = 0
-			Inventory[equipped,2] = "none"
+				//Empty the inventory slot
+				Inventory[equipped,0] = "";
+				Inventory[equipped,1] = 0;
+				Inventory[equipped,2] = "none";
 			
+			}
+				
 		}
         
     }

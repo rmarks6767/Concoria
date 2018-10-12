@@ -5,7 +5,7 @@ if other.owner != self{
 	
 		if other.owner.objectName == "player"{
 			
-			if (other.owner.attacking and other.itemholdingType !="Bow"){
+			if (other.owner.attacking and other.itemholdingType =="Sword"){
 				Health -= (other.owner.Str+1) * 8;
 			}
 			
