@@ -24,9 +24,10 @@ padding = 500;
 //gets the number of instances currently active in the room
 numInstances = instance_count;
 
-//used for seeing how many instances are currently in the room in any given frame
-show_debug_message(string(numInstances));
 
+//used for seeing how many instances are currently in the room in any given frame      /////////////////trun on for dbuggin///////////////
+//show_debug_message(string(numInstances));
+					
 //the first time it gets the x and y to use for the instance in the room that is checking to store or not
 var fobjx = 0; 
 var fobjy = 0;
@@ -48,7 +49,7 @@ for (i = 0; i < numInstances; i++)
 		{
 			//stores the instance id in a new array, only the ones that really need to be stored
 			storedids[counterStore] = instance_id[i];
-			counterStore = counterStore + 1;
+			counterStore++;
 		}
 }
 
@@ -77,18 +78,19 @@ if(array_length_1d(storedids) > 0)
 	var wide = (viewx2 - viewx1) + padding*2
 	var high =(viewy2 - viewy1) + padding*2
 	instance_deactivate_region(viewx1 - padding, viewy1 - padding, wide,high, false, true);
-
+	
 	
 	Low = 0
-	High =  array_length_2d(objectStorage, counterFull) - 1;
+	High = array_length_2d(objectStorage, counterFull) - 1;
 	Total = array_length_2d(objectStorage, counterFull);
 	MergeSort(objectStorage, Low, High, Total);
 
+	
          
 
 
-
-	for (p = 0; p < array_length_1d(storedids); p++) 
+    // checks each part of the array from the last value to the first value and deletes the last value that is always the closest to the deactivation area
+	for (p = array_length_1d(storedids) - 1; p > 0; p--) 
 	{
 		if array_length_2d(objectStorage, p) > 0
 		{
@@ -97,21 +99,16 @@ if(array_length_1d(storedids) > 0)
 			var inst = objectStorage[p, 2];	
 				if ((objx > viewx1 - padding && objx < viewx2 + padding) && (objy > viewy1 - padding && objy < viewy2 + padding))
 				{
+					
+					
+					counterFull--;
 					inst = instance_activate_object(inst)
 					
-					for (t = 0; t < array_length_2d(objectStorage, p) - 1; t++)
-                    {
-                        saved[t, 0] = objectStorage[p - 1, 0];
-						saved[t, 1]	= objectStorage[p - 1, 1];
-                    	saved[t, 2]	= objectStorage[p - 1, 2];	
-					}
-                    for (o = 0; o < array_length_2d(objectStorage, p) - 1; o++)
-                    {
-                       objectStorage[p, 0] = saved[o, 0]
-					   objectStorage[p, 1] = saved[o, 1]
-					   objectStorage[p, 2] = saved[o, 2]
-                    }
-					//counterFull--;
+					objectStorage[p, 0] = noone;
+					objectStorage[p, 1] = noone;
+                    objectStorage[p, 2] = noone;	
+					
+					
 				}
 		}
 	}

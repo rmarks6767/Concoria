@@ -5,20 +5,21 @@ High = argument3
 Total = argument4
 
             
-Left = Low;
-Counter = Low;
-Right = Mid + 1;
+var Left = Low;
+var Counter = Low;
+var Right = Mid + 1;
 
+var result
 
-Lobjx = objectStorage[Left,0];
-Lobjy = objectStorage[Right,1];
+var Lobjx = objectStorage[Left,0];
+var Lobjy = objectStorage[Right,1];
 
-Robjx = objectStorage[Left,0];
-Robjy = objectStorage[Right,1];
+var Robjx = objectStorage[Left,0];
+var Robjy = objectStorage[Right,1];
 
-LDistance = sqrt(sqr(Lobjx) + sqr(Lobjy));
+var LDistance = sqrt(sqr(Lobjx) + sqr(Lobjy));
 
-RDistance = sqrt(sqr(Robjx) + sqr(Robjy));
+var RDistance = sqrt(sqr(Robjx) + sqr(Robjy));
 
 
 while(Left <= Mid && Right <= High)
@@ -35,7 +36,7 @@ while(Left <= Mid && Right <= High)
         Counter++;
         Right++;
     }
-    }
+}
 while(Left <= Mid)
 {
     result[Counter, 2] = objectStorage[Left, 2];
@@ -48,8 +49,9 @@ while(Right <= High)
     Counter++;
     Right++;
 }
-for (l = Low; l < Counter; l++)
+for (var i = Counter; i > 0; i--)
 {
-    objectStorage[l, 2] = result[l, 2];
+    objectStorage[i, 2] = result[i, 2];
 }
-return;
+return; //objectStorage;ssssssssssssssssssssssssssssssssssss
+
