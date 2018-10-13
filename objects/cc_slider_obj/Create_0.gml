@@ -1,6 +1,6 @@
 /// @description Set Up vars
-slider = instance_create_layer(x,y-5,"Instances",cc_sliderNotch_obj)
-with(slider){
+notch = instance_create_layer(x,y-5,"Instances",cc_sliderNotch_obj)
+with(notch){
 
 	depth = -1;
 	

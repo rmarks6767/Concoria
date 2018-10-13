@@ -36,7 +36,7 @@ if (pressed == true) {
 	else if (mouse_x > minx and mouse_x < maxx){
 			
 		x = mouse_x;
-		sliderNum = maxx - x;
+		sliderNum = x - minx;
 			
 	}
 	show_debug_message("SliderNum:" + string(sliderNum))
