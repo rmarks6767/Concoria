@@ -27,7 +27,7 @@ if (pressed == true) {
 		
 			
 	}
-	else if (mouse_x < 0) {
+	else if (mouse_x < minx) {
 			
 		x = minx;
 		sliderNum = 0;
