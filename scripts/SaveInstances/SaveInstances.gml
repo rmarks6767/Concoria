@@ -99,9 +99,6 @@ if(array_length_1d(storedids) > 0)
 			var inst = objectStorage[p, 2];	
 				if ((objx > viewx1 - padding && objx < viewx2 + padding) && (objy > viewy1 - padding && objy < viewy2 + padding))
 				{
-					
-					
-					counterFull--;
 					inst = instance_activate_object(inst)
 					
 					objectStorage[p, 0] = noone;

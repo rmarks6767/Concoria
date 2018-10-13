@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "15664165-0e05-45b8-9dde-79512cf568bd",
+            "Value": {
+                "id": "1116cf31-518d-44f8-bdfb-5b9ae540c540",
+                "resourcePath": "scripts\\entering\\entering.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "15866137-669c-4230-9d0c-da9283a0b490",
             "Value": {
                 "id": "38c36f01-7042-469e-8e59-1d7bf6c657dc",
@@ -867,6 +875,14 @@
             "Value": {
                 "id": "67cc0449-f27a-4893-8928-fd0a346ade12",
                 "resourcePath": "sprites\\template_arm_swing_l11\\template_arm_swing_l11.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "57ddd061-2f37-4ca6-a8b5-78bb6676f2d9",
+            "Value": {
+                "id": "f72061b3-3736-4b05-be25-044c0ac65c07",
+                "resourcePath": "sprites\\sprHouseSmoke\\sprHouseSmoke.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1783,6 +1799,14 @@
             }
         },
         {
+            "Key": "c9665201-469a-480b-a481-d1975df72366",
+            "Value": {
+                "id": "f546e695-e1dd-4292-8f89-a7499f92eaf7",
+                "resourcePath": "scripts\\exiting\\exiting.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c96addc0-3d75-4372-af58-8247e011a3e3",
             "Value": {
                 "id": "d6ea42e5-c159-463f-a017-f8614cef9181",
@@ -1804,6 +1828,14 @@
                 "id": "5bfa6e01-fcac-405d-8ffb-45560374523a",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "ced62a88-78e9-4272-b303-3e5b0cfddca5",
+            "Value": {
+                "id": "23659e12-97f8-4d31-8174-3a7561ce8e81",
+                "resourcePath": "views\\ced62a88-78e9-4272-b303-3e5b0cfddca5.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2221,7 +2253,9 @@
         "2f379bc9-cc7f-4228-9e8e-29927d492d85",
         "50b35dae-a817-492b-b22b-6cae385fecca",
         "2d4a9028-1e0b-4f9a-8633-b4af10cf3ae5",
-        "8d8c6b74-a64d-401c-963d-34291c360ae4"
+        "8d8c6b74-a64d-401c-963d-34291c360ae4",
+        "15664165-0e05-45b8-9dde-79512cf568bd",
+        "c9665201-469a-480b-a481-d1975df72366"
     ],
     "tutorial": ""
 }
