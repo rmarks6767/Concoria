@@ -7,7 +7,8 @@
         "b3aa4bc3-9e3d-4047-8384-21ec8d70175f",
         "66f0ab68-6a34-43ef-890a-a7419105322b",
         "b55db63e-b3dc-4edd-876c-1938f257ef75",
-        "d46770e5-6901-4874-b353-feb281c16341"
+        "d46770e5-6901-4874-b353-feb281c16341",
+        "925e56dc-3212-40f9-8f31-15bffea66063"
     ],
     "filterType": "GMObject",
     "folderName": "Character Creation",

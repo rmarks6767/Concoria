@@ -7,7 +7,7 @@ if Inventory[equipped,0] == ""{
 	
 			if GetMouseDirection() == "left"{
 		
-				sprite_index = template_idle_l
+				drawMode = DRAW.STAND_LEFT;
 		
 				if direction == 0{
 		
@@ -24,7 +24,7 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "right"{
 		
-				sprite_index = template_idle_r
+				drawMode = DRAW.STAND_RIGHT;
 		
 				if direction == 180{
 		
@@ -40,8 +40,8 @@ if Inventory[equipped,0] == ""{
 		
 			}
 			else if GetMouseDirection() == "up"{
-		
-				sprite_index = template_idle_b
+				
+				drawMode = DRAW.STAND_BACK;
 		
 				if direction == 270{
 		
@@ -58,7 +58,7 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "down"{
 		
-				sprite_index = template_idle_f
+				drawMode = DRAW.STAND_FRONT;
 		
 				if direction == 90{
 		
@@ -79,7 +79,7 @@ if Inventory[equipped,0] == ""{
 	
 			if GetMouseDirection() == "left"{
 		
-				sprite_index = template_move_l
+				drawMode = DRAW.WALK_LEFT;
 		
 				if direction == 0{
 		
@@ -100,7 +100,7 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "right"{
 		
-				sprite_index = template_move_r
+				drawMode = DRAW.WALK_RIGHT;
 		
 				if direction == 180{
 		
@@ -119,7 +119,7 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "up"{
 		
-				sprite_index = template_move_b
+				drawMode = DRAW.WALK_BACK;
 		
 				if direction == 270{
 		
@@ -136,7 +136,7 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "down"{
 		
-				sprite_index = template_move_f
+				drawMode = DRAW.WALK_FRONT;
 		
 				if direction == 90{
 		
@@ -161,7 +161,7 @@ if Inventory[equipped,0] == ""{
 	
 			if GetMouseDirection() == "left"{
 		
-				sprite_index = template_idle_attack_l
+				drawMode = DRAW.ATTACK_STAND_LEFT;
 		
 				if direction == 0{
 		
@@ -178,7 +178,7 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "right"{
 		
-				sprite_index = template_idle_attack_r
+					drawMode = DRAW.ATTACK_STAND_RIGHT;
 		
 				if direction == 180{
 		
@@ -195,7 +195,7 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "up"{
 		
-				sprite_index = template_idle_attack_b
+					drawMode = DRAW.ATTACK_STAND_BACK;
 		
 				if direction == 270{
 		
@@ -212,7 +212,7 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "down"{
 		
-				sprite_index = template_idle_attack_f
+					drawMode = DRAW.ATTACK_STAND_FRONT;
 		
 				if direction == 90{
 		
@@ -233,7 +233,7 @@ if Inventory[equipped,0] == ""{
 	
 			if GetMouseDirection() == "left"{
 		
-				sprite_index = template_move_attack_l
+					drawMode = DRAW.ATTACK_WALK_LEFT;
 		
 				if direction == 0{
 		
@@ -254,7 +254,7 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "right"{
 		
-				sprite_index = template_move_attack_r
+				drawMode = DRAW.ATTACK_WALK_RIGHT;
 		
 				if direction == 180{
 		
@@ -273,7 +273,7 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "up"{
 		
-				sprite_index = template_move_attack_b
+				drawMode = DRAW.ATTACK_WALK_BACK;
 		
 				if direction == 270{
 		
@@ -290,7 +290,7 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "down"{
 		
-				sprite_index = template_move_attack_f
+				drawMode = DRAW.ATTACK_WALK_FRONT;
 		
 				if direction == 90{
 		
@@ -321,7 +321,7 @@ else{
 	
 		if GetMouseDirection() == "left"{
 		
-			sprite_index = template_idle_attack_l
+			drawMode = DRAW.ATTACK_STAND_LEFT;
 		
 			if direction == 0{
 		
@@ -338,7 +338,7 @@ else{
 		}
 		else if GetMouseDirection() == "right"{
 		
-			sprite_index = template_idle_attack_r
+			drawMode = DRAW.ATTACK_STAND_RIGHT;
 		
 			if direction == 180{
 		
@@ -357,7 +357,7 @@ else{
 		}
 		else if GetMouseDirection() == "up"{
 		
-			sprite_index = template_idle_attack_b
+			drawMode = DRAW.ATTACK_STAND_BACK;
 		
 			if direction == 270{
 		
@@ -374,7 +374,7 @@ else{
 		}
 		else if GetMouseDirection() == "down"{
 		
-			sprite_index = template_idle_attack_f
+			drawMode = DRAW.ATTACK_STAND_FRONT;
 		
 			if direction == 90{
 		
@@ -395,7 +395,7 @@ else{
 	
 		if GetMouseDirection() == "left"{
 		
-			sprite_index = template_move_attack_l
+			drawMode = DRAW.ATTACK_WALK_LEFT;
 		
 			if direction == 0{
 		
@@ -412,7 +412,7 @@ else{
 		}
 		else if GetMouseDirection() == "right"{
 		
-			sprite_index = template_move_attack_r
+			drawMode = DRAW.ATTACK_WALK_RIGHT;
 		
 			if direction == 180{
 		
@@ -431,7 +431,7 @@ else{
 		}
 		else if GetMouseDirection() == "up"{
 		
-			sprite_index = template_move_attack_b
+			drawMode = DRAW.ATTACK_WALK_BACK;
 		
 			if direction == 270{
 		
@@ -448,7 +448,7 @@ else{
 		}
 		else if GetMouseDirection() == "down"{
 		
-			sprite_index = template_move_attack_f
+			drawMode = DRAW.ATTACK_WALK_FRONT;
 		
 			if direction == 90{
 		

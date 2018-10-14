@@ -8,6 +8,7 @@ hair[2] = hair2_f
 
 hairButtonL = instance_create_layer(x - 288, y -336,"Instances",cc_button_obj)
 hairButtonR = instance_create_layer(x + 160, y -336,"Instances",cc_button_obj)
+playButton = instance_create_layer(x - 128, y +208,"Instances",cc_play_obj)
 with (hairButtonR){
 	
 	sprite_index = sprButtonRight

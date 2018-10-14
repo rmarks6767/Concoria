@@ -43,6 +43,34 @@ Inventory[4,1] = 0
 Inventory[4,2] = "none"
 Inventory[4,3] = false
 
+//Colors and type for drawing CC components
+shirtColor = make_color_rgb(255,255,255);
+skinColor = make_color_rgb(255,255,255);
+pantsColor = make_color_rgb(255,255,255);
+hairColor = make_color_rgb(255,255,255);
+hairType =0;
+enum DRAW{
+	
+	STAND_FRONT,
+	STAND_LEFT,
+	STAND_RIGHT,
+	STAND_BACK,
+	WALK_FRONT,
+	WALK_LEFT,
+	WALK_RIGHT,
+	WALK_BACK,
+	ATTACK_STAND_FRONT,
+	ATTACK_STAND_LEFT,
+	ATTACK_STAND_RIGHT,
+	ATTACK_STAND_BACK,
+	ATTACK_WALK_FRONT,
+	ATTACK_WALK_LEFT,
+	ATTACK_WALK_RIGHT,
+	ATTACK_WALK_BACK,
+	
+}
+drawMode = DRAW.STAND_FRONT
+
 
 arm = instance_create_layer(x,y,"Instances",arm_obj);
 with(arm){

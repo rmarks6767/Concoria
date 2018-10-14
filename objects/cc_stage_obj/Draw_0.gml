@@ -15,7 +15,7 @@ draw_sprite_ext(sprCharStage,0,x,y,3,3,0,c_white,255);
 
 
 //Shirt
-draw_sprite_ext(shirt0_idle_f,0,x,y,6,6,0,shirtColor,255);
+draw_sprite_ext(shirt0_f,0,x,y,6,6,0,shirtColor,255);
 
 //Pants
 draw_sprite_ext(pants_idle_f,0,x,y,6,6,0,pantsColor,255);

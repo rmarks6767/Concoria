@@ -1,0 +1,1 @@
+/// @description Create a player and handoff their vars
