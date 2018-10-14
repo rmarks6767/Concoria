@@ -49,11 +49,11 @@ while(Right <= high)
     Counter++;
     Right++;
 }
-for (l = Counter; l > 0; l--)
+for (l = Low; l < Counter; l++)
 {
-    argument0[l - 1, 0] = result[l - 1, 0];
-	argument0[l - 1, 1] = result[l - 1, 1];
-	argument0[l - 1, 2] = result[l - 1, 2];
-	argument0[l - 1, 3] = result[l - 1, 3];
+    argument0[l, 0] = result[l, 0];
+	argument0[l, 1] = result[l, 1];
+	argument0[l, 2] = result[l, 2];
+	argument0[l, 3] = result[l, 3];
 }
 return argument0;
