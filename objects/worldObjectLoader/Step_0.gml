@@ -1,1 +1,1 @@
-SaveInstances(counterStore, counterFull, objectStorage, storedids);
+objectStorage = SaveInstances(counterStore, numInstances, objectStorage, counterStore)

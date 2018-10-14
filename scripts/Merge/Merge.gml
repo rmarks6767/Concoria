@@ -4,53 +4,56 @@ Mid = argument2
 High = argument3
 Total = argument4
 
-            
-var Left = Low;
-var Counter = Low;
-var Right = Mid + 1;
+var high = floor(High);
+var mid = floor(Mid);       
+var Left = floor(Low);
+var Counter = floor(Low);
+var Right = floor(Mid + 1);
 
-var result
-
-var Lobjx = objectStorage[Left,0];
-var Lobjy = objectStorage[Right,1];
-
-var Robjx = objectStorage[Left,0];
-var Robjy = objectStorage[Right,1];
-
-var LDistance = sqrt(sqr(Lobjx) + sqr(Lobjy));
-
-var RDistance = sqrt(sqr(Robjx) + sqr(Robjy));
-
-
-while(Left <= Mid && Right <= High)
+while(Left <= Mid and Right <= High)
 {
-    if (LDistance < RDistance)
+    if (argument0[Left, 3] < argument0[Right, 3])
     {
-        result[Counter, 2] = objectStorage[Left, 2];
+        result[Counter, 0] = argument0[Left, 0];
+		result[Counter, 1] = argument0[Left, 1];
+		result[Counter, 2] = argument0[Left, 2];
+		result[Counter, 3] = argument0[Left, 3];
         Counter++;
         Left++;
     }
     else
     {
-        result[Counter, 2] = objectStorage[Right, 2];
+        result[Counter, 0] = argument0[Right, 0];
+		result[Counter, 1] = argument0[Right, 1];
+		result[Counter, 2] = argument0[Right, 2];
+		result[Counter, 3] = argument0[Right, 3];
         Counter++;
         Right++;
     }
 }
-while(Left <= Mid)
+while(Left <= mid)
 {
-    result[Counter, 2] = objectStorage[Left, 2];
+    result[Counter, 0] = argument0[Left, 0];
+	result[Counter, 1] = argument0[Left, 1];
+	result[Counter, 2] = argument0[Left, 2];
+	result[Counter, 3] = argument0[Left, 3];
     Counter++;
     Left++;
 }
-while(Right <= High)
+while(Right <= high)
 {
-    result[Counter, 2] = objectStorage[Right, 2];
+    result[Counter, 0] = argument0[Right, 0];
+	result[Counter, 1] = argument0[Right, 1];
+	result[Counter, 2] = argument0[Right, 2];
+	result[Counter, 3] = argument0[Right, 3];
     Counter++;
     Right++;
 }
-for (var i = Counter; i > 0; i--)
+for (l = Counter; l > 0; l--)
 {
-    objectStorage[i, 2] = result[i, 2];
+    argument0[l - 1, 0] = result[l - 1, 0];
+	argument0[l - 1, 1] = result[l - 1, 1];
+	argument0[l - 1, 2] = result[l - 1, 2];
+	argument0[l - 1, 3] = result[l - 1, 3];
 }
-return; //objectStorage;ssssssssssssssssssssssssssssssssssss
+return argument0;
