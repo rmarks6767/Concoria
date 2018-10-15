@@ -1183,6 +1183,14 @@
             }
         },
         {
+            "Key": "7c1eaae6-285e-4ec2-adca-7c7f705021e2",
+            "Value": {
+                "id": "77611233-9d03-4e92-b914-4b4e8491fe32",
+                "resourcePath": "scripts\\EnemyEquipedWeapon\\EnemyEquipedWeapon.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "814dd47e-76ca-419f-9531-23e47185988f",
             "Value": {
                 "id": "c5ac7bca-0ca3-46cd-b860-38514a272704",
@@ -2228,6 +2236,7 @@
         "a694bb7a-037f-4f54-aaef-5248ad0217ae",
         "0af2c7f6-2ae0-4f91-81de-01b49235bd09",
         "b3084bb0-51ac-49c9-b84c-64263d6fb7b5",
+        "7c1eaae6-285e-4ec2-adca-7c7f705021e2",
         "f68f5897-9e49-4591-a2bb-3f05d53523d5",
         "15c5f407-4680-407d-accb-ffb294aa636b",
         "86384ae3-2cad-4814-952a-2ec6599eb1a5",
