@@ -2,17 +2,14 @@ objectStorage = argument0
 Low = argument1
 High = argument2
 Total = argument3
-
-var mid = floor((Low + High) / 2);
-var low = floor(Low);
-var high = floor(High);
-var total = floor(Total);
-
-if (low < high)
+Mid = floor((Low + High) / 2);
+Low = floor(Low);
+High = floor(High);
+Total = floor(Total);
+if (Low < High)
 {
-	MergeSort(objectStorage, low, mid, total);
-	MergeSort(objectStorage, mid + 1, high, total);
-	
-	argument0 = Merge(objectStorage, low, mid, high, total);
+	MergeSort(objectStorage, Low, Mid, Total);
+	MergeSort(objectStorage, Mid + 1, High, Total);
+	argument0 = Merge(objectStorage, Low, Mid, High, Total);
 }
 return argument0;

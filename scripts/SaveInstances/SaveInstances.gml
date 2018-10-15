@@ -1,8 +1,10 @@
+
 //gets the arguments from the worldObjectLoader
 counterStore = argument0     
-objectStorage = argument1
-storedids = argument2
-previousStore = argument3
+counterFull = argument1
+objectStorage = argument2
+storedids = argument3
+
 
 //gets the views from the player's view
 viewx = camera_get_view_x(view_camera[0])   
@@ -21,8 +23,7 @@ viewy2 = viewy1 + viewheight;
 padding = 500;
 
 //gets the number of instances currently active in the room
-var numInstances = instance_count;
-var newvals = 0;
+numInstances = instance_count;
 
 //used for seeing how many instances are currently in the room in any given frame
 show_debug_message(string(numInstances));
@@ -30,88 +31,65 @@ show_debug_message(string(numInstances));
 //the first time it gets the x and y to use for the instance in the room that is checking to store or not
 var fobjx = 0; 
 var fobjy = 0;
-
-//runs the function for the number of instances in the entire room (checking every instance)
+ 
+ 
+//checks to see if the instance should be deactivated or kept in the room based on the view 
 for (i = 0; i < numInstances; i++)  
-{ 
-	//checks the array that stores all of the instances in the room and gets each of their positions in the room
-	with(instance_id[i])  
+{
+	with(instance_id[i])  //instids[i])
 	{
 		fobjx = x;
 		fobjy = y;
 	}
-	//checks to see if the instance should be deactivated or kept in the room based on the view 
 	if ((fobjx < (viewx1 - padding) or fobjx > (viewx2 + padding)) or (fobjy < (viewy1 - padding) or fobjy > (viewy2 + padding)))
 	{
-		//stores the instance id in a new array, only the ones that really need to be stored
-		storedids[counterStore] = instance_id[i];
-		counterStore++;
-	}	
+		storedids[counterStore] = instance_id[i]  //instids[i];	
+		counterStore = counterStore + 1;
+	}
 }
-
-
-//gets the number of how many instances that are outside of the room
-//repeats the analysis for all of the instances outside of the room
-	
-//also only starts the counter at the length of the array
-if previousStore != counterStore
+//will store x, y, instance_id, health, state (if applicable)
+if(array_length_1d(storedids) > 0)
 {
-	for (i = newvals + counterStore; i > counterStore; i--)
+	
+	for (i = counterFull; i < array_length_1d(storedids); i++)
 	{
 			var lobjx = 0;
 			var lobjy = 0;
 			var distance = 0;
-			with (storedids[i])
+			with (storedids[counterFull])
 			{
 				lobjx = x;
 				lobjy = y;
-				distance = round(distance_to_object(player)); //round(sqrt(sqr(abs(player.x - lobjx)) + sqr(abs(player.y - lobjy))));
+				distance = round(distance_to_object(player));
 			}
-			argument1[i, 0] = lobjx;      //x pos of instance
-			argument1[i, 1] = lobjy;  //y pos of instance
-			argument1[i, 2] = storedids[i];    //instance Id
-			argument1[i, 3] = distance
+			objectStorage[i, 0] = lobjx;      //x pos of instance
+			objectStorage[i, 1] = lobjy;  //y pos of instance
+			objectStorage[i, 2] = storedids[counterFull];
+			objectStorage[i, 3] = distance;
+			counterFull++;
+	}
+	var wide = (viewx2 - viewx1) + padding * 2
+	
+	var high =(viewy2 - viewy1) + padding * 2
+	//show_debug_message(string(wide) + "::" + string(high))
+	instance_deactivate_region(viewx1 - padding, viewy1 - padding, wide,high, false, true)
+
+	Low = 0
+	High = array_height_2d(objectStorage) - 1;
+	Total = array_height_2d(objectStorage);
+	objectStorage = MergeSort(objectStorage, Low, High, Total);
+
+	for (p = 0; p < array_length_1d(storedids); p++) 
+	{
+		if array_length_2d(objectStorage, p) > 0
+		{
+			var objx = objectStorage[p, 0];
+			var objy = objectStorage[p, 1];
+			var inst = objectStorage[p, 2];	
+				if ((objx > viewx1 - padding && objx < viewx2 + padding) && (objy > viewy1 - padding && objy < viewy2 + padding))
+				{
+					inst = instance_activate_object(inst)
+				}
+		}
 	}
 }
-
-previousStore = counterStore
-
-var wid = (viewx2 - viewx1) + padding * 2
-var higt= (viewy2 - viewy1) + padding * 2
-instance_deactivate_region(viewx1 - padding, viewy1 - padding, wid, higt, false, true);
-show_debug_message("deactvated")
-Low = 0
-High =  array_height_2d(argument1) - 1;
-Total = array_height_2d(argument1);
-argument1 = MergeSort(argument1, Low, High, Total);
-
-for (p = array_height_2d(argument1) - 1; p >= 0; p--) 
-{
-	var objx = argument1[p, 0];
-	var objy = argument1[p, 1];
-	var inst = argument1[p, 2];
-	if p == 0 and not((objx > viewx1 - padding && objx < viewx2 + padding) && (objy > viewy1 - padding && objy < viewy2 + padding))
-	{
-		break;
-		show_debug_message("BROKE OUT")
-	}
-	if ((objx > (viewx1 - padding) and objx < (viewx2 + padding)) and (objy > (viewy1 - padding) and objy < (viewy2 + padding)))
-	{
-		instance_activate_object(inst)
-		show_debug_message(string(inst))
-		show_debug_message("SPAWNED")
-		//storedids[h] = 0;
-		//counterStore--;
-		//show_debug_message("Counter")
-		//show_debug_message(string(counterStore))
-		//show_debug_message("^^^^^^^^^")
-		argument1[p, 0] = 0
-		argument1[p, 1] = 0	
-		argument1[p, 2] = 0
-		argument1[p, 2] = 0
-		
-	}
-}
-show_debug_message("Counter")
-show_debug_message(string(counterStore))
-return argument1;

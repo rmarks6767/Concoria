@@ -3,13 +3,10 @@ Low = argument1
 Mid = argument2
 High = argument3
 Total = argument4
-
-var high = floor(High);
-var mid = floor(Mid);       
+       
 var Left = floor(Low);
 var Counter = floor(Low);
 var Right = floor(Mid + 1);
-
 while(Left <= Mid and Right <= High)
 {
     if (argument0[Left, 3] < argument0[Right, 3])
@@ -31,7 +28,7 @@ while(Left <= Mid and Right <= High)
         Right++;
     }
 }
-while(Left <= mid)
+while(Left <= Mid)
 {
     result[Counter, 0] = argument0[Left, 0];
 	result[Counter, 1] = argument0[Left, 1];
@@ -40,7 +37,7 @@ while(Left <= mid)
     Counter++;
     Left++;
 }
-while(Right <= high)
+while(Right <= High)
 {
     result[Counter, 0] = argument0[Right, 0];
 	result[Counter, 1] = argument0[Right, 1];
