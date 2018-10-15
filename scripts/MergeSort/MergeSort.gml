@@ -10,6 +10,6 @@ if (Low < High)
 {
 	MergeSort(objectStorage, Low, Mid, Total);
 	MergeSort(objectStorage, Mid + 1, High, Total);
-	argument0 = Merge(objectStorage, Low, Mid, High, Total);
+	Merge(objectStorage, Low, Mid, High, Total);
 }
 return argument0;

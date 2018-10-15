@@ -1,4 +1,4 @@
-objectStorage = SaveInstances(counterStore, counterFull, objectStorage, storedids)
+SaveInstances(counterStore, counterFull, objectStorage, storedids)
 
 x = player.x
 y = player.y

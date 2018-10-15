@@ -77,7 +77,7 @@ if(array_length_1d(storedids) > 0)
 	Low = 0
 	High = array_height_2d(objectStorage) - 1;
 	Total = array_height_2d(objectStorage);
-	objectStorage = MergeSort(objectStorage, Low, High, Total);
+	/*objectStorage = */MergeSort(objectStorage, Low, High, Total);
 
 	for (p = 0; p < array_length_1d(storedids); p++) 
 	{
@@ -93,3 +93,4 @@ if(array_length_1d(storedids) > 0)
 		}
 	}
 }
+return argument2;
