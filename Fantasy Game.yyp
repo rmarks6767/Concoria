@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "13ebdb87-7b7b-4a44-99f7-65b6597c417b",
+            "Value": {
+                "id": "59240415-4bad-4d64-bf95-d559c3d04c83",
+                "resourcePath": "sprites\\brownHorse_move_r\\brownHorse_move_r.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "14790d5c-8c40-4358-bee2-a2b782852f11",
             "Value": {
                 "id": "6d59154a-fd23-4dc0-b7ce-df11357d5b06",
@@ -287,6 +295,14 @@
             }
         },
         {
+            "Key": "229327f1-9e9d-461a-a318-5815b06a7719",
+            "Value": {
+                "id": "7f9a8d77-61e5-48db-82c4-bf25f1e840e7",
+                "resourcePath": "sprites\\brownHorse_move_l\\brownHorse_move_l.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "244374ca-5ade-4413-8c4c-22805f1b9f6c",
             "Value": {
                 "id": "5c80ed0b-91a8-4cee-8688-a89bf0b853c8",
@@ -343,10 +359,26 @@
             }
         },
         {
+            "Key": "276a0a19-9828-4214-a583-a46a98784dd2",
+            "Value": {
+                "id": "9cc350cf-ca91-46b2-9643-a92c22edec15",
+                "resourcePath": "views\\276a0a19-9828-4214-a583-a46a98784dd2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "27733fd2-93ff-4325-9783-fd306558ff3e",
             "Value": {
                 "id": "7db86950-1352-4b51-99d1-648acbd2a0ea",
                 "resourcePath": "sprites\\template_arm_swing_b1\\template_arm_swing_b1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2a96711d-bb7a-4c5d-b4bb-ccd55b02dd2c",
+            "Value": {
+                "id": "e93379de-783d-4ea2-8b16-bfd5e0857b3a",
+                "resourcePath": "sprites\\brownHorse_idle_l\\brownHorse_idle_l.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -631,6 +663,14 @@
             }
         },
         {
+            "Key": "42e6f993-9a0f-4569-8259-4c609675696d",
+            "Value": {
+                "id": "d3a9a29f-4b08-48c7-943a-d655331caf35",
+                "resourcePath": "sprites\\brownHorse_idle_f\\brownHorse_idle_f.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "42ee920d-4fdc-41e4-80fc-d6bb80f01721",
             "Value": {
                 "id": "8cafd114-96dd-416d-a28c-268db96907f1",
@@ -871,6 +911,14 @@
             }
         },
         {
+            "Key": "56fa3f37-295b-4e29-8535-5afa4e97266b",
+            "Value": {
+                "id": "9f7dbfa5-4eab-4a2d-943a-2bf7362b7521",
+                "resourcePath": "sprites\\brownHorse_idle_r\\brownHorse_idle_r.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "57a69df0-d9a7-41fc-a59f-c934b87b4be4",
             "Value": {
                 "id": "67cc0449-f27a-4893-8928-fd0a346ade12",
@@ -1036,6 +1084,14 @@
                 "id": "ac60cfa8-822d-4e09-9ed8-a390356b1c7c",
                 "resourcePath": "sprites\\mythril_iron_swing_f\\mythril_iron_swing_f.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6dfc569f-ec61-4a1d-911e-a9ce72951ecc",
+            "Value": {
+                "id": "1309aa60-2e7d-4df9-8780-9b4cd2303fb1",
+                "resourcePath": "views\\6dfc569f-ec61-4a1d-911e-a9ce72951ecc.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1431,6 +1487,14 @@
             }
         },
         {
+            "Key": "a4be3d6b-696b-420f-9dd6-6e3bfc0f7714",
+            "Value": {
+                "id": "c1b56ca3-a68c-4bd9-a5b9-a4326b35c2c6",
+                "resourcePath": "views\\a4be3d6b-696b-420f-9dd6-6e3bfc0f7714.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a5115611-b7dc-4b4c-96d5-b49cdbdcf958",
             "Value": {
                 "id": "7a21ba1e-697a-47db-8ae6-5c59fb676aa5",
@@ -1655,6 +1719,14 @@
             }
         },
         {
+            "Key": "bb423ace-f667-4709-87c3-f698967f1e36",
+            "Value": {
+                "id": "c5076268-27da-4dfd-bb49-99180239fbe6",
+                "resourcePath": "sprites\\brownHorse_idle_b\\brownHorse_idle_b.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bb487735-8a91-4da0-b922-c9115a9d48cb",
             "Value": {
                 "id": "1cebd595-3376-4b41-80b0-ab4574ec0d8e",
@@ -1747,6 +1819,14 @@
             "Value": {
                 "id": "66bac03d-f7de-458f-8e6b-201f9260da1f",
                 "resourcePath": "views\\c0d802b0-483d-4baf-8211-ced651c69b8d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c1216b70-3397-4782-8c66-f7ef430c2f16",
+            "Value": {
+                "id": "2c3b76bb-1e18-460b-a355-e0ad30a36476",
+                "resourcePath": "views\\c1216b70-3397-4782-8c66-f7ef430c2f16.yy",
                 "resourceType": "GMFolder"
             }
         },
