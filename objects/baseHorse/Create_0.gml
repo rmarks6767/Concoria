@@ -1,7 +1,6 @@
-horseHealth = 100;
+horseHealth = 50;
 inBattle = false;
 fleeing = false;
-
 
 enum horse
 {

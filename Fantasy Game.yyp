@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "0f21c5bb-4116-4482-816b-1d84a391ddbd",
+            "Value": {
+                "id": "6c911118-1d10-4b22-a5f9-9898ca63c25b",
+                "resourcePath": "views\\0f21c5bb-4116-4482-816b-1d84a391ddbd.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "0f827b42-6c9f-46c7-95c1-e256bb2018ff",
             "Value": {
                 "id": "d08ed8d4-0b28-46a2-b52b-61f3f84cc0d6",
@@ -1924,6 +1932,14 @@
                 "id": "ad31985f-0ec4-46db-8598-833ab005b467",
                 "resourcePath": "sprites\\mythril_iron_b\\mythril_iron_b.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c85de007-e166-43e5-a312-324d10cc2d6a",
+            "Value": {
+                "id": "3d8785c8-45ed-442f-93d8-8052aa999ad0",
+                "resourcePath": "views\\c85de007-e166-43e5-a312-324d10cc2d6a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
