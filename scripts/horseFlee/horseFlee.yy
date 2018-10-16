@@ -1,8 +1,8 @@
 {
-    "id": "15c5f407-4680-407d-accb-ffb294aa636b",
+    "id": "b482c63d-716b-4b32-889a-a59bf5417432",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "GetEnemySprite",
+    "name": "horseFlee",
     "IsCompatibility": false,
     "IsDnD": false
 }

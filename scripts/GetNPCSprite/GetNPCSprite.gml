@@ -4,7 +4,7 @@ var npcDirection = argument2; //int Which way the enemy is facing
 var npcSpeed = argument3; //int of speed to check if it is greater than zero
 var ourSprite = 0;
 
-italiansprite[0] =	italian_idle_l
+italiansprite[0] =	italian_idle_l     //pattern is left, right, forward, backward
 italiansprite[1] =	italian_idle_r
 italiansprite[2] =	italian_idle_f
 italiansprite[3] =	italian_idle_b
@@ -21,14 +21,26 @@ italiansprite[13] = italian_move_attack_r
 italiansprite[14] = italian_move_attack_f
 italiansprite[15] = italian_move_attack_b
 
+horsesprite[0] = brownHorse_idle_l
+horsesprite[1] = brownHorse_idle_r
+horsesprite[2] = brownHorse_idle_f
+horsesprite[3] = brownHorse_idle_b
+horsesprite[4] = brownHorse_move_l
+horsesprite[5] = brownHorse_move_r
+horsesprite[6] = brownHorse_move_f
+horsesprite[7] = brownHorse_move_b
+
 
 
 
 switch(name){
 	
 	case "italian":
-	ourSprite = italiansprite;
-		
+		ourSprite = italiansprite;
+		break;
+	
+	case "Brown Horse":
+		ourSprite = horsesprite;
 		break;
 	
 }

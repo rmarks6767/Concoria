@@ -202,7 +202,7 @@
             "Key": "15c5f407-4680-407d-accb-ffb294aa636b",
             "Value": {
                 "id": "cdb0e0ac-3d5a-4eb6-b33f-a7c68c6dabaf",
-                "resourcePath": "scripts\\GetEnemySprite\\GetEnemySprite.yy",
+                "resourcePath": "scripts\\GetNPCSprite\\GetNPCSprite.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -268,6 +268,14 @@
                 "id": "804450c6-c95a-4845-ac7f-815f0d16dd13",
                 "resourcePath": "sprites\\sword_wood_icon\\sword_wood_icon.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1fdd518b-d9cc-4804-b9af-58731840f40d",
+            "Value": {
+                "id": "cb45b198-b920-48c6-98ae-2fbdbbb15578",
+                "resourcePath": "objects\\BrownHorse\\BrownHorse.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -751,6 +759,14 @@
             }
         },
         {
+            "Key": "46ecd2e5-047c-4c63-99eb-ee130ba73604",
+            "Value": {
+                "id": "d91c470c-4629-45fc-b97a-21fcc12b7580",
+                "resourcePath": "objects\\baseHorse\\baseHorse.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "48697ad0-3a25-4c98-9ede-7e1f70ac14c6",
             "Value": {
                 "id": "85551a77-4062-4511-b1ff-bd7123918fbf",
@@ -959,6 +975,14 @@
             }
         },
         {
+            "Key": "5c3f9769-6694-4d26-8e10-aab3da1ad7e4",
+            "Value": {
+                "id": "2840d477-2c32-4d83-9140-5b7311293e8a",
+                "resourcePath": "scripts\\horseWander\\horseWander.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5d1954d2-945b-44ed-a53a-882410b85299",
             "Value": {
                 "id": "65807e84-2113-47b1-8d86-9cdd4e3cb155",
@@ -1164,6 +1188,14 @@
                 "id": "a41a86f7-2cfd-4f20-a954-e8e96d129315",
                 "resourcePath": "objects\\objMongolians\\objMongolians.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "753897d2-4350-47a9-b67d-11d9af30df6a",
+            "Value": {
+                "id": "0ea8bec7-ce74-4cb4-8791-e6b970f61db3",
+                "resourcePath": "sprites\\brownHorse_move_b\\brownHorse_move_b.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1567,6 +1599,14 @@
             }
         },
         {
+            "Key": "ac20f006-7423-4162-a817-2a353878131d",
+            "Value": {
+                "id": "51df8bd2-ba49-4014-bab3-f60aefd7bcea",
+                "resourcePath": "views\\ac20f006-7423-4162-a817-2a353878131d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "ad0118eb-4d3e-4714-b8fd-57c1c515653d",
             "Value": {
                 "id": "434a00cd-0751-4926-9b96-f41a913de2a9",
@@ -1644,6 +1684,14 @@
                 "id": "9f1d82c5-1272-4fd4-bd3b-f879b0d59cf6",
                 "resourcePath": "sprites\\bow_short_pull_r\\bow_short_pull_r.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b482c63d-716b-4b32-889a-a59bf5417432",
+            "Value": {
+                "id": "6fd45403-5b6e-4705-b5d5-1cdf77169018",
+                "resourcePath": "scripts\\horseFlee\\horseFlee.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1887,6 +1935,14 @@
             }
         },
         {
+            "Key": "c95a0b7c-6b2a-46c9-abaa-59d61b9637c3",
+            "Value": {
+                "id": "56650273-12fa-43f7-9d0a-c68a8ca2cc68",
+                "resourcePath": "sprites\\brownHorse_move_f\\brownHorse_move_f.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c9665201-469a-480b-a481-d1975df72366",
             "Value": {
                 "id": "f546e695-e1dd-4292-8f89-a7499f92eaf7",
@@ -2039,6 +2095,14 @@
             }
         },
         {
+            "Key": "db6e99f2-c2f3-476d-bd67-68e42e960b62",
+            "Value": {
+                "id": "e18f43fb-a89b-4429-ac39-3a4f0579af67",
+                "resourcePath": "views\\db6e99f2-c2f3-476d-bd67-68e42e960b62.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "dcfc165d-6a63-4ce6-96f3-d8f878964fbc",
             "Value": {
                 "id": "61a0949d-9a8b-4589-802e-3cebb67d47b2",
@@ -2068,6 +2132,14 @@
                 "id": "13876dcd-d1d1-49a0-8803-9f0cf9845780",
                 "resourcePath": "sprites\\italian_move_attack_b1\\italian_move_attack_b1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e1a63638-9b81-4cf6-89ad-4df055e2ddc1",
+            "Value": {
+                "id": "6e88d9eb-fc8c-42d5-acf1-2d274727d580",
+                "resourcePath": "scripts\\horseRiding\\horseRiding.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2344,7 +2416,10 @@
         "2d4a9028-1e0b-4f9a-8633-b4af10cf3ae5",
         "8d8c6b74-a64d-401c-963d-34291c360ae4",
         "15664165-0e05-45b8-9dde-79512cf568bd",
-        "c9665201-469a-480b-a481-d1975df72366"
+        "c9665201-469a-480b-a481-d1975df72366",
+        "5c3f9769-6694-4d26-8e10-aab3da1ad7e4",
+        "e1a63638-9b81-4cf6-89ad-4df055e2ddc1",
+        "b482c63d-716b-4b32-889a-a59bf5417432"
     ],
     "tutorial": ""
 }
