@@ -4,6 +4,7 @@ switch(drawMode){
 	//STAND
 	case DRAW.STAND_FRONT:
 		
+		
 		draw_sprite_ext(shirt0_f,0,x,y,1,1,0,shirtColor,255)
 		draw_sprite_ext(pants_idle_f,0,x,y,1,1,0,pantsColor,255)
 		break;
@@ -30,25 +31,25 @@ switch(drawMode){
 	case DRAW.WALK_FRONT:
 	
 		draw_sprite_ext(shirt0_f,0,x,y,1,1,0,shirtColor,255)
-		draw_sprite_ext(pants_move_f,0,x,y,1,1,0,pantsColor,255)
+		DrawSpriteAnimated(pants_move_f,image_speed,x,y,pantsColor)
 		break;
 	
 	case DRAW.WALK_LEFT:
 	
 		draw_sprite_ext(shirt0_l,0,x,y,1,1,0,shirtColor,255)
-		draw_sprite_ext(pants_move_l,0,x,y,1,1,0,pantsColor,255)
+		DrawSpriteAnimated(pants_move_l,image_speed,x,y,pantsColor)
 		break;
 
 	case DRAW.WALK_RIGHT:
 	
 		draw_sprite_ext(shirt0_r,0,x,y,1,1,0,shirtColor,255)
-		draw_sprite_ext(pants_move_r,0,x,y,1,1,0,pantsColor,255)
+		DrawSpriteAnimated(pants_move_r,image_speed,x,y,pantsColor)
 		break;
 	
 	case DRAW.WALK_BACK:
 	
 		draw_sprite_ext(shirt0_b,0,x,y,1,1,0,shirtColor,255)
-		draw_sprite_ext(pants_move_b,0,x,y,1,1,0,pantsColor,255)
+		DrawSpriteAnimated(pants_move_b,image_speed,x,y,pantsColor)
 		break;
 		
 	
@@ -83,24 +84,24 @@ switch(drawMode){
 	case DRAW.ATTACK_WALK_FRONT:
 	
 		draw_sprite_ext(shirt0_f,0,x,y,1,1,0,shirtColor,255)
-		draw_sprite_ext(pants_move_f,0,x,y,1,1,0,pantsColor,255)
+		DrawSpriteAnimated(pants_move_f,image_speed,x,y,pantsColor)
 		break;
 	
 	case DRAW.ATTACK_WALK_LEFT:
 	
 		draw_sprite_ext(shirt0_l,0,x,y,1,1,0,shirtColor,255)
-		draw_sprite_ext(pants_move_l,0,x,y,1,1,0,pantsColor,255)
+		DrawSpriteAnimated(pants_move_l,image_speed,x,y,pantsColor)
 		break;
 	
 	case DRAW.ATTACK_WALK_RIGHT:
 	
 		draw_sprite_ext(shirt0_r,0,x,y,1,1,0,shirtColor,255)
-		draw_sprite_ext(pants_move_r,0,x,y,1,1,0,pantsColor,255)
+		DrawSpriteAnimated(pants_move_r,image_speed,x,y,pantsColor)
 		break;
 	
 	case DRAW.ATTACK_WALK_BACK:
 	
 		draw_sprite_ext(shirt0_b,0,x,y,1,1,0,shirtColor,255)
-		draw_sprite_ext(pants_move_b,0,x,y,1,1,0,pantsColor,255)
+		DrawSpriteAnimated(pants_move_b,image_speed,x,y,pantsColor)
 		break;
 }

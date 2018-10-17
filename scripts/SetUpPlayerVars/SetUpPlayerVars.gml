@@ -13,8 +13,9 @@ Str = 0
 Vit = 0
 
 attacking = false
-
 Inventory_Open = false
+imageIndex = 0;
+
 
 //Inventory
 // Slot0: Name

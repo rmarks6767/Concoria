@@ -12,12 +12,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 0{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 			
@@ -29,12 +29,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 180{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 		
@@ -46,12 +46,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 270{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 		
@@ -63,12 +63,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 90{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 		
@@ -84,12 +84,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 0{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 			
@@ -105,12 +105,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 180{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 		
@@ -124,12 +124,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 270{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 		
@@ -141,12 +141,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 90{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 		
@@ -166,12 +166,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 0{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 			
@@ -183,12 +183,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 180{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 		
@@ -200,12 +200,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 270{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 		
@@ -217,12 +217,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 90{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 		
@@ -238,12 +238,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 0{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 			
@@ -259,12 +259,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 180{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 		
@@ -278,12 +278,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 270{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 		
@@ -295,12 +295,12 @@ if Inventory[equipped,0] == ""{
 				if direction == 90{
 		
 			
-					image_speed = -2
+					image_speed = -1
 		
 				}
 				else{
 			
-					image_speed = 2
+					image_speed = 1
 
 				}
 		
@@ -326,12 +326,12 @@ else{
 			if direction == 0{
 		
 			
-				image_speed = -2
+				image_speed = -1
 		
 			}
 			else{
 			
-				image_speed = 2
+				image_speed = 1
 
 			}
 	
@@ -343,12 +343,12 @@ else{
 			if direction == 180{
 		
 			
-				image_speed = -2
+				image_speed = -1
 		
 			}
 			else{
 			
-				image_speed = 2
+				image_speed = 1
 
 			}
 		
@@ -362,12 +362,12 @@ else{
 			if direction == 270{
 		
 			
-				image_speed = -2
+				image_speed = -1
 		
 			}
 			else{
 			
-				image_speed = 2
+				image_speed = 1
 
 			}
 		
@@ -379,12 +379,12 @@ else{
 			if direction == 90{
 		
 			
-				image_speed = -2
+				image_speed = -1
 		
 			}
 			else{
 			
-				image_speed = 2
+				image_speed = 1
 
 			}
 		
@@ -400,12 +400,12 @@ else{
 			if direction == 0{
 		
 			
-				image_speed = -2
+				image_speed = -1
 		
 			}
 			else{
 			
-				image_speed = 2
+				image_speed = 1
 
 			}
 			
@@ -417,12 +417,12 @@ else{
 			if direction == 180{
 		
 			
-				image_speed = -2
+				image_speed = -1
 		
 			}
 			else{
 			
-				image_speed = 2
+				image_speed = 1
 
 			}
 		
@@ -436,12 +436,12 @@ else{
 			if direction == 270{
 		
 			
-				image_speed = -2
+				image_speed = -1
 		
 			}
 			else{
 			
-				image_speed = 2
+				image_speed = 1
 
 			}
 		
@@ -453,12 +453,12 @@ else{
 			if direction == 90{
 		
 			
-				image_speed = -2
+				image_speed = -1
 		
 			}
 			else{
 			
-				image_speed = 2
+				image_speed = 1
 
 			}
 		
@@ -743,3 +743,11 @@ if mouse_wheel_down(){
     }
 
 }
+//reset image index
+if(!attacking and speed = 0){
+
+	imageIndex = 0;
+
+}
+
+

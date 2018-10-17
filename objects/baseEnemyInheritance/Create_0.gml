@@ -10,7 +10,7 @@ inBattle = false;
 itemHolding[0] =  "Iron Sword"//Name
 itemHolding[1] =  "Sword"//Type
 face_direction = direction;
-
+subImage = 0;
 
 
 

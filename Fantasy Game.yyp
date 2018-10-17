@@ -1695,6 +1695,14 @@
             }
         },
         {
+            "Key": "8993b569-acf1-4b6e-81e2-bec41a0f877d",
+            "Value": {
+                "id": "8c9ff1cd-19e0-4846-8865-120baa146045",
+                "resourcePath": "scripts\\DrawSpriteAnimated\\DrawSpriteAnimated.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "89fab315-32b2-47a9-a7ad-60c3d7ad8f95",
             "Value": {
                 "id": "1113bb2b-338e-4d40-a346-040e2244a13f",
@@ -2933,7 +2941,8 @@
         "2f379bc9-cc7f-4228-9e8e-29927d492d85",
         "50b35dae-a817-492b-b22b-6cae385fecca",
         "2d4a9028-1e0b-4f9a-8633-b4af10cf3ae5",
-        "8d8c6b74-a64d-401c-963d-34291c360ae4"
+        "8d8c6b74-a64d-401c-963d-34291c360ae4",
+        "8993b569-acf1-4b6e-81e2-bec41a0f877d"
     ],
     "tutorial": ""
 }

@@ -6,5 +6,3 @@ CheckCollisions()
 with(arm){
 	ArmControl()
 }
-show_debug_message("Draw Mode:" + string(drawMode))
-show_debug_message(string(DRAW.ATTACK_WALK_FRONT))
