@@ -1,4 +1,4 @@
-sprite_index = GetNPCSprite(objectName,inBattle,direction,speed);
+sprite_index = GetEnemySprite(objectName,inBattle,direction,speed);
 face_direction = direction;
 
 switch(thestate)

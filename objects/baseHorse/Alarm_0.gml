@@ -1,4 +1,0 @@
-if fleeing != true
-{
-	horseWander();
-}
