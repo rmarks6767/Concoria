@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "italianHouseOutside",
     "eventList": [
-        {
-            "id": "1618a1bf-a953-4c29-b5b7-cdddf0968500",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "10a0bf64-2f5b-40f2-babc-595c6e0aaa03"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
