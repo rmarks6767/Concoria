@@ -6,3 +6,4 @@ CheckCollisions()
 with(arm){
 	ArmControl()
 }
+Animate()

@@ -1,13 +1,17 @@
 equipped = FindEquippedSlot(self)
 
-//Sprite Handling
+//Sprite,direction, and image speed handling
+
+//UNEQIPPED
 if Inventory[equipped,0] == ""{
 	if attacking == false{
 		if speed == 0{
 	
+		//Unequipped not attacking standing
 			if GetMouseDirection() == "left"{
 		
-				drawMode = DRAW.STAND_LEFT;
+				lastDrawMode = drawMode;
+				drawMode = DRAW.UNEQUIPPED_STAND_LEFT;
 		
 				if direction == 0{
 		
@@ -23,8 +27,9 @@ if Inventory[equipped,0] == ""{
 			
 			}
 			else if GetMouseDirection() == "right"{
-		
-				drawMode = DRAW.STAND_RIGHT;
+				
+				lastDrawMode = drawMode;
+				drawMode = DRAW.UNEQUIPPED_STAND_RIGHT;
 		
 				if direction == 180{
 		
@@ -41,7 +46,8 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "up"{
 				
-				drawMode = DRAW.STAND_BACK;
+				lastDrawMode = drawMode;
+				drawMode = DRAW.UNEQUIPPED_STAND_BACK;
 		
 				if direction == 270{
 		
@@ -58,7 +64,8 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "down"{
 		
-				drawMode = DRAW.STAND_FRONT;
+				lastDrawMode = drawMode;
+				drawMode = DRAW.UNEQUIPPED_STAND_FRONT;
 		
 				if direction == 90{
 		
@@ -75,11 +82,14 @@ if Inventory[equipped,0] == ""{
 			}
 
 		}
+		
+		//Unequipped not attacking moving
 		else{
 	
 			if GetMouseDirection() == "left"{
 		
-				drawMode = DRAW.WALK_LEFT;
+				lastDrawMode = drawMode;
+				drawMode = DRAW.UNEQUIPPED_WALK_LEFT;
 		
 				if direction == 0{
 		
@@ -100,7 +110,8 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "right"{
 		
-				drawMode = DRAW.WALK_RIGHT;
+				lastDrawMode = drawMode;
+				drawMode = DRAW.UNEQUIPPED_WALK_RIGHT;
 		
 				if direction == 180{
 		
@@ -119,7 +130,8 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "up"{
 		
-				drawMode = DRAW.WALK_BACK;
+				lastDrawMode = drawMode;
+				drawMode = DRAW.UNEQUIPPED_WALK_BACK;
 		
 				if direction == 270{
 		
@@ -136,7 +148,8 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "down"{
 		
-				drawMode = DRAW.WALK_FRONT;
+				lastDrawMode = drawMode;
+				drawMode = DRAW.UNEQUIPPED_WALK_FRONT;
 		
 				if direction == 90{
 		
@@ -156,12 +169,14 @@ if Inventory[equipped,0] == ""{
 		}
 		
 	}
-	else{//IF WE'RE ATTACKING
+	//Unequipped attacking standing
+	else{
 		if speed == 0{
 	
 			if GetMouseDirection() == "left"{
 		
-				drawMode = DRAW.ATTACK_STAND_LEFT;
+				lastDrawMode = drawMode;
+				drawMode = DRAW.UNEQUIPPED_ATTACK_STAND_LEFT;
 		
 				if direction == 0{
 		
@@ -178,7 +193,8 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "right"{
 		
-					drawMode = DRAW.ATTACK_STAND_RIGHT;
+					lastDrawMode = drawMode;
+					drawMode = DRAW.UNEQUIPPED_ATTACK_STAND_RIGHT;
 		
 				if direction == 180{
 		
@@ -195,7 +211,8 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "up"{
 		
-					drawMode = DRAW.ATTACK_STAND_BACK;
+					lastDrawMode = drawMode;
+					drawMode = DRAW.UNEQUIPPED_ATTACK_STAND_BACK;
 		
 				if direction == 270{
 		
@@ -212,7 +229,8 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "down"{
 		
-					drawMode = DRAW.ATTACK_STAND_FRONT;
+					lastDrawMode = drawMode;
+					drawMode = DRAW.UNEQUIPPED_ATTACK_STAND_FRONT;
 		
 				if direction == 90{
 		
@@ -229,11 +247,13 @@ if Inventory[equipped,0] == ""{
 			}
 
 		}
+		//Unequipped attacking moving
 		else{
 	
 			if GetMouseDirection() == "left"{
 		
-					drawMode = DRAW.ATTACK_WALK_LEFT;
+					lastDrawMode = drawMode;
+					drawMode = DRAW.UNEQUIPPED_ATTACK_WALK_LEFT;
 		
 				if direction == 0{
 		
@@ -254,7 +274,8 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "right"{
 		
-				drawMode = DRAW.ATTACK_WALK_RIGHT;
+				lastDrawMode = drawMode;
+				drawMode = DRAW.UNEQUIPPED_ATTACK_WALK_RIGHT;
 		
 				if direction == 180{
 		
@@ -273,7 +294,8 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "up"{
 		
-				drawMode = DRAW.ATTACK_WALK_BACK;
+				lastDrawMode = drawMode;
+				drawMode = DRAW.UNEQUIPPED_ATTACK_WALK_BACK;
 		
 				if direction == 270{
 		
@@ -290,7 +312,170 @@ if Inventory[equipped,0] == ""{
 			}
 			else if GetMouseDirection() == "down"{
 		
-				drawMode = DRAW.ATTACK_WALK_FRONT;
+				lastDrawMode = drawMode;
+				drawMode = DRAW.UNEQUIPPED_ATTACK_WALK_FRONT;
+		
+				if direction == 90{
+		
+			
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
+
+				}
+			}
+		}
+	}
+}
+//EQUIPPED
+else{
+	
+	if attacking == false{
+		if speed == 0{
+		
+			//Equipped not attacking standing
+			if GetMouseDirection() == "left"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_STAND_LEFT;
+		
+				if direction == 0{
+		
+			
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
+
+				}
+	
+			}
+			else if GetMouseDirection() == "right"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_STAND_RIGHT;
+		
+				if direction == 180{
+		
+			
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
+
+				}
+		
+		
+		
+			}
+			else if GetMouseDirection() == "up"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_STAND_BACK;
+		
+				if direction == 270{
+		
+			
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
+
+				}
+		
+			}
+			else if GetMouseDirection() == "down"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_STAND_FRONT;
+		
+				if direction == 90{
+		
+			
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
+
+				}
+		
+			}
+
+		}
+		//Equipped not attacking moving
+		else{
+	
+			if GetMouseDirection() == "left"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_WALK_LEFT;
+		
+				if direction == 0{
+		
+			
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
+
+				}
+			
+			}
+			else if GetMouseDirection() == "right"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_WALK_RIGHT;
+		
+				if direction == 180{
+		
+			
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
+
+				}
+		
+		
+		
+			}
+			else if GetMouseDirection() == "up"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_WALK_BACK;
+		
+				if direction == 270{
+		
+			
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
+
+				}
+		
+			}
+			else if GetMouseDirection() == "down"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_WALK_FRONT;
 		
 				if direction == 90{
 		
@@ -306,167 +491,174 @@ if Inventory[equipped,0] == ""{
 		
 		
 			}
-
-		}
-		
-		
-		
-		
-	}
-	
-}
-else{
-	
-	if speed == 0{
-	
-		if GetMouseDirection() == "left"{
-		
-			drawMode = DRAW.ATTACK_STAND_LEFT;
-		
-			if direction == 0{
-		
-			
-				image_speed = -1
-		
-			}
-			else{
-			
-				image_speed = 1
-
-			}
 	
 		}
-		else if GetMouseDirection() == "right"{
-		
-			drawMode = DRAW.ATTACK_STAND_RIGHT;
-		
-			if direction == 180{
-		
-			
-				image_speed = -1
-		
-			}
-			else{
-			
-				image_speed = 1
-
-			}
-		
-		
-		
-		}
-		else if GetMouseDirection() == "up"{
-		
-			drawMode = DRAW.ATTACK_STAND_BACK;
-		
-			if direction == 270{
-		
-			
-				image_speed = -1
-		
-			}
-			else{
-			
-				image_speed = 1
-
-			}
-		
-		}
-		else if GetMouseDirection() == "down"{
-		
-			drawMode = DRAW.ATTACK_STAND_FRONT;
-		
-			if direction == 90{
-		
-			
-				image_speed = -1
-		
-			}
-			else{
-			
-				image_speed = 1
-
-			}
-		
-		}
-
+				
 	}
 	else{
+		if speed == 0{
+		
+			//Equipped attacking standing
+			if GetMouseDirection() == "left"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_ATTACK_STAND_LEFT;
+		
+				if direction == 0{
+		
+			
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
+
+				}
 	
-		if GetMouseDirection() == "left"{
-		
-			drawMode = DRAW.ATTACK_WALK_LEFT;
-		
-			if direction == 0{
-		
-			
-				image_speed = -1
-		
 			}
-			else{
+			else if GetMouseDirection() == "right"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_ATTACK_STAND_RIGHT;
+		
+				if direction == 180{
+		
 			
-				image_speed = 1
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
 
-			}
-			
-		}
-		else if GetMouseDirection() == "right"{
+				}
 		
-			drawMode = DRAW.ATTACK_WALK_RIGHT;
 		
-			if direction == 180{
-		
-			
-				image_speed = -1
 		
 			}
-			else{
+			else if GetMouseDirection() == "up"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_ATTACK_STAND_BACK;
+		
+				if direction == 270{
+		
 			
-				image_speed = 1
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
 
-			}
-		
-		
-		
-		}
-		else if GetMouseDirection() == "up"{
-		
-			drawMode = DRAW.ATTACK_WALK_BACK;
-		
-			if direction == 270{
-		
-			
-				image_speed = -1
+				}
 		
 			}
-			else{
+			else if GetMouseDirection() == "down"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_ATTACK_STAND_FRONT;
+		
+				if direction == 90{
+		
 			
-				image_speed = 1
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
 
-			}
-		
-		}
-		else if GetMouseDirection() == "down"{
-		
-			drawMode = DRAW.ATTACK_WALK_FRONT;
-		
-			if direction == 90{
-		
-			
-				image_speed = -1
+				}
 		
 			}
-			else{
-			
-				image_speed = 1
 
-			}
-		
-		
 		}
+		//Equipped attacking moving
+		else{
 	
+			if GetMouseDirection() == "left"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_ATTACK_WALK_LEFT;
+		
+				if direction == 0{
+		
+			
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
+
+				}
+			
+			}
+			else if GetMouseDirection() == "right"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_ATTACK_WALK_RIGHT;
+		
+				if direction == 180{
+		
+			
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
+
+				}
+		
+		
+		
+			}
+			else if GetMouseDirection() == "up"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_ATTACK_WALK_BACK;
+		
+				if direction == 270{
+		
+			
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
+
+				}
+		
+			}
+			else if GetMouseDirection() == "down"{
+		
+				lastDrawMode = drawMode;
+				drawMode = DRAW.EQUIPPED_ATTACK_WALK_FRONT;
+		
+				if direction == 90{
+		
+			
+					image_speed = -1
+		
+				}
+				else{
+			
+					image_speed = 1
+
+				}
+		
+		
+			}
+	
+		}
+			
+		
 	}
-
+		
 }
 
 
@@ -744,10 +936,4 @@ if mouse_wheel_down(){
 
 }
 //reset image index
-if(!attacking and speed = 0){
-
-	imageIndex = 0;
-
-}
-
 
