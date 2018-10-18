@@ -5,6 +5,7 @@
 solidArray[0] = solid_obj;
 solidArray[1] = player;
 solidArray[2] = baseEnemyInheritance;
+solidArray[3] = baseHorse;
 
 //Loop through and check for each type of object
 for	(var i = 0; i < array_length_1d(solidArray); i++)
