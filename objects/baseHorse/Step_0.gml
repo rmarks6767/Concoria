@@ -25,3 +25,4 @@ if baseHorse.horseHealth <= 0
 {
 	instance_destroy(self);
 }
+

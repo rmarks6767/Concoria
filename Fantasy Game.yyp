@@ -191,14 +191,6 @@
             }
         },
         {
-            "Key": "15664165-0e05-45b8-9dde-79512cf568bd",
-            "Value": {
-                "id": "1116cf31-518d-44f8-bdfb-5b9ae540c540",
-                "resourcePath": "scripts\\entering\\entering.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "15866137-669c-4230-9d0c-da9283a0b490",
             "Value": {
                 "id": "38c36f01-7042-469e-8e59-1d7bf6c657dc",
@@ -523,6 +515,14 @@
             "Value": {
                 "id": "5e0fa115-c5ed-42b8-9010-f73f663ceba3",
                 "resourcePath": "sprites\\sword_wood_l\\sword_wood_l.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "399eede0-4616-4ac1-8c34-99c11d7b3eaf",
+            "Value": {
+                "id": "b60983c9-cd9a-44d3-8076-ea5182409fdc",
+                "resourcePath": "sprites\\horse_player_b\\horse_player_b.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1447,6 +1447,14 @@
             }
         },
         {
+            "Key": "9128163a-d485-477d-a104-c4b0dcb0fac9",
+            "Value": {
+                "id": "a734aa8b-84eb-458b-a8eb-673d40233250",
+                "resourcePath": "sprites\\horse_player_f\\horse_player_f.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "91d1a039-ecc3-4ebb-b03c-7b44cf4390b1",
             "Value": {
                 "id": "75d1cc6c-a13f-4dfe-9653-dc865d1362d6",
@@ -1959,14 +1967,6 @@
             }
         },
         {
-            "Key": "c9665201-469a-480b-a481-d1975df72366",
-            "Value": {
-                "id": "f546e695-e1dd-4292-8f89-a7499f92eaf7",
-                "resourcePath": "scripts\\exiting\\exiting.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "c96addc0-3d75-4372-af58-8247e011a3e3",
             "Value": {
                 "id": "d6ea42e5-c159-463f-a017-f8614cef9181",
@@ -1988,14 +1988,6 @@
                 "id": "5bfa6e01-fcac-405d-8ffb-45560374523a",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
-            }
-        },
-        {
-            "Key": "ced62a88-78e9-4272-b303-3e5b0cfddca5",
-            "Value": {
-                "id": "23659e12-97f8-4d31-8174-3a7561ce8e81",
-                "resourcePath": "views\\ced62a88-78e9-4272-b303-3e5b0cfddca5.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -2431,8 +2423,6 @@
         "50b35dae-a817-492b-b22b-6cae385fecca",
         "2d4a9028-1e0b-4f9a-8633-b4af10cf3ae5",
         "8d8c6b74-a64d-401c-963d-34291c360ae4",
-        "15664165-0e05-45b8-9dde-79512cf568bd",
-        "c9665201-469a-480b-a481-d1975df72366",
         "5c3f9769-6694-4d26-8e10-aab3da1ad7e4",
         "e1a63638-9b81-4cf6-89ad-4df055e2ddc1",
         "b482c63d-716b-4b32-889a-a59bf5417432"
