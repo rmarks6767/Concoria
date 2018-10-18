@@ -1,0 +1,23 @@
+/// @description Insert description here
+if(
+drawMode == DRAW.UNEQUIPPED_WALK_FRONT or
+drawMode == DRAW.UNEQUIPPED_WALK_LEFT or
+drawMode == DRAW.UNEQUIPPED_WALK_RIGHT or
+drawMode == DRAW.UNEQUIPPED_WALK_BACK or
+drawMode == DRAW.UNEQUIPPED_ATTACK_WALK_FRONT or
+drawMode == DRAW.UNEQUIPPED_ATTACK_WALK_LEFT or
+drawMode == DRAW.UNEQUIPPED_ATTACK_WALK_RIGHT or
+drawMode == DRAW.UNEQUIPPED_ATTACK_WALK_BACK or
+drawMode == DRAW.EQUIPPED_WALK_FRONT or
+drawMode == DRAW.EQUIPPED_WALK_LEFT or
+drawMode == DRAW.EQUIPPED_WALK_RIGHT or
+drawMode == DRAW.EQUIPPED_WALK_BACK or
+drawMode == DRAW.EQUIPPED_ATTACK_WALK_FRONT or 
+drawMode == DRAW.EQUIPPED_ATTACK_WALK_LEFT or
+drawMode ==	DRAW.EQUIPPED_ATTACK_WALK_RIGHT or
+drawMode == DRAW.EQUIPPED_ATTACK_WALK_BACK
+){
+	
+	self.imageIndex += abs(spriteSpeed);
+	
+}

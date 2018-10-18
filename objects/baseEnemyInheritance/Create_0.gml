@@ -37,8 +37,10 @@ if weaponUsed == 0{
 	itemHolding[1] = ""
 	ranged = false;
 }
-
 face_direction = direction;
+subImage = 0;
+drawMode = DRAW.UNEQUIPPED_STAND_FRONT;
+lastDrawMode = drawMode;
 
 //pasta people inventory
 dropables[0, 0] = "ItalianPeople"; //enemy type

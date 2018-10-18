@@ -1,5 +1,5 @@
 {
-    "id": "3af6430a-5b27-4212-9186-067f05bb19ac",
+    "id": "3af6430a-5b27-4212-9186-067f05bb19ac"
     "modelName": "GMFolder",
     "mvc": "1.1",
     "name": "3af6430a-5b27-4212-9186-067f05bb19ac",
@@ -18,7 +18,7 @@
         "50b35dae-a817-492b-b22b-6cae385fecca",
         "2d4a9028-1e0b-4f9a-8633-b4af10cf3ae5",
         "8d8c6b74-a64d-401c-963d-34291c360ae4",
-        "db6e99f2-c2f3-476d-bd67-68e42e960b62"
+        "8993b569-acf1-4b6e-81e2-bec41a0f877d"
     ],
     "filterType": "GMScript",
     "folderName": "scripts",
