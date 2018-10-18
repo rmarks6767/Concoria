@@ -39,6 +39,7 @@ with(owner){
 
 
 
+
 //Display arm at proper depth
 
 if NumDirectionToString(owner.face_direction) == "left"{

@@ -1,7 +1,7 @@
-houseWidth = x + 226;
-houseHeight = y + 370;
+houseWidth = x + 241;
+houseHeight = y + 500;
 house_x = x;
-house_y = y + 150;
+house_y = y + 20;
 
 	if ((player.x > house_x && player.x < houseWidth) && (player.y > house_y && player.y < houseHeight))
 	{
@@ -23,11 +23,4 @@ house_y = y + 150;
 			}
 		}
 	}
-	//if (player.y < y)
-	//{
-	//	depth = player.depth - 1;	
-	//}
-	//else
-	//{
-	//	depth = player.depth + 1;	
-	//}
+

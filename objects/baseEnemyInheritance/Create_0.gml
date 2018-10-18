@@ -7,40 +7,13 @@ playerClose = false;
 enemyFriendly = true;
 attacking = false;
 inBattle = false;
-ranged = true;  // used for adding distance for the ranged weapons
-
-
-var weaponUsed = round(random_range(0,4));
-
-if weaponUsed == 0{
-	itemHolding[0] =  "Iron Sword"
-    itemHolding[1] =  "Sword"
-	ranged = false;
-}else if weaponUsed == 1{
-	itemHolding[0] = "Wooden Sword" 
-	itemHolding[1] = "Sword"
-	ranged = false;
-}else if weaponUsed == 2{
-	itemHolding[0] = "Short Bow" 
-	itemHolding[1] = "Bow" 
-	ranged = true;
-}else if weaponUsed == 3{
-	itemHolding[0] = "Wooden Staff" 
-	itemHolding[1] = "Staff" 
-	ranged = true;
-}else if weaponUsed == 4{
-	itemHolding[0] = ""  //they spawn wesponless
-	itemHolding[1] = ""
-	ranged = false;
-}else{
-	itemHolding[0] = "" 
-	itemHolding[1] = ""
-	ranged = false;
-}
+itemHolding[0] =  "Iron Sword"//Name
+itemHolding[1] =  "Sword"//Type
 face_direction = direction;
 subImage = 0;
 drawMode = DRAW.UNEQUIPPED_STAND_FRONT;
 lastDrawMode = drawMode;
+
 
 //pasta people inventory
 dropables[0, 0] = "ItalianPeople"; //enemy type
@@ -132,9 +105,9 @@ enum state
 }
 //initializes the enemy in the stationary state
 thestate = state.stationary;
-
 arm = instance_create_layer(x,y,"Instances",arm_obj);
 with (arm){
+	
 	owner = other;
 	
 }
