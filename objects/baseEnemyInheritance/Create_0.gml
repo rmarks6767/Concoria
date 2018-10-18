@@ -8,6 +8,7 @@ enemyFriendly = true;
 attacking = false;
 inBattle = false;
 ranged = true;  // used for adding distance for the ranged weapons
+Str = 0;
 
 
 var weaponUsed = round(random_range(0,4));

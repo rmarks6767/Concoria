@@ -127,6 +127,22 @@
             }
         },
         {
+            "Key": "0af5db0d-8f4a-4774-a24b-9f7089982f73",
+            "Value": {
+                "id": "cb0a7364-7d3f-4c61-8cc6-907506c25629",
+                "resourcePath": "sprites\\spritalianHouse\\spritalianHouse.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0b60faa4-3295-4781-a5b1-5062793d0127",
+            "Value": {
+                "id": "655acbeb-fc9e-445c-90db-5949afad8985",
+                "resourcePath": "sprites\\sprItalianHouseOpen\\sprItalianHouseOpen.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0c438865-4f19-4c6f-9368-cbcfa41fd9d0",
             "Value": {
                 "id": "6b23049c-53cf-4128-beb0-ee292dc73544",
@@ -195,14 +211,6 @@
             "Value": {
                 "id": "21eec639-e886-4dd1-b640-d27d273a1264",
                 "resourcePath": "sprites\\skin0_idle_attack_f\\skin0_idle_attack_f.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "11e5a256-c280-4ea3-accb-3248d2145a5c",
-            "Value": {
-                "id": "fc650b6c-07d8-445d-9cd2-bd7202ae0c26",
-                "resourcePath": "sprites\\sprItalianHouse\\sprItalianHouse.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2691,14 +2699,6 @@
             "Value": {
                 "id": "61a0949d-9a8b-4589-802e-3cebb67d47b2",
                 "resourcePath": "sprites\\template_arm_l\\template_arm_l.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "df279dd3-0696-4352-8f2d-f40fc97fc7ea",
-            "Value": {
-                "id": "015b2b51-405f-4aa8-af44-89dcb7187a3f",
-                "resourcePath": "sprites\\sprItalianHouseOpen\\sprItalianHouseOpen.yy",
                 "resourceType": "GMSprite"
             }
         },
