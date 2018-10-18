@@ -10,8 +10,9 @@ inBattle = false;
 itemHolding[0] =  "Iron Sword"//Name
 itemHolding[1] =  "Sword"//Type
 face_direction = direction;
-
-
+subImage = 0;
+drawMode = DRAW.UNEQUIPPED_STAND_FRONT;
+lastDrawMode = drawMode;
 
 
 //pasta people inventory

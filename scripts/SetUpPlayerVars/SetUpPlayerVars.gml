@@ -11,10 +11,12 @@ Agil = 0
 Dex = 0
 Str = 0
 Vit = 0
-
+//Determine player's attacking state
 attacking = false
-
 Inventory_Open = false
+//The current index of the subimage of an animated sprite
+imageIndex = 0;
+
 
 //Inventory
 // Slot0: Name
@@ -43,6 +45,53 @@ Inventory[4,1] = 0
 Inventory[4,2] = "none"
 Inventory[4,3] = false
 
+
+//Colors and type for drawing CC components
+shirtColor = make_color_rgb(255,255,255);
+skinColor = make_color_rgb(255,255,255);
+pantsColor = make_color_rgb(255,255,255);
+hairColor = make_color_rgb(255,255,255);
+hairType = 0;
+
+//Draw type enums
+enum DRAW{
+	
+	UNEQUIPPED_STAND_FRONT,
+	UNEQUIPPED_STAND_LEFT,
+	UNEQUIPPED_STAND_RIGHT,
+	UNEQUIPPED_STAND_BACK,
+	UNEQUIPPED_WALK_FRONT,
+	UNEQUIPPED_WALK_LEFT,
+	UNEQUIPPED_WALK_RIGHT,
+	UNEQUIPPED_WALK_BACK,
+	UNEQUIPPED_ATTACK_STAND_FRONT,
+	UNEQUIPPED_ATTACK_STAND_LEFT,
+	UNEQUIPPED_ATTACK_STAND_RIGHT,
+	UNEQUIPPED_ATTACK_STAND_BACK,
+	UNEQUIPPED_ATTACK_WALK_FRONT,
+	UNEQUIPPED_ATTACK_WALK_LEFT,
+	UNEQUIPPED_ATTACK_WALK_RIGHT,
+	UNEQUIPPED_ATTACK_WALK_BACK,
+	EQUIPPED_STAND_FRONT,
+	EQUIPPED_STAND_LEFT,
+	EQUIPPED_STAND_RIGHT,
+	EQUIPPED_STAND_BACK,
+	EQUIPPED_WALK_FRONT,
+	EQUIPPED_WALK_LEFT,
+	EQUIPPED_WALK_RIGHT,
+	EQUIPPED_WALK_BACK,
+	EQUIPPED_ATTACK_STAND_FRONT,
+	EQUIPPED_ATTACK_STAND_LEFT,
+	EQUIPPED_ATTACK_STAND_RIGHT,
+	EQUIPPED_ATTACK_STAND_BACK,
+	EQUIPPED_ATTACK_WALK_FRONT,
+	EQUIPPED_ATTACK_WALK_LEFT,
+	EQUIPPED_ATTACK_WALK_RIGHT,
+	EQUIPPED_ATTACK_WALK_BACK,
+	
+}
+drawMode = DRAW.UNEQUIPPED_STAND_FRONT;
+lastDrawMode = drawMode;
 
 arm = instance_create_layer(x,y,"Instances",arm_obj);
 with(arm){
