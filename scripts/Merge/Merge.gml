@@ -54,3 +54,4 @@ for (l = Low; l < Counter; l++)
 	objectStorage[l, 3] = result[l, 3];
 }
 return argument0;
+

@@ -13,3 +13,4 @@ if (Low < High)
 	Merge(objectStorage, Low, Mid, High, Total);
 }
 return argument0;
+
