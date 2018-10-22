@@ -1,22 +1,8 @@
 //Purpose: Control The movement of the arm object
 
-
-
-
-
-
 //Keep the Arm Attached to the Player when he moves
-//if owner.speed == 0{
-
-    x = owner.x;
-    y = owner.y;
-    
-//}
-//else{
-
     x = x + lengthdir_x(owner.speed, owner.direction);
 	y = y + lengthdir_y(owner.speed, owner.direction);
-//}
 
 
 //Grab the equipped item's name from the inventory and store it in the arm
@@ -48,7 +34,7 @@ if NumDirectionToString(owner.face_direction) == "left"{
 }
 else if NumDirectionToString(owner.face_direction) == "right"{
 		
-	depth = -1
+	depth = 1
 		
 }
 else if NumDirectionToString(owner.face_direction) == "up"{
@@ -58,9 +44,10 @@ else if NumDirectionToString(owner.face_direction) == "up"{
 }
 else if NumDirectionToString(owner.face_direction) == "down"{
 		
-	depth = -1
+	depth = 1
 			
 }
+
 
 if owner.objectName == "player"{
 	

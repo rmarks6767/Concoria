@@ -2439,6 +2439,14 @@
             }
         },
         {
+            "Key": "c3fb6e81-29cb-40a3-a86f-492d891dbabf",
+            "Value": {
+                "id": "0115ad35-a03f-4866-b931-e47eb1936aa9",
+                "resourcePath": "scripts\\GetHairSprite\\GetHairSprite.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c4b40881-3b10-451f-a82d-1acefc4da940",
             "Value": {
                 "id": "3b8b87ad-680b-4f04-b4fb-9631664047f9",
@@ -3106,7 +3114,8 @@
         "8993b569-acf1-4b6e-81e2-bec41a0f877d",
         "b482c63d-716b-4b32-889a-a59bf5417432",
         "5c3f9769-6694-4d26-8e10-aab3da1ad7e4",
-        "e1a63638-9b81-4cf6-89ad-4df055e2ddc1"
+        "e1a63638-9b81-4cf6-89ad-4df055e2ddc1",
+        "c3fb6e81-29cb-40a3-a86f-492d891dbabf"
     ],
     "tutorial": ""
 }
