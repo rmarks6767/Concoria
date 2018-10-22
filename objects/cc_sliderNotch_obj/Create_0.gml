@@ -1,5 +1,6 @@
 /// @description Insert description here
 minx = x;
 maxx = x+255;
-sliderNum = 0;
+x = maxx;
+sliderNum = 255;
 pressed = false;
