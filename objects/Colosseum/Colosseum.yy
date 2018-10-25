@@ -1,8 +1,8 @@
 {
-    "id": "244374ca-5ade-4413-8c4c-22805f1b9f6c",
+    "id": "8c2c1b66-4271-4930-bfe1-a157092c028d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "solid_obj",
+    "name": "Colosseum",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "94a94000-0388-4894-bd51-e05919460823",
+    "spriteId": "78baa9ae-ff32-4d92-83a2-195a37dd8d99",
     "visible": true
 }
