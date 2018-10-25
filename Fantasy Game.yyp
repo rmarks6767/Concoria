@@ -991,6 +991,14 @@
             }
         },
         {
+            "Key": "4780e111-2917-49da-9919-8f35af4777c6",
+            "Value": {
+                "id": "62c1494b-fbfe-403a-9a46-67bc2e6e5a64",
+                "resourcePath": "objects\\italianHouseOutside1\\italianHouseOutside1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4842b5cf-4fc9-485f-8b24-a35db13b6d9f",
             "Value": {
                 "id": "9431be92-ade4-46af-8a0e-1e3de4260585",
@@ -1107,6 +1115,14 @@
             "Value": {
                 "id": "918bce76-d007-4323-be9f-319ec177a2c0",
                 "resourcePath": "sprites\\mythril_iron_world\\mythril_iron_world.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4f38cc4e-a554-4c59-a0a4-5a7f214022fa",
+            "Value": {
+                "id": "3444fb44-d79b-4cf3-8686-983199e9ee8e",
+                "resourcePath": "sprites\\sprItalianHouseOpen1\\sprItalianHouseOpen1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1599,6 +1615,14 @@
             }
         },
         {
+            "Key": "78baa9ae-ff32-4d92-83a2-195a37dd8d99",
+            "Value": {
+                "id": "c71d8a61-9982-4c2d-80cd-25631e66945d",
+                "resourcePath": "sprites\\sprColeseum\\sprColeseum.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "78d5355c-5607-4640-974e-2bea2582509c",
             "Value": {
                 "id": "7a3b8c09-4995-44d4-87e9-a29f01d00980",
@@ -1651,6 +1675,14 @@
             "Value": {
                 "id": "a8e49f25-5b81-42d0-a46d-8f52bddeffd3",
                 "resourcePath": "sprites\\shirt0_move_attack_l\\shirt0_move_attack_l.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "80d3e40f-c828-4096-a607-df4266c88f99",
+            "Value": {
+                "id": "d34740c6-910e-4196-89f6-cbd636dd7346",
+                "resourcePath": "sprites\\spritalianHouse2\\spritalianHouse2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1815,6 +1847,14 @@
             }
         },
         {
+            "Key": "8c2c1b66-4271-4930-bfe1-a157092c028d",
+            "Value": {
+                "id": "dde4c00b-6dcf-4b22-ba93-d3f3127331c0",
+                "resourcePath": "objects\\Colosseum\\Colosseum.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8d8c6b74-a64d-401c-963d-34291c360ae4",
             "Value": {
                 "id": "47763180-3fb1-4ef3-bc53-eaf23ff53a4d",
@@ -1860,6 +1900,14 @@
                 "id": "15ffcb1a-c00f-421c-b8ca-c28b70a77c82",
                 "resourcePath": "sprites\\sprPlay\\sprPlay.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9247e1ea-1bbf-4fa3-a4f5-530329d55db9",
+            "Value": {
+                "id": "53fe11c8-69c0-492a-ae62-e2fd89848e2d",
+                "resourcePath": "objects\\italianHouse1\\italianHouse1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2279,10 +2327,26 @@
             }
         },
         {
+            "Key": "ba7a30ba-e34e-4284-9ab4-1ed0944d1051",
+            "Value": {
+                "id": "596f7131-ce11-4081-8645-4900033f6e44",
+                "resourcePath": "objects\\object40\\object40.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ba7c1803-8e15-44c7-91a7-b2f6d678f22f",
             "Value": {
                 "id": "9affcf60-a29c-47ae-b7ba-895e335a9d29",
                 "resourcePath": "sprites\\italian_arm_f\\italian_arm_f.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bac05a49-1889-4407-bf05-331140dd4638",
+            "Value": {
+                "id": "3a0b8754-e72f-4860-a106-43cb13e85857",
+                "resourcePath": "sprites\\spritalianHouse1\\spritalianHouse1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2679,6 +2743,14 @@
             }
         },
         {
+            "Key": "d77bc1d8-9686-489c-ab3e-44a1e762e6b8",
+            "Value": {
+                "id": "e4f83d67-e4e1-45c1-9508-2dcda9fe048b",
+                "resourcePath": "sprites\\sprItalianHouseOpen2\\sprItalianHouseOpen2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d78ea00d-9369-49b3-8528-2d89af3c1759",
             "Value": {
                 "id": "3e917c22-88e3-4f24-8aa6-633b4d906bb1",
@@ -2932,6 +3004,14 @@
                 "id": "cdaf55b3-f97b-4ea8-af82-80677156db97",
                 "resourcePath": "sprites\\italian_idle_l\\italian_idle_l.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f22a33b8-966a-4b37-973c-1559c7714f22",
+            "Value": {
+                "id": "1a94759d-ac53-4c12-a583-3472bba6e16b",
+                "resourcePath": "views\\f22a33b8-966a-4b37-973c-1559c7714f22.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

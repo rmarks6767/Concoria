@@ -1,12 +1,9 @@
-instance = instance_create_depth(x, y, -3, italianHouse);
-
-
-var top = instance_create_depth(x, y + 70, -3, solid_obj);
-var topinside = instance_create_depth(x, y + 175, -3, solid_obj);
-var bottom1 = instance_create_depth(x, y + 353, -3, solid_obj);
-var bottom2 = instance_create_depth(x + 141, y + 353, -3, solid_obj);
-var right = instance_create_depth(x + 207, y + 70, -3, solid_obj);
-var left = instance_create_depth(x, y + 70, -3, solid_obj);
+var top = instance_create_depth(self.x, self.y + 70, -3, solid_obj);
+var topinside = instance_create_depth(self.x, self.y + 175, -3, solid_obj);
+var bottom1 = instance_create_depth(self.x, self.y + 353, -3, solid_obj);
+var bottom2 = instance_create_depth(self.x + 141, self.y + 353, -3, solid_obj);
+var right = instance_create_depth(self.x + 207, self.y + 70, -3, solid_obj);
+var left = instance_create_depth(self.x, self.y + 70, -3, solid_obj);
 
 with (top)
 {
