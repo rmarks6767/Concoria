@@ -28,4 +28,23 @@ draw_sprite_ext(hair[hairNum],0,x,y,6,6,0,hairColor,255);
 
 
 draw_set_font(header1_font)
-draw_text_color(x-90,y-400,"Hair Colour",c_white,c_white,c_white,c_white,1)
+draw_text_color(x-30,y-400,"Hair",c_white,c_white,c_white,c_white,1)
+	draw_text_color(x+130,y-335,"R",c_red,c_red,c_red,c_red,1)
+	draw_text_color(x+130,y-310,"G",c_green,c_green,c_green,c_green,1)
+	draw_text_color(x+130,y-285,"B",c_blue,c_blue,c_blue,c_blue,1)
+
+draw_text_color(x+210,y-200,"Skin",c_white,c_white,c_white,c_white,1)
+	draw_text_color(x+475,y-185,"R",c_red,c_red,c_red,c_red,1)
+	draw_text_color(x+475,y-160,"G",c_green,c_green,c_green,c_green,1)
+	draw_text_color(x+475,y-135,"B",c_blue,c_blue,c_blue,c_blue,1)
+	
+draw_text_color(x+210,y-60,"Shirt",c_white,c_white,c_white,c_white,1)
+	draw_text_color(x+475,y-45,"R",c_red,c_red,c_red,c_red,1)
+	draw_text_color(x+475,y-20,"G",c_green,c_green,c_green,c_green,1)
+	draw_text_color(x+475,y+5,"B",c_blue,c_blue,c_blue,c_blue,1)
+	
+draw_text_color(x+210,y+90,"Pants",c_white,c_white,c_white,c_white,1)
+	draw_text_color(x+475,y+105,"R",c_red,c_red,c_red,c_red,1)
+	draw_text_color(x+475,y+130,"G",c_green,c_green,c_green,c_green,1)
+	draw_text_color(x+475,y+155,"B",c_blue,c_blue,c_blue,c_blue,1)
+	

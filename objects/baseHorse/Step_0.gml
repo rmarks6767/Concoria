@@ -1,4 +1,4 @@
-sprite_index = GetNPCSprite(objectName,inBattle,direction,speed);
+//sprite_index = GetNPCSprite(objectName,inBattle,direction,speed);
 
 switch(horseState)
 {
