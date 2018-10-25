@@ -1,4 +1,5 @@
-sprite_index = GetNPCSprite(objectName,inBattle,direction,speed);
+//Set Drawm Mode
+NPCGetDrawMode();
 face_direction = direction;
 
 switch(thestate)
@@ -11,7 +12,6 @@ switch(thestate)
 		if !alarm[0]{
 			Wander();
 			alarm[0] = irandom_range(20,50);
-			//show_debug_message("Attacking:" + string(attacking))
 		}
 		break;
 		
@@ -56,3 +56,4 @@ CheckCollisions();
 with(arm){
 	ArmControl()
 }
+Animate();
