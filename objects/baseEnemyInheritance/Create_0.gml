@@ -5,6 +5,9 @@ playerClose = false;
 enemyFriendly = true;
 attacking = false;
 inBattle = false;
+isShop = false; // used for making a shop npc
+shopRadius = 20; // used for determinig how close the player has to be to activate an 
+shopOpen = false;// used to determine if shop menu is open
 ranged = true;  // used for adding distance for the ranged weapons
 Str = 0;
 shirtColor = make_color_rgb(255,255,255);
@@ -13,33 +16,11 @@ pantsColor = make_color_rgb(255,255,255);
 hairColor = make_color_rgb(255,255,255);
 hairType = 0;
 
-var weaponUsed = round(random_range(0,4));
+shopInventory[0] = "";
 
-if weaponUsed == 0{
-	itemHolding[0] =  "Iron Sword"
-    itemHolding[1] =  "Sword"
-	ranged = false;
-}else if weaponUsed == 1{
-	itemHolding[0] = "Wooden Sword" 
-	itemHolding[1] = "Sword"
-	ranged = false;
-}else if weaponUsed == 2{
-	itemHolding[0] = "Short Bow" 
-	itemHolding[1] = "Bow" 
-	ranged = true;
-}else if weaponUsed == 3{
-	itemHolding[0] = "Wooden Staff" 
-	itemHolding[1] = "Staff" 
-	ranged = true;
-}else if weaponUsed == 4{
-	itemHolding[0] = ""  //they spawn wesponless
-	itemHolding[1] = ""
-	ranged = false;
-}else{
-	itemHolding[0] = "" 
-	itemHolding[1] = ""
-	ranged = false;
-}
+//Puts the proper item in inventory based on weaponUsed var
+SetWeaponUsed(irandom_range(0,4));
+
 face_direction = direction;
 subImage = 0;
 drawMode = DRAW.UNEQUIPPED_STAND_FRONT;
@@ -58,7 +39,8 @@ enum state
 	lowHealth, 
 	exploring,
 	wandering, 
-	blocking
+	blocking,
+	shop
 }
 
 

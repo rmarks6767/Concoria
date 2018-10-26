@@ -1,3 +1,4 @@
+//Draw different sprites for different draw states
 switch(drawMode){
 	//UNEQUIPPED
 	//STAND
@@ -313,4 +314,10 @@ switch(drawMode){
 		draw_sprite_ext(skin0_move_attack_b,0,x,y,1,1,0,skinColor,255)
 		draw_sprite_ext(GetHairSprite(NumDirectionToString(face_direction),hairType),0,x,y,1,1,0,hairColor,255)
 		break;
+}
+
+if (shopOpen == true){
+	
+	DrawShop();
+
 }
