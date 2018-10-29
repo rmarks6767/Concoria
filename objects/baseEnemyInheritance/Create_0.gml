@@ -7,7 +7,7 @@ attacking = false;
 inBattle = false;
 isShop = false; // used for making a shop npc
 shopRadius = 20; // used for determinig how close the player has to be to activate an 
-shopOpen = false;// used to determine if shop menu is open
+currentCustomer = noone;
 ranged = true;  // used for adding distance for the ranged weapons
 Str = 0;
 shirtColor = make_color_rgb(255,255,255);
@@ -16,7 +16,8 @@ pantsColor = make_color_rgb(255,255,255);
 hairColor = make_color_rgb(255,255,255);
 hairType = 0;
 
-shopInventory[0] = "";
+shopInventory[0,0] = "";
+shopInventory[0,1] = 0;
 
 //Puts the proper item in inventory based on weaponUsed var
 SetWeaponUsed(irandom_range(0,4));

@@ -11,13 +11,13 @@ if (keyboard_check_pressed(ord("E"))){
 	
 	if (distance_to_object(closestPlayer) <= shopRadius ){
 		
-		if (shopOpen == false){
+		if (currentCustomer == noone){
 				
-			shopOpen = true;
+			currentCustomer = closestPlayer;
 				
 		}else{
 	
-			shopOpen = false;
+			shopOpen = noone;
 		
 		}
 	
@@ -25,11 +25,11 @@ if (keyboard_check_pressed(ord("E"))){
 }
 
 //If the player moves outside of the radius of the shop. Close the menu
-if (shopOpen == true){
+if (currentCustomer != noone){
 	
-	if (distance_to_object(closestPlayer) > shopRadius){
+	if (distance_to_object(currentCustomer) > shopRadius){
 		
-		shopOpen = false;
+		currentCustomer = noone;
 		
 	}
 	
