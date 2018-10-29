@@ -13,6 +13,6 @@ if (emptySlot > -1){
 else{
 	
 	
-	CreateFloorItem(itemName,type,1);
+	CreateFloorItem(itemName,type,1,currentCustomer.x,currentCustomer.y);
 	
 }

@@ -822,12 +822,13 @@ or (keyboard_check(ord("D")) and keyboard_check(ord("S")))
 			if keyboard_check_pressed(vk_shift){
 		
 				//Spawn floor object and give it our important info
-				CreateFloorItem(equippedItemName,equippedItemType,1)
+				CreateFloorItem(equippedItemName,equippedItemType,1,x,y)
 				
 				
 				//If the single thing that we are dropping is the last item, empty our slot
 				if (Inventory[equipped,1] - 1 == 0){
-					EmptyPlayerSlot(self,equipped)
+					
+					EmptyPlayerSlot(self,equipped);
 					
 				//If not just subtract one from our slot
 				}
@@ -841,7 +842,7 @@ or (keyboard_check(ord("D")) and keyboard_check(ord("S")))
 			//If we aren't hitting the single drop key
 			else{
 				//Spawn a floor object
-				CreateFloorItem(equippedItemName,equippedItemType,equippedItemQuantity)
+				CreateFloorItem(equippedItemName,equippedItemType,equippedItemQuantity,x,y);
 			
 				//Empty the inventory slot
 				EmptyPlayerSlot(self,equipped);
