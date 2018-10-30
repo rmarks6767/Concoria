@@ -45,6 +45,10 @@ switch(thestate)
 		
 	case state.blocking:
 		break;
+	
+	case state.shop:
+		Shop();
+		break;
 }
 if Health <= 0{
 		
