@@ -12,7 +12,8 @@
         "265d7703-d5f7-40ac-bcc5-a98ab296c239",
         "e3a1c548-30e4-4df9-a672-e6a39c93d97d",
         "9988ffe6-23b2-4f69-a5af-425db7cee658",
-        "e8ed4455-d315-40af-aef0-00bd64329b25"
+        "e8ed4455-d315-40af-aef0-00bd64329b25",
+        "30454492-851e-4195-8f3b-7723b8a144a6"
     ],
     "filterType": "GMScript",
     "folderName": "EnemyStates",
