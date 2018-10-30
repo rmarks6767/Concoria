@@ -19,3 +19,4 @@ else{
 
 
 draw_sprite_ext(sprite,floor(subImageToDraw),spritex,spritey,1,1,0,spriteColor,255)
+show_debug_message(image_speed)

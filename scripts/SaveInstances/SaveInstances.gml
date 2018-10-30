@@ -26,7 +26,7 @@ padding = 500;
 numInstances = instance_count;
 
 //used for seeing how many instances are currently in the room in any given frame
-//show_debug_message(string(numInstances));
+show_debug_message(string(numInstances));
 
 //the first time it gets the x and y to use for the instance in the room that is checking to store or not
 var fobjx = 0; 
