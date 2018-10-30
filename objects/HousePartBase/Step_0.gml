@@ -1,25 +1,25 @@
-houseWidth = self.x
-houseHeight = self.y
-house_x = self.x;
-house_y = self.y + 150;
+houseWidth = x + 113;
+houseHeight = y + 370;
+house_x = x;
+house_y = y + 153;
 
-	if ((player.x > house_x and player.x < houseWidth) and (player.y > house_y and player.y < houseHeight))
+	if ((player.x > house_x && player.x < houseWidth) && (player.y > house_y && player.y < houseHeight))
 	{
-		with (instance)
+		with (part)
 		{
 			if (image_alpha > 0)
 			{
-				alarm[0] = 1;
+				alarm[2] = 1;
 			}
 		}
 	}
 	else
 	{
-		with (instance)
+		with (part)
 		{
 			if image_alpha < 1
 			{
-				alarm[1] = 1;
+				alarm[3] = 1;
 			}
 		}
 	}

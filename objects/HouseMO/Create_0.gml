@@ -1,0 +1,1 @@
+depth = HouseM.depth - 1;
