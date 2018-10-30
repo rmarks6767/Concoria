@@ -29,9 +29,9 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 		if ( (direction > 0 and direction <= 22.5) or ( direction > 337.5 or direction <= 0) ){
 			
 			
-			if (inst0 != noone and inst0!= self){show_debug_message("IN COLLISION")
+			if (inst0 != noone and inst0!= self){
 				speed = 0;
-				show_debug_message("IN COLLISION")
+				
 				
 			}
 			
@@ -42,7 +42,7 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 			if (inst45 and inst45!= self){
 				
 				speed = 0;
-				show_debug_message("IN COLLISION")
+				
 				
 			}
 			
@@ -53,7 +53,7 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 			if (inst90 and inst90!= self){
 				
 				speed = 0
-				show_debug_message("IN COLLISION")
+				
 				
 			}
 			
@@ -64,7 +64,7 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 			if (inst135 and inst135!= self){
 				
 				speed = 0;
-				show_debug_message("IN COLLISION")
+				
 				
 			}
 			
@@ -75,7 +75,7 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 			if (inst180 and inst180!= self){
 				
 				speed = 0;
-				show_debug_message("IN COLLISION")
+				
 				
 				
 			}
@@ -87,7 +87,7 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 			if (inst225 and inst225!= self){
 				
 				speed = 0;
-				show_debug_message("IN COLLISION")
+				
 				
 			}
 			
@@ -98,7 +98,7 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 			if (inst270 and inst270!= self){
 				
 				speed = 0;
-				show_debug_message("IN COLLISION")
+				
 				
 			}
 			
@@ -109,7 +109,7 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 			if (inst315 and inst315!= self){
 				
 				speed = 0;
-				show_debug_message("IN COLLISION")
+				
 				
 			}
 			
@@ -135,9 +135,9 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 		if ( (direction > 0 and direction <= 22.5) or ( direction > 337.5 or direction <= 0) ){
 			
 			
-			if (inst180 != noone and inst180!= self){show_debug_message("IN COLLISION")
+			if (inst180 != noone and inst180!= self){
 				speed = 0;
-				show_debug_message("IN COLLISION")
+				
 				
 			}
 			
@@ -148,7 +148,7 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 			if (inst225 and inst225!= self){
 				
 				speed = 0;
-				show_debug_message("IN COLLISION")
+				
 				
 			}
 			
@@ -159,7 +159,7 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 			if (inst270 and inst270!= self){
 				
 				speed = 0
-				show_debug_message("IN COLLISION")
+				
 				
 			}
 			
@@ -170,7 +170,7 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 			if (inst315 and inst315!= self){
 				
 				speed = 0;
-				show_debug_message("IN COLLISION")
+				
 				
 			}
 			
@@ -181,7 +181,7 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 			if (inst0 and inst0!= self){
 				
 				speed = 0;
-				show_debug_message("IN COLLISION")
+				
 				
 				
 			}
@@ -193,7 +193,7 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 			if (inst45 and inst45!= self){
 				
 				speed = 0;
-				show_debug_message("IN COLLISION")
+				
 				
 			}
 			
@@ -204,7 +204,7 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 			if (inst90 and inst90!= self){
 				
 				speed = 0;
-				show_debug_message("IN COLLISION")
+				
 				
 			}
 			
@@ -215,7 +215,7 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 			if (inst135 and inst135!= self){
 				
 				speed = 0;
-				show_debug_message("IN COLLISION")
+				
 				
 			}
 			
