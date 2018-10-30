@@ -1,8 +1,8 @@
 {
-    "id": "ba7a30ba-e34e-4284-9ab4-1ed0944d1051",
+    "id": "53d366f5-c288-4263-b6b9-dcbd7d0defc4",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object40",
+    "name": "HouseMOutside",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "0108630c-78b6-4e35-87b1-179600a9fcdd",
     "visible": true
 }

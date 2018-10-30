@@ -5,16 +5,6 @@
     "name": "HousePartBase",
     "eventList": [
         {
-            "id": "a0bae986-72c2-4122-b802-3f62c3a53014",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 2,
-            "m_owner": "da19be6e-102d-491a-b7d3-8830bda7cd5a"
-        },
-        {
             "id": "5aa2985f-fb65-4ef0-92b4-33e51ce496ac",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -25,12 +15,22 @@
             "m_owner": "da19be6e-102d-491a-b7d3-8830bda7cd5a"
         },
         {
-            "id": "5585602f-40b6-4c3a-860a-767189c7acdb",
+            "id": "526b4b37-350c-4ebc-b68a-27475769e560",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
+            "enumb": 2,
+            "eventtype": 2,
+            "m_owner": "da19be6e-102d-491a-b7d3-8830bda7cd5a"
+        },
+        {
+            "id": "15b909ec-b535-4c71-8ec3-f8abe52fec7d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 3,
             "eventtype": 2,
             "m_owner": "da19be6e-102d-491a-b7d3-8830bda7cd5a"
         }
