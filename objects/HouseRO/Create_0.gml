@@ -1,0 +1,1 @@
+depth = HouseR.depth - 1;

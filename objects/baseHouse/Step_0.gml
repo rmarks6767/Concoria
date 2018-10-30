@@ -1,9 +1,9 @@
-houseWidth = self.x
-houseHeight = self.y
-house_x = self.x;
-house_y = self.y + 150;
+houseWidth = x + 226;
+houseHeight = y + 370;
+house_x = x;
+house_y = y + 150;
 
-	if ((player.x > house_x and player.x < houseWidth) and (player.y > house_y and player.y < houseHeight))
+	if ((player.x > house_x && player.x < houseWidth) && (player.y > house_y && player.y < houseHeight))
 	{
 		with (instance)
 		{

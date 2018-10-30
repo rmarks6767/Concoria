@@ -4,7 +4,36 @@
     "mvc": "1.0",
     "name": "HouseMO",
     "eventList": [
-        
+        {
+            "id": "3fa26897-1234-4daa-bb64-f5b08601e0f9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "a971a4d9-1718-48e1-81b6-18aacc5d170a"
+        },
+        {
+            "id": "92c5451e-0b47-401d-ab34-644573eb5526",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "a971a4d9-1718-48e1-81b6-18aacc5d170a"
+        },
+        {
+            "id": "27c06d96-15e6-422a-8f7d-98daa7a509f8",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 2,
+            "m_owner": "a971a4d9-1718-48e1-81b6-18aacc5d170a"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

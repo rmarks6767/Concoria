@@ -1,23 +1,23 @@
 {
-    "id": "46e113a3-ac98-47dc-acf3-aaacecfdbde1",
+    "id": "d3128501-aa23-454e-9237-1634e5340258",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "HouseR",
     "eventList": [
         {
-            "id": "e4c9911a-1a1d-46f4-8995-7f9384578b59",
+            "id": "9b217589-f3bf-4940-b5f5-c2e2162aaa08",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "46e113a3-ac98-47dc-acf3-aaacecfdbde1"
+            "m_owner": "d3128501-aa23-454e-9237-1634e5340258"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "da19be6e-102d-491a-b7d3-8830bda7cd5a",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
