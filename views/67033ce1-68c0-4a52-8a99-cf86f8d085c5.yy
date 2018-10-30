@@ -11,6 +11,7 @@
         "aac91bce-dff0-438f-bb92-dc97067f791c",
         "a0358d76-4af6-46f9-9659-4aab4cecdb47",
         "a971a4d9-1718-48e1-81b6-18aacc5d170a",
+        "56575071-8859-4c13-85f4-fd35fdeae8da",
         "da19be6e-102d-491a-b7d3-8830bda7cd5a",
         "b3a07a24-bbaa-449b-9d32-64303c40043a",
         "a584f7b6-21aa-4c7a-9424-de6675b7b370",
@@ -18,8 +19,7 @@
         "496b6696-4918-4e2d-a3ec-407dd094e7f4",
         "dddc12b0-6c62-4de1-9299-305fd830f6b2",
         "53d366f5-c288-4263-b6b9-dcbd7d0defc4",
-        "558bc0c1-940b-42c6-9d89-801d5447f941",
-        "56575071-8859-4c13-85f4-fd35fdeae8da"
+        "558bc0c1-940b-42c6-9d89-801d5447f941"
     ],
     "filterType": "GMObject",
     "folderName": "House Parts",

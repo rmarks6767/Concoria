@@ -1,6 +1,9 @@
-depth = depth + 1;
+depth = 1;
 
-partR = instance_create_depth(x, y, -3, HouseRO);
+num = 0;
+groupid = 0;
+
+part = instance_create_depth(x, y, -3, HouseRO);
 
 var side = instance_create_depth(x + 95, y + 74, -3, solid_obj);
 var bottom = instance_create_depth(x, y + 367, -3, solid_obj);
