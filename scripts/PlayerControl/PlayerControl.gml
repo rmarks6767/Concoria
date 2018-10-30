@@ -822,19 +822,26 @@ or (keyboard_check(ord("D")) and keyboard_check(ord("S")))
 			if keyboard_check_pressed(vk_shift){
 		
 				//Spawn floor object and give it our important info
-				CreateFloorItem(equippedItemName,equippedItemType,1,x,y)
+	            var object = instance_create_layer(x,y,"Instances",floorobject_obj);
+				with(object){
+				
+					name = other.equippedItemName;
+					type = other.equippedItemType;
+					quantity += 1;
+				
+				}
 				
 				
 				//If the single thing that we are dropping is the last item, empty our slot
 				if (Inventory[equipped,1] - 1 == 0){
-					
-					EmptyPlayerSlot(self,equipped);
+					Inventory[equipped,0] = "";
+					Inventory[equipped,1] -= 1;
+					Inventory[equipped,2] = "none";
 					
 				//If not just subtract one from our slot
-				}
-				else{
+				}else{
 					
-					AddPlayerSlot(self,equipped,-1);
+					Inventory[equipped,1] -= 1;
 
 				}
 			
@@ -842,10 +849,20 @@ or (keyboard_check(ord("D")) and keyboard_check(ord("S")))
 			//If we aren't hitting the single drop key
 			else{
 				//Spawn a floor object
-				CreateFloorItem(equippedItemName,equippedItemType,equippedItemQuantity,x,y);
+				var object = instance_create_layer(x,y,"Instances",floorobject_obj);
+				with(object){
+					
+					//Give it our important info
+					name = other.equippedItemName;
+					type = other.equippedItemType;
+					quantity = other.equippedItemQuantity;
+				
+				}
 			
 				//Empty the inventory slot
-				EmptyPlayerSlot(self,equipped);
+				Inventory[equipped,0] = "";
+				Inventory[equipped,1] = 0;
+				Inventory[equipped,2] = "none";
 			
 			}
 				
