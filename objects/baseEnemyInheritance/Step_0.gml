@@ -61,3 +61,13 @@ with(arm){
 	ArmControl()
 }
 Animate();
+
+if (currentCustomer != noone){
+	
+	if (currentCustomer.hud.drawMode == MENU_DRAW.SHOP){
+		
+		currentCustomer.hud.shop = self;
+		
+	}
+
+}

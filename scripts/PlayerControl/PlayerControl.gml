@@ -918,5 +918,23 @@ if mouse_wheel_down(){
     }
 
 }
-//reset image index
 
+//View stats menu
+if keyboard_check_pressed(vk_tab){
+	
+	if hud.drawMode != MENU_DRAW.STATS{
+	
+		hud.drawMode = MENU_DRAW.STATS;
+	
+	}
+	
+}
+if keyboard_check_released(vk_tab){
+	
+	if hud.drawMode == MENU_DRAW.STATS{
+		
+		hud.drawMode = -1;
+		
+	}
+	
+}

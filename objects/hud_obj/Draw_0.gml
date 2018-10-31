@@ -6,9 +6,6 @@ screenw = camera_get_view_height(owner.view)
 //show_debug_message("VIEW X AND Y: " + string(screenh) + "," + string(screenw))
 //draw_rectangle_color(screenx, screeny, screenx + screenw , screeny + 100, c_black, c_black, c_black,c_black,false);
 
-if owner.Inventory_Open == true {
-    DrawInventory()
-}
 
 
 //Inventory
@@ -101,18 +98,18 @@ draw_rectangle_color(ebarx1 , ebary1 , ebarx2 + (barlen * (owner.Energy/owner.Ma
 draw_rectangle_color(ebarx1 , ebary1 , ebarx2 + barlen , ebary2, c_black, c_black, c_black,c_black,true); 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+//DRAW MODES
+switch(drawMode){
+	
+	case MENU_DRAW.STATS:
+		DrawStats();
+		break;
+	
+	case MENU_DRAW.SHOP:
+		DrawShop();
+		break;
+	
+}
 
 
 

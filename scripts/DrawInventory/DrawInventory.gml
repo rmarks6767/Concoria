@@ -22,4 +22,4 @@ Titley = Invy1
 //Draw Title
 draw_text_color(Titlex,Titley,"INVENTORY",c_white,c_white,c_white,c_white,255)
 
-//Draw Buttons
+//Draw Bars

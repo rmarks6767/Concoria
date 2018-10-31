@@ -2935,6 +2935,14 @@
             }
         },
         {
+            "Key": "cec7c106-d514-4281-bdd5-1c6cfa0dd7ae",
+            "Value": {
+                "id": "3a613f3e-fe6f-451c-aaaf-f2074269b2ad",
+                "resourcePath": "scripts\\DrawStats\\DrawStats.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cefe4be8-d43b-485e-ab5f-2a271395b4f0",
             "Value": {
                 "id": "cc72854b-ca6c-4e90-a756-6027991cfb25",
@@ -3593,7 +3601,8 @@
         "00f7924c-6e51-411f-8ea9-7fdde0396cc9",
         "b07bb9b5-3a61-43bf-bc09-828013af69e8",
         "d5861010-b6fb-4380-92eb-4fddaac615ca",
-        "fab092b1-dc0d-4dd2-b2fc-767314d72fee"
+        "fab092b1-dc0d-4dd2-b2fc-767314d72fee",
+        "cec7c106-d514-4281-bdd5-1c6cfa0dd7ae"
     ],
     "tutorial": ""
 }

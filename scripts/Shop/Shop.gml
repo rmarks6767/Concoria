@@ -9,18 +9,20 @@ if (instance_exists(player)){
 //If a player hits E, The closest player opens a shop menu(this will need to be fixed later when multiplayer happens)
 if (keyboard_check_pressed(ord("E"))){
 	
-	if (distance_to_object(closestPlayer) <= shopRadius ){
+	if (currentCustomer == noone){
 		
-		if (currentCustomer == noone){
-				
+		if (distance_to_object(closestPlayer) <= shopRadius ){
 			currentCustomer = closestPlayer;
-				
-		}else{
-	
-			shopOpen = noone;
-		
+			currentCustomer.hud.drawMode = MENU_DRAW.SHOP;
 		}
 	
+	}
+	
+	else{
+			
+		currentCustomer.hud.drawMode = -1;
+		currentCustomer = noone;
+			
 	}
 }
 
@@ -29,7 +31,9 @@ if (currentCustomer != noone){
 	
 	if (distance_to_object(currentCustomer) > shopRadius){
 		
+		currentCustomer.hud.drawMode = -1;
 		currentCustomer = noone;
+		
 		
 	}
 	

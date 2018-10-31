@@ -316,8 +316,3 @@ switch(drawMode){
 		break;
 }
 
-if (currentCustomer != noone){
-	
-	DrawShop();
-
-}

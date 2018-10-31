@@ -15,6 +15,7 @@ skinColor = make_color_rgb(255,255,255);
 pantsColor = make_color_rgb(255,255,255);
 hairColor = make_color_rgb(255,255,255);
 hairType = 0;
+depth = 1;
 
 shopInventory[0,0] = "";
 shopInventory[0,1] = 0;
