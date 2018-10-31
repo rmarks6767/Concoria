@@ -22,8 +22,9 @@ var menuy1 = screeny1+vertPad
 var menux2 = screenx2-horPad
 var menuy2 = screeny2-vertPad
 
-
+draw_set_alpha(0.9);
 draw_rectangle_color(menux1,menuy1,menux2,menuy2,c_black,c_black,c_black,c_black,false);
+draw_set_alpha(1.0);
 draw_set_font(header1_font);
 var spacing = 70;
 draw_text_color( screenwMid - (string_width("Shop")/2),menuy1+20,"Shop",c_white,c_white,c_white,c_white,255);
