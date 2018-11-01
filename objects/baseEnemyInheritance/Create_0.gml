@@ -15,6 +15,19 @@ skinColor = make_color_rgb(255,255,255);
 pantsColor = make_color_rgb(255,255,255);
 hairColor = make_color_rgb(255,255,255);
 hairType = 0;
+
+/*Quest Format
+Slot 0: Name of Quest
+Slot 1: Quest Rewards
+Slot 2: D(Array);
+Slot 3: Reward(Array);
+Slot 3,0: Reward Type
+Slot 3,1: Reward Amount
+
+*/
+
+
+
 depth = 1;
 
 shopInventory[0,0] = "";
@@ -44,6 +57,7 @@ enum state
 	blocking,
 	shop
 }
+
 
 
 drawMode = DRAW.UNEQUIPPED_STAND_FRONT;

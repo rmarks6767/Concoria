@@ -1,5 +1,4 @@
 equipped = FindEquippedSlot(self)
-
 //Sprite,direction, and image speed handling
 
 //UNEQIPPED

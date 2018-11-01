@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "0f2211c5-3264-4700-8ac1-f0b265b07b55",
+            "Value": {
+                "id": "88caac1f-d467-4d17-a0d6-a0682aa356d6",
+                "resourcePath": "views\\0f2211c5-3264-4700-8ac1-f0b265b07b55.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "0f827b42-6c9f-46c7-95c1-e256bb2018ff",
             "Value": {
                 "id": "d08ed8d4-0b28-46a2-b52b-61f3f84cc0d6",
@@ -212,6 +220,14 @@
                 "id": "d4e142cd-9f65-4b5c-85fc-197ea4c11c71",
                 "resourcePath": "sprites\\sprSliderPants\\sprSliderPants.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0fe53824-68c7-4dea-beac-5f0a876ba568",
+            "Value": {
+                "id": "ba0a7624-48fe-44df-9957-f14e0f2e0d47",
+                "resourcePath": "scripts\\GetQuestType\\GetQuestType.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2079,6 +2095,14 @@
             }
         },
         {
+            "Key": "888fc613-8de9-4e25-8661-b7bb6637e5f4",
+            "Value": {
+                "id": "4ff75aaa-7510-4ea4-a5f3-db0aceec23cf",
+                "resourcePath": "scripts\\DrawQuest\\DrawQuest.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "890cf754-fe2b-4e5b-8f56-4a14ff83dcaf",
             "Value": {
                 "id": "f2f28957-0c93-4ef4-851d-90db6b1d1dfb",
@@ -2300,6 +2324,14 @@
                 "id": "8d987f4f-9836-426a-97e8-b997fa7e5a3c",
                 "resourcePath": "views\\9ba11735-e665-48fa-abdb-ed34798c9408.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9e1bb8ba-1bba-4a59-be7e-da426a04f05e",
+            "Value": {
+                "id": "450ca953-d39b-4897-a9fd-1207e1e3e80e",
+                "resourcePath": "scripts\\CreateArray\\CreateArray.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2911,6 +2943,14 @@
             }
         },
         {
+            "Key": "ca15c736-f1ea-4f98-b434-9769801e0c12",
+            "Value": {
+                "id": "cc1a3087-bedd-4bb3-aad5-ea98f5d47f29",
+                "resourcePath": "scripts\\CreateQuest\\CreateQuest.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "caed75e7-8bbb-4fde-aa52-82c6b02a66c8",
             "Value": {
                 "id": "9a15bbe5-053d-4ff1-9316-425b8d649da6",
@@ -3044,6 +3084,14 @@
                 "id": "4a5522f8-d009-4d8d-9d24-9e6c9155aa77",
                 "resourcePath": "objects\\HouseR\\HouseR.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d411462c-247a-48f6-ac5e-7f54266bbe14",
+            "Value": {
+                "id": "d61247fc-f8d3-440d-942f-02ad59f9596d",
+                "resourcePath": "scripts\\PrintQuest\\PrintQuest.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3619,7 +3667,12 @@
         "b3084bb0-51ac-49c9-b84c-64263d6fb7b5",
         "cec7c106-d514-4281-bdd5-1c6cfa0dd7ae",
         "0601d5fd-caa7-480f-8e9f-a2ecada4d4a8",
-        "4d042a04-5c7f-41a9-8206-9dde43262c7e"
+        "4d042a04-5c7f-41a9-8206-9dde43262c7e",
+        "888fc613-8de9-4e25-8661-b7bb6637e5f4",
+        "ca15c736-f1ea-4f98-b434-9769801e0c12",
+        "d411462c-247a-48f6-ac5e-7f54266bbe14",
+        "9e1bb8ba-1bba-4a59-be7e-da426a04f05e",
+        "0fe53824-68c7-4dea-beac-5f0a876ba568"
     ],
     "tutorial": ""
 }
