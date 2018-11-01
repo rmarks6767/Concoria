@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "HouseMOutside",
     "eventList": [
-        
+        {
+            "id": "16b90334-57ca-4e03-929d-7dd644ddcd4a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "53d366f5-c288-4263-b6b9-dcbd7d0defc4"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
