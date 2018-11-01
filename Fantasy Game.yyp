@@ -439,6 +439,14 @@
             }
         },
         {
+            "Key": "21a1bc3b-c6aa-44a3-87c2-bb72378cf089",
+            "Value": {
+                "id": "df53a051-0eab-4be1-8aee-20f4fe014b18",
+                "resourcePath": "objects\\objBridge\\objBridge.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "229327f1-9e9d-461a-a318-5815b06a7719",
             "Value": {
                 "id": "3c466972-e6f3-400d-8aa8-b933699d21ca",
@@ -1399,6 +1407,14 @@
             }
         },
         {
+            "Key": "5573a572-4502-4de5-92de-19a31b6f5185",
+            "Value": {
+                "id": "d79ed787-6fbe-4e38-a78c-a08c00c679f7",
+                "resourcePath": "sprites\\sprColEmpty\\sprColEmpty.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "558bc0c1-940b-42c6-9d89-801d5447f941",
             "Value": {
                 "id": "d2db99bd-4934-4c1d-ab7d-ee892c8fdbb7",
@@ -1775,6 +1791,14 @@
             }
         },
         {
+            "Key": "74affb56-4046-4734-b4ce-90da340ef273",
+            "Value": {
+                "id": "ac0eca61-92f1-4869-b10f-d545b862fbc8",
+                "resourcePath": "objects\\HouseOutsideBase\\HouseOutsideBase.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "750bcec1-055a-460c-8705-f7a94ae9f714",
             "Value": {
                 "id": "731550ce-ca91-4c66-a7c0-0d32c7f5798b",
@@ -2084,6 +2108,22 @@
                 "id": "8c9ff1cd-19e0-4846-8865-120baa146045",
                 "resourcePath": "scripts\\DrawSpriteAnimated\\DrawSpriteAnimated.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "89c7077c-e876-475e-adb0-7dfdd92c2cfe",
+            "Value": {
+                "id": "0669cf9b-4c10-4916-9073-c8bd66c84dcd",
+                "resourcePath": "sprites\\bridge\\bridge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "89d7af83-824b-4620-b6c0-89588c67a148",
+            "Value": {
+                "id": "a3e59eb5-0bd0-4bf4-a87b-42290f392d4d",
+                "resourcePath": "objects\\objBridgeOutside\\objBridgeOutside.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2932,6 +2972,14 @@
                 "id": "5bfa6e01-fcac-405d-8ffb-45560374523a",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cdc2f0e2-1166-478e-83a1-9d297bfe4f84",
+            "Value": {
+                "id": "968f00cf-2227-4d75-b5fe-16f82024c909",
+                "resourcePath": "sprites\\bridgeOutside\\bridgeOutside.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -1,0 +1,1 @@
+playerFriendly = true;

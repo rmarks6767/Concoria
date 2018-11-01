@@ -9,7 +9,10 @@ if other.owner != self{
 				if (currentCustomer == noone){
 					if (!alarm[1]){
 							Health -= (other.owner.Str+1) * 8;
+							playerFriendly = false;
 							alarm[1] = 5;
+							alarm[2] = 2000;
+							
 					}
 				}
 			}

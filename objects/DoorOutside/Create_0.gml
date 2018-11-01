@@ -1,3 +1,2 @@
-depth = Door.depth - 1;
-
+event_inherited();
 groupid = 0;
