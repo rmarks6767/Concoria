@@ -13,7 +13,6 @@ Str = 0
 Vit = 0
 //Determine player's attacking state
 attacking = false
-Inventory_Open = false
 //The current index of the subimage of an animated sprite
 imageIndex = 0;
 
@@ -100,7 +99,7 @@ with(arm){
 	
 	
 }
-hud = instance_create_layer(x,y,"Instances",hud_obj);
+hud = instance_create_depth(x,y,-2,hud_obj);
 with (hud){
 	
 	owner = other;
