@@ -1,10 +1,9 @@
 // Inherit the parent event
 objectName = "italian";
 event_inherited();
-attacking = true;
+attacking = false;
 inBattle = true;
 thestate = state.wandering;
-playerFriendly = false;
 isShop = false;
 skinColor = make_color_rgb(247,151,121);
 hairColor = make_color_rgb(0,0,0);

@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "1039c519-c8bb-4a23-addb-3dc46b23cce8",
+            "Value": {
+                "id": "37290b93-a474-4054-af0a-90b0fee39039",
+                "resourcePath": "sprites\\bow_short_pull_arm_r\\bow_short_pull_arm_r.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1093c746-b7ba-4956-b025-aa24a1bdb830",
             "Value": {
                 "id": "65abb9fe-5dd5-4afd-8db1-97ccd0376692",
@@ -471,10 +479,26 @@
             }
         },
         {
+            "Key": "21a1bc3b-c6aa-44a3-87c2-bb72378cf089",
+            "Value": {
+                "id": "df53a051-0eab-4be1-8aee-20f4fe014b18",
+                "resourcePath": "objects\\objBridge\\objBridge.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "229327f1-9e9d-461a-a318-5815b06a7719",
             "Value": {
                 "id": "3c466972-e6f3-400d-8aa8-b933699d21ca",
                 "resourcePath": "sprites\\brownHorse_move_l\\brownHorse_move_l.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2427f248-f976-4edd-8110-a3caa85c4c3f",
+            "Value": {
+                "id": "a656d475-da1b-407b-8d7b-86bbe7c05803",
+                "resourcePath": "sprites\\bow_short_pull_arm_b\\bow_short_pull_arm_b.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -588,6 +612,22 @@
                 "id": "7220d088-0fcf-4126-bab9-ffcc19154b46",
                 "resourcePath": "views\\28936aa5-d3af-4e10-b3d1-8f9968dce067.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2926f1f8-4963-40c3-b63f-82291f327703",
+            "Value": {
+                "id": "64313114-8f81-4997-be6a-fdd4709cb98e",
+                "resourcePath": "sprites\\bow_short_pull_arm_l\\bow_short_pull_arm_l.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "29524b15-ee8f-42dd-a162-0ca652dc4f8d",
+            "Value": {
+                "id": "6618701b-e762-42ff-b83c-1bd9f0474778",
+                "resourcePath": "sprites\\mythril_iron_swing_b\\mythril_iron_swing_b.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1431,6 +1471,14 @@
             }
         },
         {
+            "Key": "5573a572-4502-4de5-92de-19a31b6f5185",
+            "Value": {
+                "id": "d79ed787-6fbe-4e38-a78c-a08c00c679f7",
+                "resourcePath": "sprites\\sprColEmpty\\sprColEmpty.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "558bc0c1-940b-42c6-9d89-801d5447f941",
             "Value": {
                 "id": "d2db99bd-4934-4c1d-ab7d-ee892c8fdbb7",
@@ -1711,14 +1759,6 @@
             }
         },
         {
-            "Key": "6d2218f3-94ab-4fc5-931a-98ecc8aca450",
-            "Value": {
-                "id": "ac60cfa8-822d-4e09-9ed8-a390356b1c7c",
-                "resourcePath": "sprites\\mythril_iron_swing_f\\mythril_iron_swing_f.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "6e933342-1592-4ba5-9b82-fde9d86d7c7b",
             "Value": {
                 "id": "c4fc36ff-7541-4380-9959-65300c52fa84",
@@ -1731,6 +1771,14 @@
             "Value": {
                 "id": "92fad5ab-0cb9-405a-bcdc-01ad9159032a",
                 "resourcePath": "sprites\\pants_idle_attack_f\\pants_idle_attack_f.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6f12ce2f-3605-41d2-924f-3fa08cab8e90",
+            "Value": {
+                "id": "449ba95e-d301-46f9-87ef-423884221de2",
+                "resourcePath": "sprites\\mythril_iron_swing_f\\mythril_iron_swing_f.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1775,14 +1823,6 @@
             }
         },
         {
-            "Key": "716766a4-b2cb-4034-a1fd-372dacbe1397",
-            "Value": {
-                "id": "5715e53a-b0c8-4a6a-82dd-8f5ecc5b5e3c",
-                "resourcePath": "sprites\\mythril_iron_swing_b\\mythril_iron_swing_b.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "7357d1b2-1712-4b9c-ab82-12fe74cd286a",
             "Value": {
                 "id": "4a3167e8-24c5-47cf-83ea-075dcdce8793",
@@ -1811,6 +1851,14 @@
             "Value": {
                 "id": "a41a86f7-2cfd-4f20-a954-e8e96d129315",
                 "resourcePath": "objects\\objMongolians\\objMongolians.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "74affb56-4046-4734-b4ce-90da340ef273",
+            "Value": {
+                "id": "ac0eca61-92f1-4869-b10f-d545b862fbc8",
+                "resourcePath": "objects\\HouseOutsideBase\\HouseOutsideBase.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1916,6 +1964,14 @@
                 "id": "f697003a-6cdc-4662-8451-1664d2c2d3c2",
                 "resourcePath": "sprites\\italian_arm_f1\\italian_arm_f1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7a09ebca-5bf0-41df-8976-09429e677a0a",
+            "Value": {
+                "id": "98801572-0a04-4157-a67d-70ec8a6e90a2",
+                "resourcePath": "objects\\square\\square.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2151,6 +2207,22 @@
             }
         },
         {
+            "Key": "89c7077c-e876-475e-adb0-7dfdd92c2cfe",
+            "Value": {
+                "id": "0669cf9b-4c10-4916-9073-c8bd66c84dcd",
+                "resourcePath": "sprites\\bridge\\bridge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "89d7af83-824b-4620-b6c0-89588c67a148",
+            "Value": {
+                "id": "a3e59eb5-0bd0-4bf4-a87b-42290f392d4d",
+                "resourcePath": "objects\\objBridgeOutside\\objBridgeOutside.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "89fab315-32b2-47a9-a7ad-60c3d7ad8f95",
             "Value": {
                 "id": "1113bb2b-338e-4d40-a346-040e2244a13f",
@@ -2343,6 +2415,14 @@
             }
         },
         {
+            "Key": "9b1e597f-ae97-4a36-95b6-a99c08345ac1",
+            "Value": {
+                "id": "1a46e21c-3f8a-4ee8-8a1b-c95f3ae38704",
+                "resourcePath": "sprites\\mythril_iron_swing_r\\mythril_iron_swing_r.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9ba11735-e665-48fa-abdb-ed34798c9408",
             "Value": {
                 "id": "8d987f4f-9836-426a-97e8-b997fa7e5a3c",
@@ -2372,6 +2452,14 @@
                 "id": "802417b9-aca0-44a1-8c7d-20d279fe173e",
                 "resourcePath": "objects\\HouseRO\\HouseRO.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a0a4cae7-393c-4408-9c81-f6bcff72b49f",
+            "Value": {
+                "id": "cfd7d3dd-26e3-4016-b3fa-84cb7915dcd4",
+                "resourcePath": "sprites\\mythril_iron_swing_l\\mythril_iron_swing_l.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2428,6 +2516,14 @@
                 "id": "bef42cef-5f48-4cab-bbd3-09f78595b6df",
                 "resourcePath": "objects\\RoofL\\RoofL.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a66c301d-e741-482b-837b-4b467e43a6a4",
+            "Value": {
+                "id": "1d70aa70-9349-4c21-84fc-df50c2fc2175",
+                "resourcePath": "sprites\\townSquare\\townSquare.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2639,6 +2735,14 @@
             }
         },
         {
+            "Key": "b45c9ced-37a9-42a1-9132-c830c63aff30",
+            "Value": {
+                "id": "bf27ced5-e058-49ed-b4b7-86d669cf4546",
+                "resourcePath": "views\\b45c9ced-37a9-42a1-9132-c830c63aff30.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b4709064-337d-4eb1-a50c-fcea94a41e00",
             "Value": {
                 "id": "9f1d82c5-1272-4fd4-bd3b-f879b0d59cf6",
@@ -2823,14 +2927,6 @@
             }
         },
         {
-            "Key": "bdcb0e08-3535-4e33-9242-077a2758a54d",
-            "Value": {
-                "id": "b747302f-6536-4c82-a66f-ca61f8537d30",
-                "resourcePath": "sprites\\mythril_iron_swing_r\\mythril_iron_swing_r.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "bdfbd30a-009f-428f-951b-597f9b75c1de",
             "Value": {
                 "id": "17a698ad-daf1-462d-9cfb-c15feb468a2c",
@@ -2951,14 +3047,6 @@
             }
         },
         {
-            "Key": "c8942eea-acd7-4132-b5d6-f0a75c6fd3d5",
-            "Value": {
-                "id": "231f1359-1781-4f35-acdc-2444b81a940e",
-                "resourcePath": "sprites\\mythril_iron_swing_l\\mythril_iron_swing_l.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "c95a0b7c-6b2a-46c9-abaa-59d61b9637c3",
             "Value": {
                 "id": "c49bfa6b-5e6f-4510-b1a1-e8732bb1d7d5",
@@ -3023,11 +3111,19 @@
             }
         },
         {
-            "Key": "cec7c106-d514-4281-bdd5-1c6cfa0dd7ae",
+            "Key": "ccb93c9c-04b4-44e8-ad84-9ff34c3d7ee2",
             "Value": {
-                "id": "3a613f3e-fe6f-451c-aaaf-f2074269b2ad",
-                "resourcePath": "scripts\\DrawStats\\DrawStats.yy",
-                "resourceType": "GMScript"
+                "id": "7cf164c2-c42b-40b0-a6fd-ccb82cf7248b",
+                "resourcePath": "sprites\\bow_short_pull_arm_f\\bow_short_pull_arm_f.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cdc2f0e2-1166-478e-83a1-9d297bfe4f84",
+            "Value": {
+                "id": "968f00cf-2227-4d75-b5fe-16f82024c909",
+                "resourcePath": "sprites\\bridgeOutside\\bridgeOutside.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -1,1 +1,1 @@
-depth = HouseL.depth - 1;
+event_inherited();

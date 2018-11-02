@@ -25,7 +25,8 @@
         "4cb7c82b-528a-4401-bb8b-bdf340f2dc99",
         "f68456a3-6946-427d-a392-2faa66470b2c",
         "f5644692-e783-4146-b2e4-3c20e4308bc6",
-        "3bb01f5c-8073-4c66-ab1a-4becfcc40e9b"
+        "3bb01f5c-8073-4c66-ab1a-4becfcc40e9b",
+        "5573a572-4502-4de5-92de-19a31b6f5185"
     ],
     "filterType": "GMSprite",
     "folderName": "Italian Towns",

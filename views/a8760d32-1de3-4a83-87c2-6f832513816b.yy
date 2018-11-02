@@ -11,7 +11,8 @@
         "abb64aad-e946-4bcb-b7f0-d5b92e34b9b5",
         "dcfc165d-6a63-4ce6-96f3-d8f878964fbc",
         "26604253-061c-48fc-8a68-436c294ab45b",
-        "ab859952-abbe-446a-97e5-14f1fd275dc4"
+        "ab859952-abbe-446a-97e5-14f1fd275dc4",
+        "b45c9ced-37a9-42a1-9132-c830c63aff30"
     ],
     "filterType": "GMSprite",
     "folderName": "arm",
