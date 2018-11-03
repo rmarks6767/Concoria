@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "RoofL",
     "eventList": [
-        
+        {
+            "id": "3550e93d-494d-413c-9690-1e273d547e37",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "a584f7b6-21aa-4c7a-9424-de6675b7b370"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
