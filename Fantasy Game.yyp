@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "008c7c9a-40c4-4b8d-bfda-8938bac88275",
+            "Value": {
+                "id": "a926603d-279c-474a-904e-07a284633dcd",
+                "resourcePath": "objects\\objForest\\objForest.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "00dcb977-b506-40f0-8a20-dcc0de10e293",
             "Value": {
                 "id": "9fe794e1-bd24-46d9-ac40-604028b19f75",
@@ -612,6 +620,14 @@
                 "id": "7220d088-0fcf-4126-bab9-ffcc19154b46",
                 "resourcePath": "views\\28936aa5-d3af-4e10-b3d1-8f9968dce067.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "29191414-76d0-44d1-9b6c-20b4a3af7aae",
+            "Value": {
+                "id": "b21b5c48-ec88-4737-b53f-696751eb8f11",
+                "resourcePath": "sprites\\Forest\\Forest.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1335,6 +1351,14 @@
             }
         },
         {
+            "Key": "4e520795-d34b-4624-a1c8-3212a1f90ba0",
+            "Value": {
+                "id": "7080bee5-e49d-4c99-b4aa-62e05ed067b2",
+                "resourcePath": "sprites\\sprTownSquare\\sprTownSquare.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4ea39fac-a149-47ec-ba57-a7fd3db4f93a",
             "Value": {
                 "id": "82f3cfbb-4a94-4bae-8d88-0c23bbd214ac",
@@ -1482,7 +1506,7 @@
             "Key": "558bc0c1-940b-42c6-9d89-801d5447f941",
             "Value": {
                 "id": "d2db99bd-4934-4c1d-ab7d-ee892c8fdbb7",
-                "resourcePath": "objects\\HouseLine\\HouseLine.yy",
+                "resourcePath": "objects\\HouseLineVertical\\HouseLineVertical.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1895,6 +1919,14 @@
             }
         },
         {
+            "Key": "7646e48f-2347-4478-9531-2d9ce46a5e19",
+            "Value": {
+                "id": "b52a505c-c7bb-4e87-9174-651de39c8c85",
+                "resourcePath": "sprites\\Tree2\\Tree2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7657792a-4628-4cba-9fa1-c1535b8a4829",
             "Value": {
                 "id": "32b5427a-a12d-4941-8287-a870956bc81a",
@@ -1970,7 +2002,7 @@
             "Key": "7a09ebca-5bf0-41df-8976-09429e677a0a",
             "Value": {
                 "id": "98801572-0a04-4157-a67d-70ec8a6e90a2",
-                "resourcePath": "objects\\square\\square.yy",
+                "resourcePath": "objects\\townSquare\\townSquare.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2084,6 +2116,14 @@
                 "id": "3e775b4c-1c37-43be-bc39-12ace3b4641d",
                 "resourcePath": "views\\83c2ff58-bd09-495a-b061-f2a4b93a44f9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "857332fc-c782-4012-b651-737c496ecc88",
+            "Value": {
+                "id": "208fbe51-2392-4e1d-bfdd-54d17c901097",
+                "resourcePath": "objects\\theTree1\\theTree1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2522,7 +2562,7 @@
             "Key": "a66c301d-e741-482b-837b-4b467e43a6a4",
             "Value": {
                 "id": "1d70aa70-9349-4c21-84fc-df50c2fc2175",
-                "resourcePath": "sprites\\townSquare\\townSquare.yy",
+                "resourcePath": "sprites\\sprFountainStatue\\sprFountainStatue.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3047,6 +3087,14 @@
             }
         },
         {
+            "Key": "c81732cb-750e-49d2-bd8c-32ee716976c1",
+            "Value": {
+                "id": "01a94f46-a9e6-4b6b-a33b-e46f451cfe97",
+                "resourcePath": "objects\\FountainMan\\FountainMan.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c95a0b7c-6b2a-46c9-abaa-59d61b9637c3",
             "Value": {
                 "id": "c49bfa6b-5e6f-4510-b1a1-e8732bb1d7d5",
@@ -3124,6 +3172,14 @@
                 "id": "968f00cf-2227-4d75-b5fe-16f82024c909",
                 "resourcePath": "sprites\\bridgeOutside\\bridgeOutside.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cec7c106-d514-4281-bdd5-1c6cfa0dd7ae",
+            "Value": {
+                "id": "41863fc2-db87-41c3-9137-d161a341482e",
+                "resourcePath": "scripts\\DrawStats\\DrawStats.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3316,6 +3372,14 @@
                 "id": "abe00aaf-f04a-4c26-b329-ac27541e376b",
                 "resourcePath": "sprites\\sprBack\\sprBack.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d8c0cd98-4005-4bce-9128-a22942aa5d76",
+            "Value": {
+                "id": "4434a5a4-dc9a-48e2-afcb-f0463ae7947f",
+                "resourcePath": "objects\\theTree2\\theTree2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3687,6 +3751,14 @@
             }
         },
         {
+            "Key": "f6eec74b-821a-4cb4-a2e7-bfeb01ace1fa",
+            "Value": {
+                "id": "b4f66fe2-e02d-45e5-8548-b83b53903f54",
+                "resourcePath": "sprites\\Tree1\\Tree1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f90d99e1-878a-4558-9e8d-7d366ed9c09f",
             "Value": {
                 "id": "b21798bc-4d80-4569-b803-1a2e8b884fd9",
@@ -3793,6 +3865,7 @@
         "d5861010-b6fb-4380-92eb-4fddaac615ca",
         "fab092b1-dc0d-4dd2-b2fc-767314d72fee",
         "b3084bb0-51ac-49c9-b84c-64263d6fb7b5",
+        "cec7c106-d514-4281-bdd5-1c6cfa0dd7ae",
         "0601d5fd-caa7-480f-8e9f-a2ecada4d4a8",
         "4d042a04-5c7f-41a9-8206-9dde43262c7e",
         "888fc613-8de9-4e25-8661-b7bb6637e5f4",
