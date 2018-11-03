@@ -102,11 +102,15 @@ draw_rectangle_color(ebarx1 , ebary1 , ebarx2 + barlen , ebary2, c_black, c_blac
 switch(drawMode){
 	
 	case MENU_DRAW.STATS:
-		DrawStats();
+		DrawStatistics();
 		break;
 	
 	case MENU_DRAW.SHOP:
 		DrawShop();
+		break;
+		
+	case MENU_DRAW.QUEST:
+		DrawQuest();
 		break;
 	
 }

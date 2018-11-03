@@ -8,6 +8,7 @@ enum MENU_DRAW{
 	
 	SHOP,
 	STATS,
+	QUEST,
 	
 	
 	
@@ -36,6 +37,19 @@ enum REWARD{
 }
 
 
+enum QUEST_FIELD{
+	
+	NAME,
+	CONTENT,
+	REWARDS,
+	DIALOGUE,
+	LOCK,
+	COMPLETED,
+	REPEATABLE,
+	
+}
+var quests = 0;
+
 var reward = CreateArray("5 Gold",REWARD.GOLD,5);
 
 var dialogue0 = CreateArray("Do you like pie",2,"Yes",1,"No",2);
@@ -50,7 +64,9 @@ var locked = CreateArray(-1);
 
 var quest = CreateQuest("Enjoyment of Pie",content,reward,dialogues,locked,false,true);
 
-PrintQuest(quest)
+quests[0] = quest;
+
+//PrintQuest(quest)
 
 var reward = CreateArray("10 EXP",REWARD.EXP,100);
 
@@ -66,4 +82,15 @@ var locked = CreateArray(0,1,2,3,4,5);
 
 var quest = CreateQuest("Go commit sudoku",content,reward,dialogues,locked,false,true);
 
-PrintQuest(quest)
+quests[1] = quest;
+
+//PrintQuest(quest)
+var foo = FindFirstQuest(quests)
+if (foo != noone){
+	PrintQuest(foo);
+}
+else{
+	
+	print("No quest found")
+	
+}

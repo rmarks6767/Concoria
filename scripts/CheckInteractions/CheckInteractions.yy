@@ -1,8 +1,8 @@
 {
-    "id": "9f1d4ae8-9459-430f-b52e-d2eaa109b54a",
+    "id": "09df4589-d2b5-43d5-bf69-62e7256ef7c5",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "GetDialogResponse",
+    "name": "CheckInteractions",
     "IsCompatibility": false,
     "IsDnD": false
 }
