@@ -1,6 +1,5 @@
-//Purpose: Drawing NPCS Quest
+///Purpose: Drawing NPCS Quest
 
-	
 //Screen values
 var screenx1 = camera_get_view_x(view_camera[0])
 var screeny1 = camera_get_view_y(view_camera[0])
@@ -30,24 +29,45 @@ if (questGiver.quests[0] != noone){
 	qstData = FindFirstQuest(questGiver.quests);
 }
 
-//Make sure we got a valid quest
+//Make sure we got a valid. Else, don't display anything
 if (qstData != noone){
 	
+	//Draw Background
 	draw_set_alpha(0.9);
 	draw_rectangle_color(menux1,menuy1,menux2,menuy2,c_black,c_black,c_black,c_black,false);
 	draw_set_alpha(1.0);
 	draw_set_font(header1_font);
 	var spacing = 80;
+	
 	//Draw heading
 	draw_set_font(header1_font)
 	draw_text_color( screenwMid - (string_width("NPC")/2),menuy1+20,"NPC",c_white,c_white,c_white,c_white,255);
 	
-	
+	//Get the actual quest from the quest data
 	var qst = qstData[0];
-	var dialogues = qst[QUEST_FIELD.DIALOGUE];
 	
-	//dialogueNum stores what current dialogue we're on
-	var currentDialogue = dialogues[dialogueNum];
+	//Where we will store the dialogues
+	var dialogues;
+	var currentDialogue;
+	
+	//This var is used to determine whether or not the player has our quest
+	var playerHasQuest = PlayerHasQuest(owner,qst);
+	
+	//Check if the player already has this quest to determine whether or not we should display a normal dialogue or the finish dialogue
+	if (playerHasQuest){
+	
+		//Get the "quest completed" dialogues from the quest
+		dialogues = qst[QUEST_FIELD.COMPLETE_DIALOGUE];
+		
+	}
+	else{
+		//Get the normal dialouges from the quest
+		dialogues = qst[QUEST_FIELD.DIALOGUE];
+	}
+	
+	
+	//dialogueNum stores what current dialogue we're on. Thus, currentDialogue stores what is the current display dialogue
+	currentDialogue = dialogues[dialogueNum];
 	
 	//Draw current dialogue
 	draw_set_font(header2_font)
@@ -55,6 +75,8 @@ if (qstData != noone){
 	
 	//Start drawing the responses
 	var lengthOfDialogue = array_length_1d(dialogues[dialogueNum]);
+	
+	//Check if responses exist
 	if ((lengthOfDialogue/2)-1 > 0){
 		for (var i = 0; i < (lengthOfDialogue/2)-1;i++){
 		
@@ -98,25 +120,15 @@ if (qstData != noone){
 		
 		if(mouse_check_button_pressed(mb_left)){
 			
+			
+			
+			
+			//Check if option is clicked
 			if (point_distance(mouse_x,mouse_y,responsex1,responsey1) <= 20){
 				
-					
-					
-				with(questGiver){
-						
-					var replacementQuest = quests[qstData[1]];
-					if (!replacementQuest[QUEST_FIELD.REPEATABLE]){
-							
-						replacementQuest[QUEST_FIELD.COMPLETED] = true;
-						//print("Quest that is being edited ",qstData[1])
-						quests[qstData[1]] = replacementQuest;
-						
-							
-					}
-				
-						
-						
-				}
+				//Check if option is the last option(Which would give the player a quest)
+				//if (dialogueNum+1 == array_length_1d(dialogues)){
+				CompleteQuest(questGiver,qstData[1]);
 				var rewards = qst[QUEST_FIELD.REWARDS];
 				QuestGiveReward(owner,rewards[REWARDS_FIELD.TYPE],rewards[REWARDS_FIELD.QUANTITY]);
 				drawMode = -1;
