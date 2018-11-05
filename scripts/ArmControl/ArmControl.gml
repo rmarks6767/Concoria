@@ -29,22 +29,22 @@ with(owner){
 
 if NumDirectionToString(owner.face_direction) == "left"{
 		
-	depth = 1
+	//depth = 1
 		
 }
 else if NumDirectionToString(owner.face_direction) == "right"{
 		
-	depth = 1
+	//depth = 1
 		
 }
 else if NumDirectionToString(owner.face_direction) == "up"{
 	
-	depth = 1
+	//depth = 1
 	
 }
 else if NumDirectionToString(owner.face_direction) == "down"{
 		
-	depth = 1
+	//depth = 1
 			
 }
 

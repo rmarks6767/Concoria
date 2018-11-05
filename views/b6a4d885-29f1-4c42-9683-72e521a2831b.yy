@@ -20,7 +20,9 @@
         "f30a8968-bde5-44e4-824a-83c9991fd193",
         "b83ca0b7-2fb8-4335-bbbc-c955218b108b",
         "e9cf018d-b766-45ed-988d-2f71f9de31f5",
-        "150f35e8-4b50-454a-825a-1209b1a1812a"
+        "150f35e8-4b50-454a-825a-1209b1a1812a",
+        "a80b7056-f5d6-4c55-9d63-27457afabed1",
+        "2c2dadc2-f24b-4544-b554-5c073a7e1bb7"
     ],
     "filterType": "GMSprite",
     "folderName": "skin0",

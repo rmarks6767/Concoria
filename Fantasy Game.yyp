@@ -258,7 +258,7 @@
             "Key": "1039c519-c8bb-4a23-addb-3dc46b23cce8",
             "Value": {
                 "id": "37290b93-a474-4054-af0a-90b0fee39039",
-                "resourcePath": "sprites\\bow_short_pull_arm_r\\bow_short_pull_arm_r.yy",
+                "resourcePath": "sprites\\bow_short_pull_arm_l\\bow_short_pull_arm_l.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -650,7 +650,7 @@
             "Key": "2926f1f8-4963-40c3-b63f-82291f327703",
             "Value": {
                 "id": "64313114-8f81-4997-be6a-fdd4709cb98e",
-                "resourcePath": "sprites\\bow_short_pull_arm_l\\bow_short_pull_arm_l.yy",
+                "resourcePath": "sprites\\bow_short_pull_arm_r\\bow_short_pull_arm_r.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -707,6 +707,14 @@
             "Value": {
                 "id": "13b53f88-6e81-48df-9ccf-82a25e0c6ec6",
                 "resourcePath": "sprites\\italian_idle_attack_l1\\italian_idle_attack_l1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2c2dadc2-f24b-4544-b554-5c073a7e1bb7",
+            "Value": {
+                "id": "7a1bff83-b854-4547-b453-0ff6008bafbf",
+                "resourcePath": "sprites\\skin0_head_b\\skin0_head_b.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2619,6 +2627,14 @@
             "Value": {
                 "id": "d7c12394-6501-4159-96b8-3fd98a431eb7",
                 "resourcePath": "sprites\\sword_wood_f\\sword_wood_f.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a80b7056-f5d6-4c55-9d63-27457afabed1",
+            "Value": {
+                "id": "6709df40-fcae-4562-a3e2-7f3277dbd3ff",
+                "resourcePath": "sprites\\skin0_head_f\\skin0_head_f.yy",
                 "resourceType": "GMSprite"
             }
         },
