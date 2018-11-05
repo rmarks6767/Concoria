@@ -31,7 +31,7 @@ var spacing = 80;
 draw_set_font(header1_font)
 draw_text_color( screenwMid - (string_width("NPC")/2),menuy1+20,"NPC",c_white,c_white,c_white,c_white,255);
 
-var qst = FindFirstQuest(quest.quests)
+var qst = FindFirstQuest(questGiver.quests)
 if (qst != noone){
 	
 	var dialogues = qst[QUEST_FIELD.DIALOGUE];
@@ -43,15 +43,39 @@ if (qst != noone){
 	draw_set_font(header2_font)
 	draw_text_color( screenwMid - (string_width(currentDialogue[0])/2),menuy1+60,currentDialogue[0],c_white,c_white,c_white,c_white,255);
 	
-	
-	for (var i = 0; i < (array_length_1d(dialogues[dialogueNum])/2)-1;i++){
-
-		var responseArray = GetQuestResponse(currentDialogue,i);
-		var response = responseArray[0];
-		var responseGoto = responseArray[1];
+	//Start drawing the responses
+	var lengthOfDialogue = array_length_1d(dialogues[dialogueNum]);
+	if ((lengthOfDialogue/2)-1 > 0){
+		for (var i = 0; i < (lengthOfDialogue/2)-1;i++){
 		
+			var responseArray = GetQuestResponse(currentDialogue,i);
+			var response = responseArray[0];
+			var responseGoto = responseArray[1];
+		
+			var responsex1 = (screenwMid - (string_width(response)/2));
+			var responsey1 = (menuy1 + 120) + spacing*i
+		
+		
+			//Draw Response
+			draw_set_font(header2_font)
+			draw_text_color( responsex1,responsey1,response,c_white,c_white,c_white,c_white,255);
+		
+			if(mouse_check_button_pressed(mb_left)){
+			
+				if (point_distance(mouse_x,mouse_y,responsex1,responsey1) <= 20){
+				
+					 dialogueNum = responseGoto;
+				
+				}
+			
+			}
+		
+		}
+	}
+	else{
+		var response = "Click here to close"
 		var responsex1 = (screenwMid - (string_width(response)/2));
-		var responsey1 = (menuy1 + 120) + spacing*i
+		var responsey1 = (menuy1 + 120) + spacing
 		
 		
 		//Draw Response
@@ -62,7 +86,22 @@ if (qst != noone){
 			
 			if (point_distance(mouse_x,mouse_y,responsex1,responsey1) <= 20){
 				
-				 dialogueNum = responseGoto;
+					
+					
+					with(questGiver){
+						
+						var currentQuest = FindFirstQuest(quests);
+						if (!currentQuest[QUEST_FIELD.REPEATABLE]){
+							
+							currentQuest[QUEST_FIELD.COMPLETED] = true;
+							
+						}
+					}
+					
+					drawMode = -1;
+					questGiver.currentQuester = noone;
+					questGiver = noone;
+					dialogueNum = 0;
 				
 			}
 			

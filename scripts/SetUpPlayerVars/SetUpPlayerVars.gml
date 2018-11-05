@@ -44,6 +44,12 @@ Inventory[4,1] = 0
 Inventory[4,2] = "none"
 Inventory[4,3] = false
 
+//finished quests
+finQuests[0] = noone;
+
+//active quests
+quests[0] = noone;
+
 
 //Colors and type for drawing CC components
 shirtColor = make_color_rgb(255,255,255);

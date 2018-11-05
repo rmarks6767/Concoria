@@ -743,47 +743,49 @@ or (keyboard_check(ord("D")) and keyboard_check(ord("S")))
 
 //KEYRELEASE
 
-    if keyboard_check_released(ord("A")) and not MovingKeyDown(){
+if keyboard_check_released(ord("A")) and not MovingKeyDown(){
 
 
-        direction = 180
-        speed = 0
+    direction = 180
+    speed = 0
         
         
-    }else if keyboard_check_released(ord("D")) and not MovingKeyDown(){
+}else if keyboard_check_released(ord("D")) and not MovingKeyDown(){
     
 
-        direction = 0
-        speed = 0
+    direction = 0
+    speed = 0
     
-    }else if keyboard_check_released(ord("W")) and not MovingKeyDown(){
-    
-
-        direction = 90
-        speed = 0
-    
-    }else if keyboard_check_released(ord("S")) and not MovingKeyDown(){
+}else if keyboard_check_released(ord("W")) and not MovingKeyDown(){
     
 
-        direction = 270
-        speed = 0
+    direction = 90
+    speed = 0
     
-    }
+}else if keyboard_check_released(ord("S")) and not MovingKeyDown(){
+    
+
+    direction = 270
+    speed = 0
+    
+}
     
     
 //ATTACK
 
-    if mouse_check_button_pressed(mb_left){
+if mouse_check_button_pressed(mb_left){
+	if (hud.drawMode = -1){
+		
+	    if attacking == false{
         
-        if attacking == false{
-        
-            attacking = true
+	        attacking = true
 			
-            show_debug_message("attacking")
+	        show_debug_message("attacking")
             
-        }
+	    }
+	}
         
-    }
+}
     
 
 //INVENTORY

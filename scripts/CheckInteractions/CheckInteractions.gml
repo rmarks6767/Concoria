@@ -11,16 +11,17 @@ if (keyboard_check_pressed(ord("E"))){
 		
 		if (distance_to_object(nearestPlayer) <= interactRadius ){
 			currentQuester = nearestPlayer;
-			currentQuester.hud.quest = self;
+			currentQuester.hud.questGiver = self;
 			currentQuester.hud.drawMode = MENU_DRAW.QUEST;
-			
+			speed = 0;
 		}
 	
 	}
 	
 	else{
-		currentQuester.hud.quest = noone;
+		currentQuester.hud.questGiver = noone;
 		currentQuester.hud.drawMode = -1;
+		currentQuester.hud.dialogueNum = 0;
 		currentQuester = noone;
 			
 	}
@@ -31,8 +32,9 @@ if (currentQuester != noone){
 	
 	if (distance_to_object(currentQuester) > interactRadius){
 		
-		currentQuester.hud.quest = noone;
+		currentQuester.hud.questGiver = noone;
 		currentQuester.hud.drawMode = -1;
+		currentQuester.hud.dialogueNum = 0;
 		currentQuester = noone;
 		
 		
