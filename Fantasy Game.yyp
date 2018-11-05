@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "189024fa-6d83-4227-85be-3bb55ab9a664",
+            "Value": {
+                "id": "27b3ba78-c231-4281-8b5b-89dea4180f41",
+                "resourcePath": "objects\\houseTop\\houseTop.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "18c18229-a77e-494e-8239-61855795f069",
             "Value": {
                 "id": "df718af4-11aa-4349-9f8b-199d0e5b3860",
@@ -860,6 +868,14 @@
                 "id": "84a20a1a-bfc2-4ff2-bc8e-c8aa09e6d240",
                 "resourcePath": "objects\\worldObjectLoader\\worldObjectLoader.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3738f2f1-68dd-48ca-91a2-0e081b73e4ce",
+            "Value": {
+                "id": "d97d88f9-9e13-4eba-86a2-4a1fae1d401e",
+                "resourcePath": "sprites\\ShopPlace\\ShopPlace.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1444,6 +1460,14 @@
                 "id": "d0f79204-4665-4024-bb7d-97f8a9d41f45",
                 "resourcePath": "scripts\\GetRewardType\\GetRewardType.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "529329f9-c10b-4e64-b231-3bfde4f61b5a",
+            "Value": {
+                "id": "4de1a8f0-45b8-4d99-ad6c-6979e813a790",
+                "resourcePath": "objects\\objShop\\objShop.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3355,6 +3379,14 @@
             "Value": {
                 "id": "3e917c22-88e3-4f24-8aa6-633b4d906bb1",
                 "resourcePath": "sprites\\template_arm_swing_l1\\template_arm_swing_l1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d7a81ef2-257e-4c73-94dc-7bc3422583a6",
+            "Value": {
+                "id": "bbeef6d6-00c6-4a04-9323-dc7e3306a55c",
+                "resourcePath": "sprites\\sprHouseTop\\sprHouseTop.yy",
                 "resourceType": "GMSprite"
             }
         },

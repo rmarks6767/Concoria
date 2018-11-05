@@ -20,7 +20,8 @@
         "dddc12b0-6c62-4de1-9299-305fd830f6b2",
         "53d366f5-c288-4263-b6b9-dcbd7d0defc4",
         "558bc0c1-940b-42c6-9d89-801d5447f941",
-        "74affb56-4046-4734-b4ce-90da340ef273"
+        "74affb56-4046-4734-b4ce-90da340ef273",
+        "189024fa-6d83-4227-85be-3bb55ab9a664"
     ],
     "filterType": "GMObject",
     "folderName": "House Parts",

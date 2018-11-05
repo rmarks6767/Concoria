@@ -1,9 +1,9 @@
-var diag = instance_create_depth(x + 113, y, -3, solid_obj);
-var side = instance_create_depth(x + 113, y + 60, -3, solid_obj);
+var diag = instance_create_depth(x + 113, y+ 67, -3, solid_obj);
+var side = instance_create_depth(x + 113, y + 67, -3, solid_obj);
 
 with (diag)
 {
-	direction = 90 - 32.6423
+	image_angle = 90 + (90 - 32.6423)
 	image_xscale = 4
 	image_yscale = 0.1562
 }
