@@ -1,3 +1,4 @@
+
 houseWidth = x + 113;
 houseHeight = y + 370;
 house_x = x;

@@ -1,3 +1,5 @@
+SaveInstances(id, (id - 100000));
+
 var diag = instance_create_depth(x - 5, y + 69, -3, solid_obj);
 var side = instance_create_depth(x - 5, y + 69, -3, solid_obj);
 

@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "HouseROutside",
     "eventList": [
-        
+        {
+            "id": "1a29043d-3c10-428a-a794-f10ea21becfd",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "dddc12b0-6c62-4de1-9299-305fd830f6b2"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

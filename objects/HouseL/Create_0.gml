@@ -1,3 +1,5 @@
+SaveInstances(id, (id - 100000));
+
 instancecall = instance_id; 
 amountToDraw = 0;
 instanceNumber = 0; 

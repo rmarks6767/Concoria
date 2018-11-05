@@ -1,3 +1,5 @@
+
+
 var top = instance_create_depth(x, y + 70, -3, solid_obj);
 var topinside = instance_create_depth(x, y + 175, -3, solid_obj);
 var bottom1 = instance_create_depth(x, y + 353, -3, solid_obj);

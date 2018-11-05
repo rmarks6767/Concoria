@@ -1,3 +1,4 @@
+
 if (checked == false) {
 	HouseLength(self, instanceNumber, groupid, doorinst, x1, x2, y1, y2);
 	checked = true;

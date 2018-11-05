@@ -1,4 +1,4 @@
-
+SaveInstances(id, (id - 100000));
 var top = instance_create_depth(x , y, -3, solid_obj);
 
 

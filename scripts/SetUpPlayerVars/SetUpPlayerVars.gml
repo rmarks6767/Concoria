@@ -1,3 +1,4 @@
+objectName = "player"
 Health = 100
 Maxhealth = 100
 Lvl = 1
