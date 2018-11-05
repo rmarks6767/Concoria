@@ -1,5 +1,5 @@
 ///Purpose: Check if the player has a certain quest. This is checked using a quest's unique identifier (Name Field) 
-///Returns a bool
+///Returns either a list of both (bool,index)
 
 //player
 var ply = argument0;
@@ -11,7 +11,7 @@ var qst = argument1;
 //If they don't return false
 if (ply.quests[0] == noone){
 	
-	return false;
+	return list(false,-1);
 	
 }
 
@@ -23,12 +23,12 @@ for (var i = 0; i < array_length_1d(ply.quests); i++){
 	
 	
 	//If we find one that matches, then return true
-	if (plyQst[QUEST_FIELD.NAME] == qst[QUEST_FIELD]){
+	if (plyQst[QUEST_FIELD.NAME] == qst[QUEST_FIELD.NAME]){
 		
-		return true;
+		return list(true,i);
 		
 	}
 	
 	
 }
-return false;
+return list(false,-1);

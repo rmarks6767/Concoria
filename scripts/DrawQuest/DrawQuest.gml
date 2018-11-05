@@ -50,14 +50,38 @@ if (qstData != noone){
 	var dialogues;
 	var currentDialogue;
 	
-	//This var is used to determine whether or not the player has our quest
-	var playerHasQuest = PlayerHasQuest(owner,qst);
+	
+	
+	
+	//This function returns a list of both the bool and the index of the quest on the player
+	var playerHasQuestData = PlayerHasQuest(owner,qst);
+	//This var is used to determine whether or not the player has our quest(bool)
+	var playerHasQuest = playerHasQuestData[0];
+	//This var is where that quest is located on the player
+	var playerQuestIndex = playerHasQuestData[1];
+	
+	
+	
+	var playerCompletedQuest = PlayerQuestComplete(owner,playerQuestIndex);
+	
+	
+	
 	
 	//Check if the player already has this quest to determine whether or not we should display a normal dialogue or the finish dialogue
 	if (playerHasQuest){
 	
 		//Get the "quest completed" dialogues from the quest
 		dialogues = qst[QUEST_FIELD.COMPLETE_DIALOGUE];
+		if (playerCompletedQuest){
+			
+			dialogueNum = array_length_1d(dialogues) - 1;
+			
+		}
+		else{
+			
+			dialogueNum = 0;
+			
+		}
 		
 	}
 	else{
@@ -126,16 +150,41 @@ if (qstData != noone){
 			//Check if option is clicked
 			if (point_distance(mouse_x,mouse_y,responsex1,responsey1) <= 20){
 				
-				//Check if option is the last option(Which would give the player a quest)
-				//if (dialogueNum+1 == array_length_1d(dialogues)){
-				CompleteQuest(questGiver,qstData[1]);
-				var rewards = qst[QUEST_FIELD.REWARDS];
-				QuestGiveReward(owner,rewards[REWARDS_FIELD.TYPE],rewards[REWARDS_FIELD.QUANTITY]);
-				drawMode = -1;
-				questGiver.currentQuester = noone;
-				questGiver = noone;
-				dialogueNum = 0;
+				if (playerHasQuest){
+					
+					if (playerCompletedQuest){
+					
+						CompleteQuest(questGiver,qstData[1]);
+						var rewards = qst[QUEST_FIELD.REWARDS];
+						QuestGiveReward(owner,rewards[REWARDS_FIELD.TYPE],rewards[REWARDS_FIELD.QUANTITY]);
+						CloseQuestWindow();
+					
+					}
+					else{
+					
+						CloseQuestWindow();
+						
+					}
 				
+				}
+				else{
+					
+					//Check if option is the last option(Which would give the player a quest)
+					if (dialogueNum == array_length_1d(dialogues) -1 ){
+						
+						print("Quest given");
+						GivePlayerQuest(owner,qst);
+						CloseQuestWindow();
+						
+					}
+					else{
+						
+						//CloseQuestWindow()	
+						
+					}
+					
+				}
+
 			}
 			
 		}

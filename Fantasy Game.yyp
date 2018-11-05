@@ -2623,6 +2623,14 @@
             }
         },
         {
+            "Key": "a44265eb-4e3a-4fdd-bfe9-d7847a71d548",
+            "Value": {
+                "id": "bf9e32e2-476f-4e29-8173-3a6cd89b6594",
+                "resourcePath": "scripts\\CloseQuestWindow\\CloseQuestWindow.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a5115611-b7dc-4b4c-96d5-b49cdbdcf958",
             "Value": {
                 "id": "7a21ba1e-697a-47db-8ae6-5c59fb676aa5",
@@ -4002,6 +4010,7 @@
         "c19371e9-c76f-460d-85d6-5723620d6dad",
         "520d139d-29c8-421f-90ea-ae7c117a2b54",
         "d911c61d-e29c-4061-a205-503abc86f820",
+        "a44265eb-4e3a-4fdd-bfe9-d7847a71d548",
         "fab092b1-dc0d-4dd2-b2fc-767314d72fee",
         "9e1bb8ba-1bba-4a59-be7e-da426a04f05e",
         "172545f4-6998-4d15-a00c-80b0d8437bda",
