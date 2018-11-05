@@ -1,3 +1,5 @@
+SaveInstances(id, (id - 100000));
+
 houseWidth = x + 226;
 houseHeight = y + 370;
 house_x = x;

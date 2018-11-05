@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "HouseLOutside",
     "eventList": [
-        
+        {
+            "id": "01250b1c-d46f-4e5e-8c1b-eeb59ca81a0f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "496b6696-4918-4e2d-a3ec-407dd094e7f4"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

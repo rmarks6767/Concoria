@@ -1,4 +1,4 @@
-SaveInstances(counterStore, counterFull, objectStorage, storedids)
+ReActivate();
 
 x = player.x
 y = player.y

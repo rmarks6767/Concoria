@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "HouseLineVertical",
     "eventList": [
-        
+        {
+            "id": "79093e2d-346c-47c4-8e26-3eea0a23c654",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "558bc0c1-940b-42c6-9d89-801d5447f941"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

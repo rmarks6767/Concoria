@@ -1,3 +1,5 @@
+SaveInstances(id, (id - 100000));
+
 if player.y < y
 {
 	depth = player.depth - 1
