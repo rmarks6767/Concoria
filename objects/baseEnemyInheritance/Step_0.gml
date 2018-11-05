@@ -13,6 +13,7 @@ switch(thestate)
 			Wander();
 			alarm[0] = irandom_range(20,50);
 		}
+		CheckInteractions();
 		break;
 		
 	case state.attack:
@@ -50,6 +51,7 @@ switch(thestate)
 		Shop();
 		break;
 }
+
 if Health <= 0{
 		
 		instance_destroy(self.arm);
@@ -60,8 +62,10 @@ CheckCollisions();
 with(arm){
 	ArmControl()
 }
+
 Animate();
 
+/*
 if (currentCustomer != noone){
 	
 	if (currentCustomer.hud.drawMode == MENU_DRAW.SHOP){
@@ -71,3 +75,4 @@ if (currentCustomer != noone){
 	}
 
 }
+*/

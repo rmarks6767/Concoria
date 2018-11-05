@@ -14,10 +14,10 @@ var quest = argument0;
 
 //6:Quest is repetable or not<bool>:true, false
 print("=========QUEST=========");
-print("Quest Name: ", quest[0]);
+print("Quest Name: ", quest[QUEST_FIELD.NAME]);
 
 
-var temp = quest[1];
+var temp = quest[QUEST_FIELD.CONTENT];
 
 
 
@@ -43,7 +43,7 @@ print("Quest Contents: ",contents);
 print("Quest Rewards:");
 
 var reward = "";
-var temp0 = quest[2];
+var temp0 = quest[QUEST_FIELD.REWARDS];
 for(var i = 0 ; i < array_length_1d(temp0); i+=3){
 	
 	

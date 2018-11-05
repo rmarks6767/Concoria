@@ -11,15 +11,17 @@ if (keyboard_check_pressed(ord("E"))){
 	
 	if (currentCustomer == noone){
 		
-		if (distance_to_object(closestPlayer) <= shopRadius ){
+		if (distance_to_object(closestPlayer) <= interactRadius ){
 			currentCustomer = closestPlayer;
+			currentCustomer.hud.shop = self;
 			currentCustomer.hud.drawMode = MENU_DRAW.SHOP;
+			
 		}
 	
 	}
 	
 	else{
-			
+		currentCustomer.hud.shop = noone;
 		currentCustomer.hud.drawMode = -1;
 		currentCustomer = noone;
 			
@@ -29,9 +31,10 @@ if (keyboard_check_pressed(ord("E"))){
 //If the player moves outside of the radius of the shop. Close the menu
 if (currentCustomer != noone){
 	
-	if (distance_to_object(currentCustomer) > shopRadius){
+	if (distance_to_object(currentCustomer) > interactRadius){
 		
-		currentCustomer.hud.drawMode = -1;
+		currentCustomer.hud.shop = noone;
+		currentCustomer.hud.drawMode = -1
 		currentCustomer = noone;
 		
 		

@@ -2,3 +2,5 @@
 owner = noone;
 drawMode = -1;
 shop = noone;
+quest = noone;
+dialogueNum = 0;
