@@ -26,7 +26,9 @@ draw_set_alpha(0.9);
 draw_rectangle_color(menux1,menuy1,menux2,menuy2,c_black,c_black,c_black,c_black,false);
 draw_set_alpha(1.0);
 draw_set_font(header1_font);
-var spacing = 70;
+var spacing = 80;
+//Draw heading
+draw_set_font(header1_font)
 draw_text_color( screenwMid - (string_width("NPC")/2),menuy1+20,"NPC",c_white,c_white,c_white,c_white,255);
 
 var qst = FindFirstQuest(quest.quests)
@@ -37,7 +39,9 @@ if (qst != noone){
 	//dialogueNum stores what current dialogue we're on
 	var currentDialogue = dialogues[dialogueNum];
 	
-	draw_text_color( screenwMid - (string_width(currentDialogue[0])/2),menuy1+40,currentDialogue[0],c_white,c_white,c_white,c_white,255);
+	//Draw current dialogue
+	draw_set_font(header2_font)
+	draw_text_color( screenwMid - (string_width(currentDialogue[0])/2),menuy1+60,currentDialogue[0],c_white,c_white,c_white,c_white,255);
 	
 	
 	for (var i = 0; i < (array_length_1d(dialogues[dialogueNum])/2)-1;i++){
@@ -47,9 +51,22 @@ if (qst != noone){
 		var responseGoto = responseArray[1];
 		
 		var responsex1 = (screenwMid - (string_width(response)/2));
-		var responsey1 = (menuy1 + 70) + spacing*i
+		var responsey1 = (menuy1 + 120) + spacing*i
 		
+		
+		//Draw Response
+		draw_set_font(header2_font)
 		draw_text_color( responsex1,responsey1,response,c_white,c_white,c_white,c_white,255);
+		
+		if(mouse_check_button_pressed(mb_left)){
+			
+			if (point_distance(mouse_x,mouse_y,responsex1,responsey1) <= 20){
+				
+				 dialogueNum = responseGoto;
+				
+			}
+			
+		}
 		
 	}
 	
