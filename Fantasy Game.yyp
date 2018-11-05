@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "18ab02db-103d-4557-9244-11cce4d410db",
+            "Value": {
+                "id": "7b035289-7faf-4df1-9ec8-c5548a1125c7",
+                "resourcePath": "scripts\\Concatenate\\Concatenate.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "18c18229-a77e-494e-8239-61855795f069",
             "Value": {
                 "id": "df718af4-11aa-4349-9f8b-199d0e5b3860",
@@ -1079,6 +1087,14 @@
             }
         },
         {
+            "Key": "40c352a3-08d9-4a33-9bc7-35156a3aaa96",
+            "Value": {
+                "id": "5f935825-119f-4506-98db-f754911b7004",
+                "resourcePath": "objects\\theTree1\\theTree1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "416e0a4e-5b73-4235-80f9-4e7218d4597e",
             "Value": {
                 "id": "9e4825bd-d1c9-4a91-af14-3b1d130f5c8e",
@@ -1639,6 +1655,14 @@
             }
         },
         {
+            "Key": "5c1330e1-a249-4ac5-8dcf-788801481d70",
+            "Value": {
+                "id": "ec883b50-efd7-4162-9c4a-2eb324485b1d",
+                "resourcePath": "scripts\\getExpToAdd\\getExpToAdd.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5c2d1693-311d-4a1e-b206-d1f5e2af5f64",
             "Value": {
                 "id": "ec3b4e15-4080-4559-9228-924b9282f97f",
@@ -2170,7 +2194,7 @@
             "Key": "857332fc-c782-4012-b651-737c496ecc88",
             "Value": {
                 "id": "208fbe51-2392-4e1d-bfdd-54d17c901097",
-                "resourcePath": "objects\\theTree1\\theTree1.yy",
+                "resourcePath": "objects\\theTreebase\\theTreebase.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2332,6 +2356,14 @@
                 "id": "dde4c00b-6dcf-4b22-ba93-d3f3127331c0",
                 "resourcePath": "objects\\Colosseum\\Colosseum.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8d264cbc-85fa-4549-8244-d850829865b0",
+            "Value": {
+                "id": "4b53f217-81d2-4147-a57a-f5413f1de0fb",
+                "resourcePath": "sprites\\TreeBase\\TreeBase.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3951,7 +3983,8 @@
         "14bd5092-0b8b-4649-93b9-9bfa3822f819",
         "c164e502-2c10-4fc9-a705-4bc0b404c19d",
         "b7d24bf4-b546-412f-9998-09263c4513c8",
-        "e29c396c-2223-4b80-9a26-f2593889d28b"
+        "5c1330e1-a249-4ac5-8dcf-788801481d70",
+        "18ab02db-103d-4557-9244-11cce4d410db"
     ],
     "tutorial": ""
 }

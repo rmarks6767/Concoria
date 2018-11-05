@@ -10,11 +10,8 @@ solidArray[4] = townSquare;
 solidArray[5] = theTree2;
 solidArray[6] = theTree1;
 solidArray[7] = objForest;
-solidArray[8] = HouseLOutside;
-solidArray[9] = HouseROutside;
-solidArray[10] = HouseMOutside;
-solidArray[11] = Colosseum;
-solidArray[12] = objShop;
+solidArray[8] = Colosseum;
+solidArray[9] = objShop;
 
 
 //Loop through and check for each type of object

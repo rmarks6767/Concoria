@@ -20,7 +20,7 @@ viewx2 = viewx1 + viewwidth;
 viewy2 = viewy1 + viewheight;
 
 //adds padding so the instancces aren't deleting in the players view
-padding = 500;
+padding = 1000;
 
 //gets the number of instances currently active in the room
 numInstances = instance_count;
