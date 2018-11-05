@@ -1511,6 +1511,14 @@
             }
         },
         {
+            "Key": "534f5cf1-658d-4b6e-a98c-220ba7c506a1",
+            "Value": {
+                "id": "79ab825b-5711-4a14-93b5-a7f0b4e11717",
+                "resourcePath": "scripts\\QuestGiveReward\\QuestGiveReward.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "53d366f5-c288-4263-b6b9-dcbd7d0defc4",
             "Value": {
                 "id": "352a664e-b612-4f99-91f0-e3c84552e8d7",
@@ -3949,6 +3957,7 @@
         "14bd5092-0b8b-4649-93b9-9bfa3822f819",
         "c164e502-2c10-4fc9-a705-4bc0b404c19d",
         "b7d24bf4-b546-412f-9998-09263c4513c8",
+        "534f5cf1-658d-4b6e-a98c-220ba7c506a1",
         "fab092b1-dc0d-4dd2-b2fc-767314d72fee",
         "9e1bb8ba-1bba-4a59-be7e-da426a04f05e",
         "172545f4-6998-4d15-a00c-80b0d8437bda"

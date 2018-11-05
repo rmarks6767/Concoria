@@ -22,18 +22,28 @@ var menuy1 = screeny1+vertPad
 var menux2 = screenx2-horPad
 var menuy2 = screeny2-vertPad
 
-draw_set_alpha(0.9);
-draw_rectangle_color(menux1,menuy1,menux2,menuy2,c_black,c_black,c_black,c_black,false);
-draw_set_alpha(1.0);
-draw_set_font(header1_font);
-var spacing = 80;
-//Draw heading
-draw_set_font(header1_font)
-draw_text_color( screenwMid - (string_width("NPC")/2),menuy1+20,"NPC",c_white,c_white,c_white,c_white,255);
+//Storer of quest data
+var qstData = noone;
 
-var qst = FindFirstQuest(questGiver.quests)
-if (qst != noone){
+//See if our questGiver has a quest for us and grab the appropriate quest
+if (questGiver.quests[0] != noone){
+	qstData = FindFirstQuest(questGiver.quests);
+}
+
+//Make sure we got a valid quest
+if (qstData != noone){
 	
+	draw_set_alpha(0.9);
+	draw_rectangle_color(menux1,menuy1,menux2,menuy2,c_black,c_black,c_black,c_black,false);
+	draw_set_alpha(1.0);
+	draw_set_font(header1_font);
+	var spacing = 80;
+	//Draw heading
+	draw_set_font(header1_font)
+	draw_text_color( screenwMid - (string_width("NPC")/2),menuy1+20,"NPC",c_white,c_white,c_white,c_white,255);
+	
+	
+	var qst = qstData[0];
 	var dialogues = qst[QUEST_FIELD.DIALOGUE];
 	
 	//dialogueNum stores what current dialogue we're on
@@ -59,12 +69,14 @@ if (qst != noone){
 			//Draw Response
 			draw_set_font(header2_font)
 			draw_text_color( responsex1,responsey1,response,c_white,c_white,c_white,c_white,255);
-		
+			
+			//Check if response if pressed
 			if(mouse_check_button_pressed(mb_left)){
 			
 				if (point_distance(mouse_x,mouse_y,responsex1,responsey1) <= 20){
 				
-					 dialogueNum = responseGoto;
+					//Jump to appropriate dialogue
+					dialogueNum = responseGoto;
 				
 				}
 			
@@ -72,6 +84,8 @@ if (qst != noone){
 		
 		}
 	}
+	
+	//This happens if we reach the end of a dialog tree
 	else{
 		var response = "Click here to close"
 		var responsex1 = (screenwMid - (string_width(response)/2));
@@ -88,20 +102,27 @@ if (qst != noone){
 				
 					
 					
-					with(questGiver){
+				with(questGiver){
 						
-						var currentQuest = FindFirstQuest(quests);
-						if (!currentQuest[QUEST_FIELD.REPEATABLE]){
+					var replacementQuest = quests[qstData[1]];
+					if (!replacementQuest[QUEST_FIELD.REPEATABLE]){
 							
-							currentQuest[QUEST_FIELD.COMPLETED] = true;
+						replacementQuest[QUEST_FIELD.COMPLETED] = true;
+						//print("Quest that is being edited ",qstData[1])
+						quests[qstData[1]] = replacementQuest;
+						
 							
-						}
 					}
-					
-					drawMode = -1;
-					questGiver.currentQuester = noone;
-					questGiver = noone;
-					dialogueNum = 0;
+				
+						
+						
+				}
+				var rewards = qst[QUEST_FIELD.REWARDS];
+				QuestGiveReward(owner,rewards[REWARDS_FIELD.TYPE],rewards[REWARDS_FIELD.QUANTITY]);
+				drawMode = -1;
+				questGiver.currentQuester = noone;
+				questGiver = noone;
+				dialogueNum = 0;
 				
 			}
 			

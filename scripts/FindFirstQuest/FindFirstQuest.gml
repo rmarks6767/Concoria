@@ -2,15 +2,15 @@
 var quests = argument0
 
 //Iterate through all of the quests
-print("::Quest find begun")
+//print("::Quest find begun")
 for(var i = 0; i < array_length_1d(quests); i++){
 	
 	//The individual quest we are checking
 	var quest = quests[i];
-	print(quest[QUEST_FIELD.NAME]," Is being checked");
+	//print(quest[QUEST_FIELD.NAME]," Is being checked");
 	//Check if our quest has been completed
 	if(quest[QUEST_FIELD.COMPLETED] == false){
-		print("::QUEST HAS BEEN COMPLETED")
+		//print("::QUEST HAS NOT BEEN COMPLETED")
 		
 		//Locked quest locked array
 		var locked = quest[QUEST_FIELD.LOCK]
@@ -20,7 +20,7 @@ for(var i = 0; i < array_length_1d(quests); i++){
 		
 		//Iterate through all locked quest numbers for this current quest
 		var lockedLen = array_length_1d(locked);
-		print("Locked Len:",lockedLen);
+		//print("Locked Len:",lockedLen);
 		for (var ii = 0; ii < lockedLen;ii++ ){
 			
 			if (locked[ii] != -1){
@@ -36,7 +36,7 @@ for(var i = 0; i < array_length_1d(quests); i++){
 			}
 			else{
 				
-				print("::Quest has no requirements")
+				//print("::Quest has no requirements")
 				questPassed = 1;
 			}
 		}
@@ -44,11 +44,17 @@ for(var i = 0; i < array_length_1d(quests); i++){
 		
 		if (questPassed == array_length_1d(quest[QUEST_FIELD.LOCK])){
 			
-			return quest;
+			return list(quest,i);
 			
 		}
 
 	}
+	else{
+		
+		//print("QUEST HAS BEEN COMPLETED")
+		
+	}
+		
 	
 
 }
