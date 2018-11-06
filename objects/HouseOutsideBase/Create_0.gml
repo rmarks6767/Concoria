@@ -1,2 +1,2 @@
-SaveInstances(id, (id - 100000));
 depth = -3;
+SaveInstances(id, (id - 100000));

@@ -10,13 +10,13 @@ if weaponUsed == 0{
 	itemHolding[1] = "Sword"
 	ranged = false;
 }else if weaponUsed == 2{
-	itemHolding[0] = "Short Bow" 
-	itemHolding[1] = "Bow" 
-	ranged = true;
+	itemHolding[0] = "" 
+	itemHolding[1] = "" 
+	ranged = false;
 }else if weaponUsed == 3{
-	itemHolding[0] = "Wooden Staff" 
-	itemHolding[1] = "Staff" 
-	ranged = true;
+	itemHolding[0] = "" 
+	itemHolding[1] = "" 
+	ranged = false;
 }else if weaponUsed == 4{
 	itemHolding[0] = ""  //they spawn wesponless
 	itemHolding[1] = ""

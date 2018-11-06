@@ -1,7 +1,7 @@
 var playerGetXp = argument0
 var Exp = playerGetXp.Exp
 
-var Xp = (log10(playerGetXp.Lvl/self.level) * 50) + 10;
+var Xp = floor(log10(playerGetXp.Lvl/self.level) * 50) + 10;
 print(Xp, "This is the added XP")
 
 if Xp <= 0{
