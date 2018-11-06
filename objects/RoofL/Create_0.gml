@@ -1,4 +1,4 @@
-SaveInstances(id, (id - 100000));
+
 
 var diag = instance_create_depth(x - 5, y + 69, -3, solid_obj);
 var side = instance_create_depth(x - 5, y + 69, -3, solid_obj);
@@ -14,3 +14,4 @@ with (side)
 	image_xscale = 0.1875
 	image_yscale = 1.7812
 }
+SaveInstances(id, (id - 100000));

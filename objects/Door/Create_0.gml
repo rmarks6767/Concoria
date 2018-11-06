@@ -1,4 +1,4 @@
-SaveInstances(id, (id - 100000));
+
 
 depth = 1;
 
@@ -29,3 +29,4 @@ with(bottomLeft)
 	image_xscale = 1.09375
 	image_yscale = 0.09375
 }
+SaveInstances(id, (id - 100000));

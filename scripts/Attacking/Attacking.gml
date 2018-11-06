@@ -3,9 +3,12 @@ var extra =0;
 if ranged == true{
 	
 	extra = 100;
-}else{
+}else if (itemHolding[1] = ""){
 	
-	extra = 0;
+	extra = -15;
+}
+else{
+	extra = 0;	
 }
 
 

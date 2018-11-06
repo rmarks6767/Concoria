@@ -1,4 +1,3 @@
-SaveInstances(id, (id - 100000));
 
 //sets the possible variables that the enemy can read
 Health = 100;
@@ -87,3 +86,5 @@ with (arm){
 	owner = other;
 	
 }
+
+SaveInstances(id, (id - 100000));
