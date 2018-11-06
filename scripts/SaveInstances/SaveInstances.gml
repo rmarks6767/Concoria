@@ -13,7 +13,7 @@ viewy1 = viewy;
 viewx2 = viewx1 + viewwidth;
 viewy2 = viewy1 + viewheight;
 
-padding = 500;
+padding = 2000;
 
 var fobjx = instance.x; 
 var fobjy = instance.y;

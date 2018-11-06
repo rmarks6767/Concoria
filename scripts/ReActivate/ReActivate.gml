@@ -3,7 +3,7 @@ viewy = camera_get_view_y(view_camera[0])
 viewheight = camera_get_view_height(view_camera[0])
 viewwidth = camera_get_view_width(view_camera[0])
 
-padding = 500;
+padding = 2000;
 
 viewx1 = viewx;
 viewy1 = viewy;
