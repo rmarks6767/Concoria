@@ -8,10 +8,11 @@ switch(thestate)
 {
 	case state.stationary:
 		Stationary();
+		CheckInteractions();
 		break;
 		
 	case state.wandering:
-		if !alarm[0]{
+		if (!alarm[0]){
 			Wander();
 			alarm[0] = irandom_range(20,50);
 		}

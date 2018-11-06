@@ -1,5 +1,5 @@
 //Purpose: Determining behavior for shop npcs
-direction = 270;
+
 var nearestPlayer;
 if (instance_exists(player)){
 	nearestPlayer = instance_nearest(x,y,player);

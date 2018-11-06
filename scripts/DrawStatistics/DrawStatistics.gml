@@ -55,7 +55,7 @@ stats[8,1] = "Strength";
 stats[9,0] = owner.Vit;
 stats[9,1] = "Vitality";
 
-
+//Draw stats
 for (var i = 0 ; i < array_height_2d(stats) ; i++){
 	
 	var statx1 = (menux1+40) + (floor(i/5)*240);
@@ -64,4 +64,28 @@ for (var i = 0 ; i < array_height_2d(stats) ; i++){
 	var staty2 = (staty1 + 20);
 	DrawStat(statx1,staty1,statx2,staty2,c_white,stats[i,0],stats[i,1]);
 	
+}
+
+
+//Draw Quests
+if (owner.quests[0] != noone){
+	for (var i = 0; i < array_length_1d(owner.quests); i++){
+	
+		var qst = owner.quests[i];
+		var qstName = qst[QUEST_FIELD.NAME];
+		var qstContent = qst[QUEST_FIELD.CONTENT];
+		
+		var questx1 = screenwMid;
+		var questy1 = menuy1+400;
+		
+		var textToDraw = "";
+		if (qstContent[0] == QUEST.KILL){
+			
+			textToDraw = "(QUEST)" + string(qstName) + ": "+ string(qstContent[2]) + " Left to kill";
+			questx1 -= string_length(textToDraw)/2;
+			
+		}
+	
+		draw_text_color(questx1,questy1,textToDraw,c_white,c_white,c_white,c_white,255);
+	}
 }

@@ -774,14 +774,15 @@ or (keyboard_check(ord("D")) and keyboard_check(ord("S")))
 //ATTACK
 
     if mouse_check_button_pressed(mb_left){
+        if (hud.drawMode == -1){
+	        if attacking == false{
         
-        if attacking == false{
-        
-            attacking = true
+	            attacking = true
 			
-            show_debug_message("attacking")
+
             
-        }
+	        }
+		}
         
     }
     
