@@ -855,6 +855,14 @@
             }
         },
         {
+            "Key": "3296d622-fc89-4c0a-820a-d7d2ffa1acd0",
+            "Value": {
+                "id": "2c7523e8-c92d-45ad-818d-4bf4144e76db",
+                "resourcePath": "scripts\\PlayerUpdateQuestStatus\\PlayerUpdateQuestStatus.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "32a8fc69-3af0-4d52-a78b-6e66c4349620",
             "Value": {
                 "id": "83b43c7e-e423-4f5c-b5dc-c6672b851121",
@@ -1676,6 +1684,14 @@
                 "id": "23361502-565d-483d-a103-74309a714174",
                 "resourcePath": "sprites\\template_idle_attack_l\\template_idle_attack_l.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5ab08f81-8adc-4cab-9b92-d3c13b33cea0",
+            "Value": {
+                "id": "d9d36634-5d8e-4793-b899-aaca23417d02",
+                "resourcePath": "scripts\\ObjNameToReference\\ObjNameToReference.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4063,6 +4079,8 @@
         "534f5cf1-658d-4b6e-a98c-220ba7c506a1",
         "420f648d-2d8e-46eb-af5d-d3612779137b",
         "172545f4-6998-4d15-a00c-80b0d8437bda",
+        "3296d622-fc89-4c0a-820a-d7d2ffa1acd0",
+        "5ab08f81-8adc-4cab-9b92-d3c13b33cea0",
         "5c1330e1-a249-4ac5-8dcf-788801481d70",
         "18ab02db-103d-4557-9244-11cce4d410db",
         "7fbea3f5-5504-4240-aab8-59983bed6754"

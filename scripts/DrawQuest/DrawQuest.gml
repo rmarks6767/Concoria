@@ -157,6 +157,7 @@ if (qstData != noone){
 						CompleteQuest(questGiver,qstData[1]);
 						var rewards = qst[QUEST_FIELD.REWARDS];
 						QuestGiveReward(owner,rewards[REWARDS_FIELD.TYPE],rewards[REWARDS_FIELD.QUANTITY]);
+						owner.quests[qstData[1]] = noone;
 						CloseQuestWindow();
 					
 					}
@@ -172,7 +173,6 @@ if (qstData != noone){
 					//Check if option is the last option(Which would give the player a quest)
 					if (dialogueNum == array_length_1d(dialogues) -1 ){
 						
-						print("Quest given");
 						GivePlayerQuest(owner,qst);
 						CloseQuestWindow();
 						
