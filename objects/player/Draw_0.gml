@@ -186,16 +186,9 @@ switch(drawMode){
 		break;
 	
 	case DRAW.EQUIPPED_STAND_BACK:
-	
-		if Inventory[equipped, 2] == "Bow"{
+		draw_sprite_ext(template_arm_swing_b,0,x,y,1,1,0,skinColor,255)
+		draw_sprite_ext(GetWeaponSprite(Inventory[equipped,0],NumDirectionToString(face_direction),attacking),0,x,y,1,1,0,c_white,255)
 		
-			draw_sprite_ext(template_arm_b,0,x,y,1,1,0,skinColor,255)
-			draw_sprite_ext(GetWeaponSprite(Inventory[equipped,0],NumDirectionToString(face_direction),attacking),0,x,y,1,1,0,c_white,255)
-		}
-		else{
-			draw_sprite_ext(GetWeaponSprite(Inventory[equipped,0],NumDirectionToString(face_direction),attacking),0,x,y,1,1,0,c_white,255)
-			draw_sprite_ext(template_arm_b,0,x,y,1,1,0,skinColor,255)
-		}
 		draw_sprite_ext(shirt0_b,0,x,y,1,1,0,shirtColor,255)
 		draw_sprite_ext(pants_idle_b,0,x,y,1,1,0,pantsColor,255)
 		draw_sprite_ext(skin0_idle_attack_b,0,x,y,1,1,0,skinColor,255)
