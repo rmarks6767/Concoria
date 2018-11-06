@@ -41,3 +41,8 @@ if (currentQuester != noone){
 	}
 	
 }
+
+if self.playerFriendly == false{
+		
+		self.thestate = state.attack
+}

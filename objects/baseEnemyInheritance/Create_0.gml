@@ -18,7 +18,7 @@ skinColor = make_color_rgb(255,255,255);
 pantsColor = make_color_rgb(255,255,255);
 hairColor = make_color_rgb(255,255,255);
 hairType = 0;
-
+level = floor(random_range(1, 50));
 
 /*Quest Format
 Slot 0: Name of Quest

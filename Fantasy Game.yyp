@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "172545f4-6998-4d15-a00c-80b0d8437bda",
+            "Value": {
+                "id": "cff2d5f9-7858-436b-9534-a8db7f98bc86",
+                "resourcePath": "scripts\\list\\list.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "17495428-2018-4355-8fc3-e4235c118bf3",
             "Value": {
                 "id": "f741d43e-cb48-436f-ac67-2437cfb3865b",
@@ -1116,6 +1124,14 @@
                 "id": "0e36df09-4704-488d-972d-c3de50e5ef11",
                 "resourcePath": "views\\420a4735-18f0-4577-9603-a69695e3cf7a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "420f648d-2d8e-46eb-af5d-d3612779137b",
+            "Value": {
+                "id": "cfdad2e8-f471-4212-93c9-b1fe6869608c",
+                "resourcePath": "scripts\\GivePlayerQuest\\GivePlayerQuest.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4045,6 +4061,8 @@
         "520d139d-29c8-421f-90ea-ae7c117a2b54",
         "d911c61d-e29c-4061-a205-503abc86f820",
         "534f5cf1-658d-4b6e-a98c-220ba7c506a1",
+        "420f648d-2d8e-46eb-af5d-d3612779137b",
+        "172545f4-6998-4d15-a00c-80b0d8437bda",
         "5c1330e1-a249-4ac5-8dcf-788801481d70",
         "18ab02db-103d-4557-9244-11cce4d410db",
         "7fbea3f5-5504-4240-aab8-59983bed6754"

@@ -17,7 +17,7 @@ if (ply.quests[0] == noone){
 
 
 //Iterate through all of the player's quests
-for (var i = 0; i < array_length_1d(ply.quests); i++){
+for (var i = 0; i < 10; i++){
 	
 	var plyQst = ply.quests[i];
 	
