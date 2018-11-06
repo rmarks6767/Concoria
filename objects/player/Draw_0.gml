@@ -355,9 +355,9 @@ switch(drawMode){
 		}
 		else{
 			
-			draw_sprite_ext(template_arm_b,arm.image_index,x,y,1,1,0,skinColor,255)
+			draw_sprite_ext(template_arm_swing_b,arm.image_index,x,y,1,1,0,skinColor,255)
 			draw_sprite_ext(GetWeaponSprite(Inventory[equipped,0],NumDirectionToString(face_direction),attacking),arm.image_index,x,y,1,1,0,c_white,255)
-			draw_sprite_ext(skin0_head_b,0,x,y,1,1,0,skinColor,255)
+			draw_sprite_ext(skin0_idle_attack_b,0,x,y,1,1,0,skinColor,255)
 			draw_sprite_ext(shirt0_b,0,x,y,1,1,0,shirtColor,255)
 		}
 		
