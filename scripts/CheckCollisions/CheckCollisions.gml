@@ -231,3 +231,114 @@ for	(var i = 0; i < array_length_1d(solidArray); i++)
 	}
 	
 }
+		}
+		
+	}
+	
+	if speed < 0{
+		
+		//grab every instance at every direction
+		var inst0 = instance_place(x + 1*-speed, y,solidArray[i])
+		var inst45 = instance_place(x + 1*-speed,y - 1*speed,solidArray[i])
+		var inst90 = instance_place(x,y-1*-speed,solidArray[i])
+		var inst135 = instance_place(x-1*-speed,y-1*speed,solidArray[i])
+		var inst180 = instance_place(x-1*-speed,y,solidArray[i])
+		var inst225 = instance_place(x-1*-speed,y+1*speed,solidArray[i])
+		var inst270 = instance_place(x,y+1*-speed,solidArray[i])
+		var inst315 = instance_place(x+1*-speed,y+1*speed,solidArray[i])
+		
+		//Check each direction starting from zero and going up
+		
+		//Right
+		if ( (direction > 0 and direction <= 22.5) or ( direction > 337.5 or direction <= 0) ){
+			
+			
+			if (inst180 != noone and inst180!= self){
+				speed = 0;
+				
+				
+			}
+			
+		}
+		//Top Right
+		else if ( direction > 22.5 and direction <= 67.5 ){
+			
+			if (inst225 and inst225!= self){
+				
+				speed = 0;
+				
+				
+			}
+			
+		}
+		//Top
+		else if ( direction > 67.5 and direction <= 112.5 ){
+			
+			if (inst270 and inst270!= self){
+				
+				speed = 0
+				
+				
+			}
+			
+		}
+		//Top Left
+		else if ( direction > 112.5 and direction <= 157.5 ){
+			
+			if (inst315 and inst315!= self){
+				
+				speed = 0;
+				
+				
+			}
+			
+		}
+		//Left
+		else if ( direction > 157.5 and direction <= 202.5 ){
+			
+			if (inst0 and inst0!= self){
+				
+				speed = 0;
+				
+				
+				
+			}
+			
+		}
+		//South Left
+		else if ( direction > 202.5 and direction <= 247.5 ){
+			
+			if (inst45 and inst45!= self){
+				
+				speed = 0;
+				
+				
+			}
+			
+		}
+		//South
+		else if ( direction > 247.5 and direction <= 292.5 ){
+			
+			if (inst90 and inst90!= self){
+				
+				speed = 0;
+				
+				
+			}
+			
+		}
+		//South Right
+		else if ( direction > 202.5 and direction <= 337.5 ){
+			
+			if (inst135 and inst135!= self){
+				
+				speed = 0;
+				
+				
+			}
+			
+		}
+		
+	}
+	
+}

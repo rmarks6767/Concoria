@@ -15,12 +15,15 @@
 
 //Quest Lock<array>: (This array will store ints of all the indexes of the quests that must be completed before this quest is availible.)
 	var questLocked = argument4;
+	
+//Quest completed dialogue<array>: (This array will dialogue displayed after the quest is completed
+	var completedDialogue = argument5;
 
 //Quest is completed or not<bool>:true, false
-	var questCompleted = argument5;
+	var questCompleted = argument6;
 
 //Quest is repetable or not<bool>:true, false
-	var questRepeatable = argument6;
+	var questRepeatable = argument7;
 
 
 //Set up quest array;
@@ -30,8 +33,9 @@ quest[1] = questContent;
 quest[2] = questRewards;
 quest[3] = questDialogue;
 quest[4] = questLocked;
-quest[5] = questCompleted;
-quest[6] = questRepeatable;
+quest[5] = completedDialogue;
+quest[6] = questCompleted;
+quest[7] = questRepeatable;
 
 //Return it
 return quest;

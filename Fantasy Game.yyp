@@ -1487,6 +1487,14 @@
             }
         },
         {
+            "Key": "520d139d-29c8-421f-90ea-ae7c117a2b54",
+            "Value": {
+                "id": "05732837-76e9-456c-a8f0-315a6d9da6d6",
+                "resourcePath": "scripts\\PlayerHasQuest\\PlayerHasQuest.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5249965e-7bc0-4b22-823c-7bc095d9a28f",
             "Value": {
                 "id": "d0f79204-4665-4024-bb7d-97f8a9d41f45",
@@ -1524,6 +1532,14 @@
                 "id": "1f21f070-435e-47dc-92a5-763a71a51a00",
                 "resourcePath": "views\\52f278b1-da85-45d1-a9a1-8771a17279ac.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "534f5cf1-658d-4b6e-a98c-220ba7c506a1",
+            "Value": {
+                "id": "366c8bb6-0bbb-45c7-a2e1-eec7c78b4da9",
+                "resourcePath": "scripts\\QuestGiveReward\\QuestGiveReward.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2012,6 +2028,14 @@
                 "id": "099d1cbb-879e-4f67-9b10-0ab8013ac81d",
                 "resourcePath": "views\\778e58c1-4afb-4f85-9cb5-c2c53cb02ef5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "78121fd8-f234-429d-bc5c-c3cd5e539efa",
+            "Value": {
+                "id": "d936302e-8ac2-4441-b631-2c9013e3752c",
+                "resourcePath": "scripts\\CompleteQuest\\CompleteQuest.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2623,6 +2647,14 @@
             }
         },
         {
+            "Key": "a44265eb-4e3a-4fdd-bfe9-d7847a71d548",
+            "Value": {
+                "id": "ab75d25a-e6e5-43cc-a522-cd705fe114f1",
+                "resourcePath": "scripts\\CloseQuestWindow\\CloseQuestWindow.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a5115611-b7dc-4b4c-96d5-b49cdbdcf958",
             "Value": {
                 "id": "7a21ba1e-697a-47db-8ae6-5c59fb676aa5",
@@ -3119,6 +3151,14 @@
             }
         },
         {
+            "Key": "c19371e9-c76f-460d-85d6-5723620d6dad",
+            "Value": {
+                "id": "7b56012c-804c-4f0a-818e-3d3e5728c52e",
+                "resourcePath": "scripts\\PlayerFindNextQuestSpot\\PlayerFindNextQuestSpot.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c20b960e-8008-4636-81bd-31e5c8437b3d",
             "Value": {
                 "id": "fe532419-7627-44b4-a935-084ed28d95fd",
@@ -3492,6 +3532,14 @@
                 "id": "4434a5a4-dc9a-48e2-afcb-f0463ae7947f",
                 "resourcePath": "objects\\theTree2\\theTree2.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d911c61d-e29c-4061-a205-503abc86f820",
+            "Value": {
+                "id": "f4ff345b-5d57-4a53-aaa9-c26e0ad417e2",
+                "resourcePath": "scripts\\PlayerQuestComplete\\PlayerQuestComplete.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3991,6 +4039,12 @@
         "14bd5092-0b8b-4649-93b9-9bfa3822f819",
         "c164e502-2c10-4fc9-a705-4bc0b404c19d",
         "b7d24bf4-b546-412f-9998-09263c4513c8",
+        "a44265eb-4e3a-4fdd-bfe9-d7847a71d548",
+        "78121fd8-f234-429d-bc5c-c3cd5e539efa",
+        "c19371e9-c76f-460d-85d6-5723620d6dad",
+        "520d139d-29c8-421f-90ea-ae7c117a2b54",
+        "d911c61d-e29c-4061-a205-503abc86f820",
+        "534f5cf1-658d-4b6e-a98c-220ba7c506a1",
         "5c1330e1-a249-4ac5-8dcf-788801481d70",
         "18ab02db-103d-4557-9244-11cce4d410db",
         "7fbea3f5-5504-4240-aab8-59983bed6754"

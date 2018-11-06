@@ -1,8 +1,6 @@
 //Set Drawm Mode
 NPCGetDrawMode();
 face_direction = direction;
-depth = -2
-level = 50;
 
 switch(thestate)
 {
@@ -54,6 +52,12 @@ switch(thestate)
 		break;
 }
 
+if Health <= 0{
+		
+		instance_destroy(self.arm);
+		instance_destroy(self);
+		
+}
 CheckCollisions();
 with(arm){
 	ArmControl()
@@ -69,6 +73,5 @@ if (currentCustomer != noone){
 		currentCustomer.hud.shop = self;
 		
 	}
-
 }
 */

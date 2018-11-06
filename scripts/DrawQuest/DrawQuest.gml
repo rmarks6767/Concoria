@@ -1,6 +1,5 @@
-//Purpose: Drawing NPCS Quest
+///Purpose: Drawing NPCS Quest
 
-	
 //Screen values
 var screenx1 = camera_get_view_x(view_camera[0])
 var screeny1 = camera_get_view_y(view_camera[0])
@@ -22,36 +21,121 @@ var menuy1 = screeny1+vertPad
 var menux2 = screenx2-horPad
 var menuy2 = screeny2-vertPad
 
-draw_set_alpha(0.9);
-draw_rectangle_color(menux1,menuy1,menux2,menuy2,c_black,c_black,c_black,c_black,false);
-draw_set_alpha(1.0);
-draw_set_font(header1_font);
-var spacing = 80;
-//Draw heading
-draw_set_font(header1_font)
-draw_text_color( screenwMid - (string_width("NPC")/2),menuy1+20,"NPC",c_white,c_white,c_white,c_white,255);
+//Storer of quest data
+var qstData = noone;
 
-var qst = FindFirstQuest(quest.quests)
-if (qst != noone){
+//See if our questGiver has a quest for us and grab the appropriate quest
+if (questGiver.quests[0] != noone){
+	qstData = FindFirstQuest(questGiver.quests);
+}
+
+//Make sure we got a valid. Else, don't display anything
+if (qstData != noone){
 	
-	var dialogues = qst[QUEST_FIELD.DIALOGUE];
+	//Draw Background
+	draw_set_alpha(0.9);
+	draw_rectangle_color(menux1,menuy1,menux2,menuy2,c_black,c_black,c_black,c_black,false);
+	draw_set_alpha(1.0);
+	draw_set_font(header1_font);
+	var spacing = 80;
 	
-	//dialogueNum stores what current dialogue we're on
-	var currentDialogue = dialogues[dialogueNum];
+	//Draw heading
+	draw_set_font(header1_font)
+	draw_text_color( screenwMid - (string_width("NPC")/2),menuy1+20,"NPC",c_white,c_white,c_white,c_white,255);
+	
+	//Get the actual quest from the quest data
+	var qst = qstData[0];
+	
+	//Where we will store the dialogues
+	var dialogues;
+	var currentDialogue;
+	
+	
+	
+	
+	//This function returns a list of both the bool and the index of the quest on the player
+	var playerHasQuestData = PlayerHasQuest(owner,qst);
+	//This var is used to determine whether or not the player has our quest(bool)
+	var playerHasQuest = playerHasQuestData[0];
+	//This var is where that quest is located on the player
+	var playerQuestIndex = playerHasQuestData[1];
+	
+	
+	
+	var playerCompletedQuest = PlayerQuestComplete(owner,playerQuestIndex);
+	
+	
+	
+	
+	//Check if the player already has this quest to determine whether or not we should display a normal dialogue or the finish dialogue
+	if (playerHasQuest){
+	
+		//Get the "quest completed" dialogues from the quest
+		dialogues = qst[QUEST_FIELD.COMPLETE_DIALOGUE];
+		if (playerCompletedQuest){
+			
+			dialogueNum = array_length_1d(dialogues) - 1;
+			
+		}
+		else{
+			
+			dialogueNum = 0;
+			
+		}
+		
+	}
+	else{
+		//Get the normal dialouges from the quest
+		dialogues = qst[QUEST_FIELD.DIALOGUE];
+	}
+	
+	
+	//dialogueNum stores what current dialogue we're on. Thus, currentDialogue stores what is the current display dialogue
+	currentDialogue = dialogues[dialogueNum];
 	
 	//Draw current dialogue
 	draw_set_font(header2_font)
 	draw_text_color( screenwMid - (string_width(currentDialogue[0])/2),menuy1+60,currentDialogue[0],c_white,c_white,c_white,c_white,255);
 	
+	//Start drawing the responses
+	var lengthOfDialogue = array_length_1d(dialogues[dialogueNum]);
 	
-	for (var i = 0; i < (array_length_1d(dialogues[dialogueNum])/2)-1;i++){
-
-		var responseArray = GetQuestResponse(currentDialogue,i);
-		var response = responseArray[0];
-		var responseGoto = responseArray[1];
+	//Check if responses exist
+	if ((lengthOfDialogue/2)-1 > 0){
+		for (var i = 0; i < (lengthOfDialogue/2)-1;i++){
 		
+			var responseArray = GetQuestResponse(currentDialogue,i);
+			var response = responseArray[0];
+			var responseGoto = responseArray[1];
+		
+			var responsex1 = (screenwMid - (string_width(response)/2));
+			var responsey1 = (menuy1 + 120) + spacing*i
+		
+		
+			//Draw Response
+			draw_set_font(header2_font)
+			draw_text_color( responsex1,responsey1,response,c_white,c_white,c_white,c_white,255);
+			
+			//Check if response if pressed
+			if(mouse_check_button_pressed(mb_left)){
+			
+				if (point_distance(mouse_x,mouse_y,responsex1,responsey1) <= 20){
+				
+					//Jump to appropriate dialogue
+					dialogueNum = responseGoto;
+				
+				}
+			
+			}
+		
+		}
+	}
+	
+	//This happens if we reach the end of a dialog tree
+	else{
+		var response = "Click here to close"
 		var responsex1 = (screenwMid - (string_width(response)/2));
-		var responsey1 = (menuy1 + 120) + spacing*i
+		var responsey1 = (menuy1 + 120) + spacing
 		
 		
 		//Draw Response
@@ -60,10 +144,47 @@ if (qst != noone){
 		
 		if(mouse_check_button_pressed(mb_left)){
 			
+			
+			
+			
+			//Check if option is clicked
 			if (point_distance(mouse_x,mouse_y,responsex1,responsey1) <= 20){
 				
-				 dialogueNum = responseGoto;
+				if (playerHasQuest){
+					
+					if (playerCompletedQuest){
+					
+						CompleteQuest(questGiver,qstData[1]);
+						var rewards = qst[QUEST_FIELD.REWARDS];
+						QuestGiveReward(owner,rewards[REWARDS_FIELD.TYPE],rewards[REWARDS_FIELD.QUANTITY]);
+						CloseQuestWindow();
+					
+					}
+					else{
+					
+						CloseQuestWindow();
+						
+					}
 				
+				}
+				else{
+					
+					//Check if option is the last option(Which would give the player a quest)
+					if (dialogueNum == array_length_1d(dialogues) -1 ){
+						
+						print("Quest given");
+						GivePlayerQuest(owner,qst);
+						CloseQuestWindow();
+						
+					}
+					else{
+						
+						//CloseQuestWindow()	
+						
+					}
+					
+				}
+
 			}
 			
 		}
